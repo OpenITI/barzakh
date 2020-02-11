@@ -9,4 +9,5 @@ You can already create a yml file for your added author, text or version in this
 
 # Suggestions for new libraries to scrape:
 
-* [ar.lib.eshia.ir](http://ar.lib.eshia.ir)
+* [ar.lib.eshia.ir](http://ar.lib.eshia.ir) (SM has the script ready)
+* [filaha.org](http://www.filaha.org/texts_translations.html)
