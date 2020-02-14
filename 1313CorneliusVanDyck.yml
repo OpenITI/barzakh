@@ -1,0 +1,17 @@
+00#AUTH#URI######: 1313CorneliusVanDyck
+10#AUTH#ISM####AR: 
+10#AUTH#KUNYA##AR: 
+10#AUTH#LAQAB##AR: 
+10#AUTH#NASAB##AR: 
+10#AUTH#NISBA##AR: 
+10#AUTH#SHUHRA#AR: Cornelius Van Alen Van Dyck, Cornelius Van Dyke
+20#AUTH#BORN#####: URIs from Althurayya, comma separated
+20#AUTH#DIED#####: URIs from Althurayya, comma separated
+20#AUTH#RESIDED##: URIs from Althurayya, comma separated
+20#AUTH#VISITED##: URIs from Althurayya, comma separated
+30#AUTH#BORN###AH: 1313-05-25
+30#AUTH#DIED###AH: 1233-10-10
+40#AUTH#STUDENTS#: 
+40#AUTH#TEACHERS#: 
+80#AUTH#BIBLIO###: src@id, src@id, src@id, src@id, src@id
+90#AUTH#COMMENT##: https://en.wikipedia.org/wiki/Cornelius_Van_Alen_Van_Dyck.
