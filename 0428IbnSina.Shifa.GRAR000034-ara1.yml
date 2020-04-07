@@ -2,8 +2,9 @@
 00#VERS#URI######: 0428IbnSina.Shifa.GRAR000034-ara1
 80#VERS#BASED####: https://www.graeco-arabic-studies.org/single-text/text/margoliouth-41.html, 
     http://www.worldcat.org/oclc/1039069199
-80#VERS#COLLATED#: https://archive.org/details/analectaorienta00arisgoog/page/n172
-80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+80#VERS#COLLATED#: https://www.graeco-arabic-studies.org/single-text/text/margoliouth-41.html, 
+    http://www.worldcat.org/oclc/1039069199
+80#VERS#LINKS####: https://archive.org/details/analectaorienta00arisgoog/page/n172
 90#VERS#ANNOTATOR: PV
 90#VERS#COMMENT##: Ed. David S. Margoliouth (1887),
     Analecta Orientalia ad Poeticam Aristoteleam. 

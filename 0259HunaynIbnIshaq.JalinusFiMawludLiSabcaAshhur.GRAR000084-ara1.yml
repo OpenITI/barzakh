@@ -2,8 +2,9 @@
 00#VERS#URI######: 0259HunaynIbnIshaq.JalinusFiMawludLiSabcaAshhur.GRAR000084-ara1
 80#VERS#BASED####: https://www.jstor.org/stable/41863830,
     https://www.graeco-arabic-studies.org/single-text/text/walzer-26.html
-80#VERS#COLLATED#: www.jstor.org/stable/41863830
-80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+80#VERS#COLLATED#: https://www.jstor.org/stable/41863830,
+    https://www.graeco-arabic-studies.org/single-text/text/walzer-26.html
+80#VERS#LINKS####: www.jstor.org/stable/41863830
 90#VERS#ANNOTATOR: PV
 90#VERS#COMMENT##: Ed. Richard Walzer (1935), 
     "Galens Schrift Über die Siebenmonatskinder",
