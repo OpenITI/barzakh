@@ -80,9 +80,11 @@ $	DOLLAR SIGN
 ؛	ARABIC SEMICOLON
 !	EXCLAMATION MARK
 "	QUOTATION MARK
-, 	 COMMA
-= 	 EQUALS SIGN
-? 	 QUESTION MARK
+,	COMMA
+=	EQUALS SIGN
+?	QUESTION MARK
+“	LEFT DOUBLE QUOTATION MARK
+”	RIGHT DOUBLE QUOTATION MARK
 """
 allowed_chars = [x.split("\t")[0] for x in allowed_chars.splitlines()]
 allowed_chars = re.compile("[{}]+".format("".join(allowed_chars)))
@@ -94,7 +96,8 @@ remove = """\
 remove = [x.split("\t")[0] for x in remove.splitlines()]
 remove = re.compile("[{}]+".format("".join(remove)))
 
-repl_dict = {"…": "...", "ک": "ك", "ی": "ي", }
+repl_dict = {"…": "...", "ک": "ك", "ی": "ي", "۰": "٠", "۱": "١", "۳": "٣",
+             "۹": "٩"}
 
 def clean(text):
     text = deNoise(text)
@@ -126,9 +129,9 @@ def clean(text):
     return text
 
 def rewrap(text, maxlength=72):
-    text = re.sub("(### \|+.+[\r\n]+)([^#P])", r"\1# \2", text)
+    text = re.sub("(### \|+.+[\r\n]+)([^#PN])", r"\1# \2", text)
     text = re.sub("[\r\n]+~~", " ", text)
-    text = re.sub("[\r\n]+([^P#])", r" \1", text)
+    text = re.sub("[\r\n]+([^P#N])", r" \1", text)
     s = re.split("([\r\n]+)", text)
     new = ""
     for el in s:
@@ -159,6 +162,8 @@ for fn in os.listdir("."):
                 file.write(text)
         else:
             print("rewriting file", fn, "aborted")
-
-        
-
+"""
+0363QadiNucman.Idah.EShia0027411-ara1
+̈ 	 COMBINING DIAERESIS   
+� 	 REPLACEMENT CHARACTER
+"""
