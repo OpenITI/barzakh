@@ -85,6 +85,8 @@ $	DOLLAR SIGN
 ?	QUESTION MARK
 “	LEFT DOUBLE QUOTATION MARK
 ”	RIGHT DOUBLE QUOTATION MARK
+¶	PILCROW SIGN
+¬	NOT SIGN
 """
 allowed_chars = [x.split("\t")[0] for x in allowed_chars.splitlines()]
 allowed_chars = re.compile("[{}]+".format("".join(allowed_chars)))
@@ -97,10 +99,11 @@ remove = [x.split("\t")[0] for x in remove.splitlines()]
 remove = re.compile("[{}]+".format("".join(remove)))
 
 repl_dict = {"…": "...", "ک": "ك", "ی": "ي", "۰": "٠", "۱": "١", "۳": "٣",
-             "۹": "٩"}
+             "۹": "٩", "–": "-", "—": "-", "⁄": "/"}
 
 def clean(text):
     text = deNoise(text)
+    text = normalize_composites(text)
     text = re.sub(remove, "", text)
     #text = re.sub("﻿", "", text) # remove zero width no-break space
     all_chars = "".join(set(text))
@@ -113,7 +116,8 @@ def clean(text):
         except:
             not_found.append(c)
         if c not in not_found: 
-            print(re.findall("[^%s]{,10}%s[^%s]{,10}"%(c,c,c), text))
+            print(re.findall("[^%s]{,10}%s[^%s]{,10}"%(c,c,c), text)[:20])
+            print("({} times in text)".format(len(re.findall(c, text))))
             resp = input("Do you want to replace all? Y/N  ")
             if resp in "Yy":
                 if c in repl_dict:
@@ -155,7 +159,7 @@ for fn in os.listdir("."):
         with open(fn, mode="r", encoding="utf-8-sig") as file:
             text = file.read()
             text = clean(text)
-            text = rewrap(text, 72)
+            #text = rewrap(text, 72)
 
         if text:
             with open(fn, mode="w", encoding="utf-8-sig") as file:

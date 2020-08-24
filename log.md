@@ -328,3 +328,1069 @@ to D:/London/OpenITI/25Y_repos/0725AH/data/0710IbnRifca/0710IbnRifca.Nafais/0710
 
 Move D:\London\OpenITI\barzakh\barzakh\0750Anonymous.SirajZulma.GVDB20200219-ara1.completed 
 to D:/London/OpenITI/25Y_repos/0750AH/data/0750Anonymous/0750Anonymous.SirajZulma/0750Anonymous.SirajZulma.GVDB20200219-ara1.completed
+
+
+Move .\0068CabdAllahIbnCabbas.GharibQuran.Zaydiyya0000300-ara1 
+    to D:/London/OpenITI/25Y_repos/0075AH/data/0068CabdAllahIbnCabbas/0068CabdAllahIbnCabbas.GharibQuran/0068CabdAllahIbnCabbas.GharibQuran.Zaydiyya0000300-ara1
+Move .\0094ZaynCabidin.SahifaSajjadiyya.Zaydiyya0000014-ara1 
+    to D:/London/OpenITI/25Y_repos/0100AH/data/0094ZaynCabidin/0094ZaynCabidin.SahifaSajjadiyya/0094ZaynCabidin.SahifaSajjadiyya.Zaydiyya0000014-ara1
+Move .\0122ZaydIbnCali.MajmucRasail.Zaydiyya0000074-ara1 
+    to D:/London/OpenITI/25Y_repos/0125AH/data/0122ZaydIbnCali/0122ZaydIbnCali.MajmucRasail/0122ZaydIbnCali.MajmucRasail.Zaydiyya0000074-ara1
+Move .\0122ZaydIbnCali.MansikHajj.Zaydiyya0000065-ara1 
+    to D:/London/OpenITI/25Y_repos/0125AH/data/0122ZaydIbnCali/0122ZaydIbnCali.MansikHajj/0122ZaydIbnCali.MansikHajj.Zaydiyya0000065-ara1
+Move .\0122ZaydIbnCali.MansikHajj.Zaydiyya0000269-ara1 
+    to D:/London/OpenITI/25Y_repos/0125AH/data/0122ZaydIbnCali/0122ZaydIbnCali.MansikHajj/0122ZaydIbnCali.MansikHajj.Zaydiyya0000269-ara1
+Move .\0122ZaydIbnCali.MusnadZayd.Zaydiyya0000052-ara1 
+    to D:/London/OpenITI/25Y_repos/0125AH/data/0122ZaydIbnCali/0122ZaydIbnCali.MusnadZayd/0122ZaydIbnCali.MusnadZayd.Zaydiyya0000052-ara1
+Move .\0122ZaydIbnCali.MusnadZayd.Zaydiyya0000056-ara1 
+    to D:/London/OpenITI/25Y_repos/0125AH/data/0122ZaydIbnCali/0122ZaydIbnCali.MusnadZayd/0122ZaydIbnCali.MusnadZayd.Zaydiyya0000056-ara1
+Move .\0122ZaydIbnCali.TafsirGharibQuran.Zaydiyya0000297-ara1 
+    to D:/London/OpenITI/25Y_repos/0125AH/data/0122ZaydIbnCali/0122ZaydIbnCali.TafsirGharibQuran/0122ZaydIbnCali.TafsirGharibQuran.Zaydiyya0000297-ara1
+Move .\0145MufaddalIbnCumarJucfi.Tawhid.Zaydiyya0000117-ara1 
+    to D:/London/OpenITI/25Y_repos/0150AH/data/0145MufaddalIbnCumarJucfi/0145MufaddalIbnCumarJucfi.Tawhid/0145MufaddalIbnCumarJucfi.Tawhid.Zaydiyya0000117-ara1
+Move .\0170KhalilFarahidi.Cayn.ShamIbadiyya0000225-ara1 
+    to D:/London/OpenITI/25Y_repos/0175AH/data/0170KhalilFarahidi/0170KhalilFarahidi.Cayn/0170KhalilFarahidi.Cayn.ShamIbadiyya0000225-ara1
+Move .\0170RabicIbnHabibAzdi.JamicSahih.ShamIbadiyya0000155-ara1 
+    to D:/London/OpenITI/25Y_repos/0175AH/data/0170RabicIbnHabibAzdi/0170RabicIbnHabibAzdi.JamicSahih/0170RabicIbnHabibAzdi.JamicSahih.ShamIbadiyya0000155-ara1
+Move .\0200AbuGhanimKhurasani.MudawwanaSughra.ShamIbadiyya0000772-ara1 
+    to D:/London/OpenITI/25Y_repos/0200AH/data/0200AbuGhanimKhurasani/0200AbuGhanimKhurasani.MudawwanaSughra/0200AbuGhanimKhurasani.MudawwanaSughra.ShamIbadiyya0000772-ara1
+Move .\0200IbnJacfarSadiq.Masail.Zaydiyya0000221-ara1 
+    to D:/London/OpenITI/25Y_repos/0200AH/data/0200IbnJacfarSadiq/0200IbnJacfarSadiq.Masail/0200IbnJacfarSadiq.Masail.Zaydiyya0000221-ara1
+Move .\0200SayfIbnCumar.Fitna.Zaydiyya0000155-ara1 
+    to D:/London/OpenITI/25Y_repos/0200AH/data/0200SayfIbnCumar/0200SayfIbnCumar.Fitna/0200SayfIbnCumar.Fitna.Zaydiyya0000155-ara1
+Move .\0203CaliRida.Sahifa.Zaydiyya0000121-ara1 
+    to D:/London/OpenITI/25Y_repos/0225AH/data/0203CaliRida/0203CaliRida.Sahifa/0203CaliRida.Sahifa.Zaydiyya0000121-ara1
+Move .\0203CaliRida.Sahifa.Zaydiyya0000158-ara1 
+    to D:/London/OpenITI/25Y_repos/0225AH/data/0203CaliRida/0203CaliRida.Sahifa/0203CaliRida.Sahifa.Zaydiyya0000158-ara1
+Move .\0246QasimRassi.KamilMunir.Zaydiyya0000003-ara1 
+    to D:/London/OpenITI/25Y_repos/0250AH/data/0246QasimRassi/0246QasimRassi.KamilMunir/0246QasimRassi.KamilMunir.Zaydiyya0000003-ara1
+Move .\0246QasimRassi.KamilMunir.Zaydiyya0000222-ara1 
+    to D:/London/OpenITI/25Y_repos/0250AH/data/0246QasimRassi/0246QasimRassi.KamilMunir/0246QasimRassi.KamilMunir.Zaydiyya0000222-ara1
+Move .\0246QasimRassi.KitabFihiMasail.Zaydiyya0000408-ara1 
+    to D:/London/OpenITI/25Y_repos/0250AH/data/0246QasimRassi/0246QasimRassi.KitabFihiMasail/0246QasimRassi.KitabFihiMasail.Zaydiyya0000408-ara1
+Move .\0246QasimRassi.Majmuc.Zaydiyya0000075-ara1 
+    to D:/London/OpenITI/25Y_repos/0250AH/data/0246QasimRassi/0246QasimRassi.Majmuc/0246QasimRassi.Majmuc.Zaydiyya0000075-ara1
+Move .\0247AhmadIbnCisa.Amali.Zaydiyya0000049-ara1 
+    to D:/London/OpenITI/25Y_repos/0250AH/data/0247AhmadIbnCisa/0247AhmadIbnCisa.Amali/0247AhmadIbnCisa.Amali.Zaydiyya0000049-ara1
+Move .\0250AflahIbnCabdWahhab.Jawabat.ShamIbadiyya0000784-ara1 
+    to D:/London/OpenITI/25Y_repos/0250AH/data/0250AflahIbnCabdWahhab/0250AflahIbnCabdWahhab.Jawabat/0250AflahIbnCabdWahhab.Jawabat.ShamIbadiyya0000784-ara1
+Move .\0255Jahiz.BayanWaTabyin.Zaydiyya0000478-ara1 
+    to D:/London/OpenITI/25Y_repos/0275AH/data/0255Jahiz/0255Jahiz.BayanWaTabyin/0255Jahiz.BayanWaTabyin.Zaydiyya0000478-ara1
+Move .\0275AbuHawariAcma.Diraya.ShamIbadiyya0000441-ara1 
+    to D:/London/OpenITI/25Y_repos/0275AH/data/0275AbuHawariAcma/0275AbuHawariAcma.Diraya/0275AbuHawariAcma.Diraya.ShamIbadiyya0000441-ara1
+Move .\0275LawwabIbnSallam.BidIslam.ShamIbadiyya0000099-ara1 
+    to D:/London/OpenITI/25Y_repos/0275AH/data/0275LawwabIbnSallam/0275LawwabIbnSallam.BidIslam/0275LawwabIbnSallam.BidIslam.ShamIbadiyya0000099-ara1
+Move .\0280HudHawari.Tafsir.ShamIbadiyya0000194-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0280HudHawari/0280HudHawari.Tafsir/0280HudHawari.Tafsir.ShamIbadiyya0000194-ara1
+Move .\0283AbuIshaqThaqafi.Gharat.Zaydiyya0000174-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0283AbuIshaqThaqafi/0283AbuIshaqThaqafi.Gharat/0283AbuIshaqThaqafi.Gharat.Zaydiyya0000174-ara1
+Move .\0283CamrusIbnFath.UsulDaynunaSafiya.ShamIbadiyya0000030-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0283CamrusIbnFath/0283CamrusIbnFath.UsulDaynunaSafiya/0283CamrusIbnFath.UsulDaynunaSafiya.ShamIbadiyya0000030-ara1
+Move .\0284MuhammadIbnQasimRassi.HijraWaWasiyya.Zaydiyya0000019-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0284MuhammadIbnQasimRassi/0284MuhammadIbnQasimRassi.HijraWaWasiyya/0284MuhammadIbnQasimRassi.HijraWaWasiyya.Zaydiyya0000019-ara1
+Move .\0285IbnYazidMubarrad.Fadil.ShamIbadiyya0000640-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0285IbnYazidMubarrad/0285IbnYazidMubarrad.Fadil/0285IbnYazidMubarrad.Fadil.ShamIbadiyya0000640-ara1
+Move .\0285IbnYazidMubarrad.KamilFiLugha.ShamIbadiyya0000642-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0285IbnYazidMubarrad/0285IbnYazidMubarrad.KamilFiLugha/0285IbnYazidMubarrad.KamilFiLugha.ShamIbadiyya0000642-ara1
+Move .\0285IbnYazidMubarrad.KamilFiLugha.Zaydiyya0000578-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0285IbnYazidMubarrad/0285IbnYazidMubarrad.KamilFiLugha/0285IbnYazidMubarrad.KamilFiLugha.Zaydiyya0000578-ara1
+Move .\0285IbnYazidMubarrad.Muqtadab.ShamIbadiyya0000063-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0285IbnYazidMubarrad/0285IbnYazidMubarrad.Muqtadab/0285IbnYazidMubarrad.Muqtadab.ShamIbadiyya0000063-ara1
+Move .\0285IbnYazidMubarrad.NasabCadnan.ShamIbadiyya0000179-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0285IbnYazidMubarrad/0285IbnYazidMubarrad.NasabCadnan/0285IbnYazidMubarrad.NasabCadnan.ShamIbadiyya0000179-ara1
+Move .\0285IbnYazidMubarrad.TacaziWaMarai.ShamIbadiyya0000610-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0285IbnYazidMubarrad/0285IbnYazidMubarrad.TacaziWaMarai/0285IbnYazidMubarrad.TacaziWaMarai.ShamIbadiyya0000610-ara1
+Move .\0286IbnHakamHibri.Tafsir.Zaydiyya0000124-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0286IbnHakamHibri/0286IbnHakamHibri.Tafsir/0286IbnHakamHibri.Tafsir.Zaydiyya0000124-ara1
+Move .\0290IbnHasanSaffar.BasairDarajat.Zaydiyya0000179-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0290IbnHasanSaffar/0290IbnHasanSaffar.BasairDarajat/0290IbnHasanSaffar.BasairDarajat.Zaydiyya0000179-ara1
+Move .\0290IbnMansurMuradi.Dhikr.Zaydiyya0000024-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0290IbnMansurMuradi/0290IbnMansurMuradi.Dhikr/0290IbnMansurMuradi.Dhikr.Zaydiyya0000024-ara1
+Move .\0290IbnMansurMuradi.Dhikr.Zaydiyya0000268-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0290IbnMansurMuradi/0290IbnMansurMuradi.Dhikr/0290IbnMansurMuradi.Dhikr.Zaydiyya0000268-ara1
+Move .\0292Yacqubi.Tarikh.Zaydiyya0000057-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0292Yacqubi/0292Yacqubi.Tarikh/0292Yacqubi.Tarikh.Zaydiyya0000057-ara1
+Move .\0298YahyaIbnHusayn.AhkamFiHalalWaHaram.Zaydiyya0000064-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0298YahyaIbnHusayn/0298YahyaIbnHusayn.AhkamFiHalalWaHaram/0298YahyaIbnHusayn.AhkamFiHalalWaHaram.Zaydiyya0000064-ara1
+Move .\0298YahyaIbnHusayn.DurarAhadithNabawiyya.Zaydiyya0000353-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0298YahyaIbnHusayn/0298YahyaIbnHusayn.DurarAhadithNabawiyya/0298YahyaIbnHusayn.DurarAhadithNabawiyya.Zaydiyya0000353-ara1
+Move .\0298YahyaIbnHusayn.Majmuc.Zaydiyya0000076-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0298YahyaIbnHusayn/0298YahyaIbnHusayn.Majmuc/0298YahyaIbnHusayn.Majmuc.Zaydiyya0000076-ara1
+Move .\0298YahyaIbnHusayn.MajmucaFakhira.Zaydiyya0000073-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0298YahyaIbnHusayn/0298YahyaIbnHusayn.MajmucaFakhira/0298YahyaIbnHusayn.MajmucaFakhira.Zaydiyya0000073-ara1
+Move .\0298YahyaIbnHusayn.SharhBalighMudrak.Zaydiyya0000401-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0298YahyaIbnHusayn/0298YahyaIbnHusayn.SharhBalighMudrak/0298YahyaIbnHusayn.SharhBalighMudrak.Zaydiyya0000401-ara1
+Move .\0298YahyaIbnHusayn.TathbitImama.Zaydiyya0000160-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0298YahyaIbnHusayn/0298YahyaIbnHusayn.TathbitImama/0298YahyaIbnHusayn.TathbitImama.Zaydiyya0000160-ara1
+Move .\0300IbnJacfarHimyari.QurbIsnad.Zaydiyya0000112-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0300IbnJacfarHimyari/0300IbnJacfarHimyari.QurbIsnad/0300IbnJacfarHimyari.QurbIsnad.Zaydiyya0000112-ara1
+Move .\0300IbnSulaymanKufi.ManaqibImam.Zaydiyya0000150-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0300IbnSulaymanKufi/0300IbnSulaymanKufi.ManaqibImam/0300IbnSulaymanKufi.ManaqibImam.Zaydiyya0000150-ara1
+Move .\0300MuallifMajhul.AjwibaCulamaFazzan.ShamIbadiyya0000319-ara1 
+    to D:/London/OpenITI/25Y_repos/0300AH/data/0300MuallifMajhul/0300MuallifMajhul.AjwibaCulamaFazzan/0300MuallifMajhul.AjwibaCulamaFazzan.ShamIbadiyya0000319-ara1
+Move .\0304HasanUtrush.Bisat.Zaydiyya0000041-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0304HasanUtrush/0304HasanUtrush.Bisat/0304HasanUtrush.Bisat.Zaydiyya0000041-ara1
+Move .\0304HasanUtrush.Ihtisab.Zaydiyya0000455-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0304HasanUtrush/0304HasanUtrush.Ihtisab/0304HasanUtrush.Ihtisab.Zaydiyya0000455-ara1
+Move .\0310CabdAllahIbnHusaynRassi.NasikhWaMansukh.Zaydiyya0000027-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0310CabdAllahIbnHusaynRassi/0310CabdAllahIbnHusaynRassi.NasikhWaMansukh/0310CabdAllahIbnHusaynRassi.NasikhWaMansukh.Zaydiyya0000027-ara1
+Move .\0316MuhammadMurtada.Fiqh.Zaydiyya0000219-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0316MuhammadMurtada/0316MuhammadMurtada.Fiqh/0316MuhammadMurtada.Fiqh.Zaydiyya0000219-ara1
+Move .\0316MuhammadMurtada.Manahi.Zaydiyya0000271-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0316MuhammadMurtada/0316MuhammadMurtada.Manahi/0316MuhammadMurtada.Manahi.Zaydiyya0000271-ara1
+Move .\0321IbnDuraydAzdi.Diwan.ShamIbadiyya0000652-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.Diwan/0321IbnDuraydAzdi.Diwan.ShamIbadiyya0000652-ara1
+Move .\0321IbnDuraydAzdi.FawaidWaAkhbar.ShamIbadiyya0000641-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.FawaidWaAkhbar/0321IbnDuraydAzdi.FawaidWaAkhbar.ShamIbadiyya0000641-ara1
+Move .\0321IbnDuraydAzdi.Ishtiqaq.ShamIbadiyya0000603-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.Ishtiqaq/0321IbnDuraydAzdi.Ishtiqaq.ShamIbadiyya0000603-ara1
+Move .\0321IbnDuraydAzdi.JamharatLugha.ShamIbadiyya0000223-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.JamharatLugha/0321IbnDuraydAzdi.JamharatLugha.ShamIbadiyya0000223-ara1
+Move .\0321IbnDuraydAzdi.Malahin.ShamIbadiyya0000882-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.Malahin/0321IbnDuraydAzdi.Malahin.ShamIbadiyya0000882-ara1
+Move .\0321IbnDuraydAzdi.Maqsura.ShamIbadiyya0000650-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.Maqsura/0321IbnDuraydAzdi.Maqsura.ShamIbadiyya0000650-ara1
+Move .\0321IbnDuraydAzdi.MatarWaSahab.ShamIbadiyya0000647-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.MatarWaSahab/0321IbnDuraydAzdi.MatarWaSahab.ShamIbadiyya0000647-ara1
+Move .\0321IbnDuraydAzdi.TacliqMinAmali.ShamIbadiyya0000612-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0321IbnDuraydAzdi/0321IbnDuraydAzdi.TacliqMinAmali/0321IbnDuraydAzdi.TacliqMinAmali.ShamIbadiyya0000612-ara1
+Move .\0322NasirAhmad.MasailIbadiyya.Zaydiyya0000471-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0322NasirAhmad/0322NasirAhmad.MasailIbadiyya/0322NasirAhmad.MasailIbadiyya.Zaydiyya0000471-ara1
+Move .\0325IbnSahlRazi.AkhbarFakhkh.Zaydiyya0000089-ara1 
+    to D:/London/OpenITI/25Y_repos/0325AH/data/0325IbnSahlRazi/0325IbnSahlRazi.AkhbarFakhkh/0325IbnSahlRazi.AkhbarFakhkh.Zaydiyya0000089-ara1
+Move .\0329IbnBabawayh.ImamaWaTabsira.Zaydiyya0000115-ara1 
+    to D:/London/OpenITI/25Y_repos/0350AH/data/0329IbnBabawayh/0329IbnBabawayh.ImamaWaTabsira/0329IbnBabawayh.ImamaWaTabsira.Zaydiyya0000115-ara1
+Move .\0329IbnYacqubKulayni.Kafi.Zaydiyya0000177-ara1 
+    to D:/London/OpenITI/25Y_repos/0350AH/data/0329IbnYacqubKulayni/0329IbnYacqubKulayni.Kafi/0329IbnYacqubKulayni.Kafi.Zaydiyya0000177-ara1
+Move .\0329IbnYacqubKulayni.Kafi.Zaydiyya0000345-ara1 
+    to D:/London/OpenITI/25Y_repos/0350AH/data/0329IbnYacqubKulayni/0329IbnYacqubKulayni.Kafi/0329IbnYacqubKulayni.Kafi.Zaydiyya0000345-ara1
+Move .\0336IbnHumamIskafi.Tamhis.Zaydiyya0000197-ara1 
+    to D:/London/OpenITI/25Y_repos/0350AH/data/0336IbnHumamIskafi/0336IbnHumamIskafi.Tamhis/0336IbnHumamIskafi.Tamhis.Zaydiyya0000197-ara1
+Move .\0340IbnMusaTabari.Majalis.Zaydiyya0000082-ara1 
+    to D:/London/OpenITI/25Y_repos/0350AH/data/0340IbnMusaTabari/0340IbnMusaTabari.Majalis/0340IbnMusaTabari.Majalis.Zaydiyya0000082-ara1
+Move .\0353AbuCabbasHasani.Masabih.Zaydiyya0000087-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0353AbuCabbasHasani/0353AbuCabbasHasani.Masabih/0353AbuCabbasHasani.Masabih.Zaydiyya0000087-ara1
+Move .\0355AbuFarajIsbahani.MaqatilTalibiyyin.Zaydiyya0000154-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0355AbuFarajIsbahani/0355AbuFarajIsbahani.MaqatilTalibiyyin/0355AbuFarajIsbahani.MaqatilTalibiyyin.Zaydiyya0000154-ara1
+Move .\0355AbuFarajIsbahani.MaqatilTalibiyyin.Zaydiyya0000224-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0355AbuFarajIsbahani/0355AbuFarajIsbahani.MaqatilTalibiyyin/0355AbuFarajIsbahani.MaqatilTalibiyyin.Zaydiyya0000224-ara1
+Move .\0361AbuSacidKudami.Istiqama.ShamIbadiyya0000005-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0361AbuSacidKudami/0361AbuSacidKudami.Istiqama/0361AbuSacidKudami.Istiqama.ShamIbadiyya0000005-ara1
+Move .\0361AbuSacidKudami.Istiqama.ShamIbadiyya0000094-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0361AbuSacidKudami/0361AbuSacidKudami.Istiqama/0361AbuSacidKudami.Istiqama.ShamIbadiyya0000094-ara1
+Move .\0361AbuSacidKudami.Muctabar.ShamIbadiyya0000130-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0361AbuSacidKudami/0361AbuSacidKudami.Muctabar/0361AbuSacidKudami.Muctabar.ShamIbadiyya0000130-ara1
+Move .\0361AbuSacidKudami.Muctabar.ShamIbadiyya0000231-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0361AbuSacidKudami/0361AbuSacidKudami.Muctabar/0361AbuSacidKudami.Muctabar.ShamIbadiyya0000231-ara1
+Move .\0362IbnBaraka.Jamic.ShamIbadiyya0000204-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0362IbnBaraka/0362IbnBaraka.Jamic/0362IbnBaraka.Jamic.ShamIbadiyya0000204-ara1
+Move .\0362IbnBaraka.Tacaruf.ShamIbadiyya0000214-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0362IbnBaraka/0362IbnBaraka.Tacaruf/0362IbnBaraka.Tacaruf.ShamIbadiyya0000214-ara1
+Move .\0362IbnBaraka.Tacaruf.ShamIbadiyya0000782-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0362IbnBaraka/0362IbnBaraka.Tacaruf/0362IbnBaraka.Tacaruf.ShamIbadiyya0000782-ara1
+Move .\0363QadiNucman.DacaimIslam.Zaydiyya0000186-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0363QadiNucman/0363QadiNucman.DacaimIslam/0363QadiNucman.DacaimIslam.Zaydiyya0000186-ara1
+Move .\0364AbuHasanBasiwi.Jamic.ShamIbadiyya0000129-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0364AbuHasanBasiwi/0364AbuHasanBasiwi.Jamic/0364AbuHasanBasiwi.Jamic.ShamIbadiyya0000129-ara1
+Move .\0364AbuHasanBasiwi.Mukhtasar.ShamIbadiyya0000473-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0364AbuHasanBasiwi/0364AbuHasanBasiwi.Mukhtasar/0364AbuHasanBasiwi.Mukhtasar.ShamIbadiyya0000473-ara1
+Move .\0368AbuGhalibZurari.TarikhAlZurara.Zaydiyya0000180-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0368AbuGhalibZurari/0368AbuGhalibZurari.TarikhAlZurara/0368AbuGhalibZurari.TarikhAlZurara.Zaydiyya0000180-ara1
+Move .\0368IbnQulawayh.KamilZiyarat.Zaydiyya0000196-ara1 
+    to D:/London/OpenITI/25Y_repos/0375AH/data/0368IbnQulawayh/0368IbnQulawayh.KamilZiyarat/0368IbnQulawayh.KamilZiyarat.Zaydiyya0000196-ara1
+Move .\0380AbuKhazarTunisi.RaddCalaJamicMukhalifin.ShamIbadiyya0000432-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0380AbuKhazarTunisi/0380AbuKhazarTunisi.RaddCalaJamicMukhalifin/0380AbuKhazarTunisi.RaddCalaJamicMukhalifin.ShamIbadiyya0000432-ara1
+Move .\0380IbnIbrahimNucmani.Ghayba.Zaydiyya0000198-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0380IbnIbrahimNucmani/0380IbnIbrahimNucmani.Ghayba/0380IbnIbrahimNucmani.Ghayba.Zaydiyya0000198-ara1
+Move .\0381IbnBabawayh.Amali.Zaydiyya0000114-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0381IbnBabawayh/0381IbnBabawayh.Amali/0381IbnBabawayh.Amali.Zaydiyya0000114-ara1
+Move .\0381IbnBabawayh.CilalSharaic.Zaydiyya0000192-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0381IbnBabawayh/0381IbnBabawayh.CilalSharaic/0381IbnBabawayh.CilalSharaic.Zaydiyya0000192-ara1
+Move .\0381IbnBabawayh.CilalSharaic.Zaydiyya0000332-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0381IbnBabawayh/0381IbnBabawayh.CilalSharaic/0381IbnBabawayh.CilalSharaic.Zaydiyya0000332-ara1
+Move .\0381IbnBabawayh.CuyunAkhbarRida.Zaydiyya0000193-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0381IbnBabawayh/0381IbnBabawayh.CuyunAkhbarRida/0381IbnBabawayh.CuyunAkhbarRida.Zaydiyya0000193-ara1
+Move .\0381IbnBabawayh.Khisal.Zaydiyya0000128-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0381IbnBabawayh/0381IbnBabawayh.Khisal/0381IbnBabawayh.Khisal.Zaydiyya0000128-ara1
+Move .\0381IbnBabawayh.ManLaYahduruhuFaqih.Zaydiyya0000239-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0381IbnBabawayh/0381IbnBabawayh.ManLaYahduruhuFaqih/0381IbnBabawayh.ManLaYahduruhuFaqih.Zaydiyya0000239-ara1
+Move .\0400IbnRifacaHashimi.ArbacunHadithan.Zaydiyya0000341-ara1 
+    to D:/London/OpenITI/25Y_repos/0400AH/data/0400IbnRifacaHashimi/0400IbnRifacaHashimi.ArbacunHadithan/0400IbnRifacaHashimi.ArbacunHadithan.Zaydiyya0000341-ara1
+Move .\0404MahdiHusaynIbnQasim.Majmuc.Zaydiyya0000146-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0404MahdiHusaynIbnQasim/0404MahdiHusaynIbnQasim.Majmuc/0404MahdiHusaynIbnQasim.Majmuc.Zaydiyya0000146-ara1
+Move .\0406SharifRadi.NahjBalagha.Zaydiyya0000009-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0406SharifRadi/0406SharifRadi.NahjBalagha/0406SharifRadi.NahjBalagha.Zaydiyya0000009-ara1
+Move .\0406SharifRadi.NahjBalagha.Zaydiyya0000212-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0406SharifRadi/0406SharifRadi.NahjBalagha/0406SharifRadi.NahjBalagha.Zaydiyya0000212-ara1
+Move .\0411IbnCubaydAllahGhadairi.TakmilatRisalatZurari.Zaydiyya0000184-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0411IbnCubaydAllahGhadairi/0411IbnCubaydAllahGhadairi.TakmilatRisalatZurari/0411IbnCubaydAllahGhadairi.TakmilatRisalatZurari.Zaydiyya0000184-ara1
+Move .\0411MuayyadAhmad.IthbatNubuwwa.Zaydiyya0000473-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0411MuayyadAhmad/0411MuayyadAhmad.IthbatNubuwwa/0411MuayyadAhmad.IthbatNubuwwa.Zaydiyya0000473-ara1
+Move .\0411MuayyadAhmad.Tabsira.Zaydiyya0000457-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0411MuayyadAhmad/0411MuayyadAhmad.Tabsira/0411MuayyadAhmad.Tabsira.Zaydiyya0000457-ara1
+Move .\0411MuayyadAhmad.Tajrid.Zaydiyya0000068-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0411MuayyadAhmad/0411MuayyadAhmad.Tajrid/0411MuayyadAhmad.Tajrid.Zaydiyya0000068-ara1
+Move .\0411MuayyadAhmad.Tajrid.Zaydiyya0000267-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0411MuayyadAhmad/0411MuayyadAhmad.Tajrid/0411MuayyadAhmad.Tajrid.Zaydiyya0000267-ara1
+Move .\0413ShaykhMufid.Afsah.Zaydiyya0000316-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Afsah/0413ShaykhMufid.Afsah.Zaydiyya0000316-ara1
+Move .\0413ShaykhMufid.Ashraf.Zaydiyya0000307-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Ashraf/0413ShaykhMufid.Ashraf.Zaydiyya0000307-ara1
+Move .\0413ShaykhMufid.AwailMaqalat.Zaydiyya0000323-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.AwailMaqalat/0413ShaykhMufid.AwailMaqalat.Zaydiyya0000323-ara1
+Move .\0413ShaykhMufid.FusulCashara.Zaydiyya0000318-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.FusulCashara/0413ShaykhMufid.FusulCashara.Zaydiyya0000318-ara1
+Move .\0413ShaykhMufid.FusulMukhtara.Zaydiyya0000319-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.FusulMukhtara/0413ShaykhMufid.FusulMukhtara.Zaydiyya0000319-ara1
+Move .\0413ShaykhMufid.Hikayat.Zaydiyya0000317-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Hikayat/0413ShaykhMufid.Hikayat.Zaydiyya0000317-ara1
+Move .\0413ShaykhMufid.Iclam.Zaydiyya0000309-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Iclam/0413ShaykhMufid.Iclam.Zaydiyya0000309-ara1
+Move .\0413ShaykhMufid.Ikhtisas.Zaydiyya0000321-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Ikhtisas/0413ShaykhMufid.Ikhtisas.Zaydiyya0000321-ara1
+Move .\0413ShaykhMufid.ImanAbiTalib.Zaydiyya0000324-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.ImanAbiTalib/0413ShaykhMufid.ImanAbiTalib.Zaydiyya0000324-ara1
+Move .\0413ShaykhMufid.Irshad.Zaydiyya0000306-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Irshad/0413ShaykhMufid.Irshad.Zaydiyya0000306-ara1
+Move .\0413ShaykhMufid.MasailCukbariyya.Zaydiyya0000322-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.MasailCukbariyya/0413ShaykhMufid.MasailCukbariyya.Zaydiyya0000322-ara1
+Move .\0413ShaykhMufid.MasailJarudiyya.Zaydiyya0000305-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.MasailJarudiyya/0413ShaykhMufid.MasailJarudiyya.Zaydiyya0000305-ara1
+Move .\0413ShaykhMufid.MasarShica.Zaydiyya0000326-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.MasarShica/0413ShaykhMufid.MasarShica.Zaydiyya0000326-ara1
+Move .\0413ShaykhMufid.MasarShica.Zaydiyya0000327-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.MasarShica/0413ShaykhMufid.MasarShica.Zaydiyya0000327-ara1
+Move .\0413ShaykhMufid.Mazar.Zaydiyya0000320-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.Mazar/0413ShaykhMufid.Mazar.Zaydiyya0000320-ara1
+Move .\0413ShaykhMufid.NukatIctiqadiyya.Zaydiyya0000308-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.NukatIctiqadiyya/0413ShaykhMufid.NukatIctiqadiyya.Zaydiyya0000308-ara1
+Move .\0413ShaykhMufid.TashihIctiqadat.Zaydiyya0000325-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0413ShaykhMufid/0413ShaykhMufid.TashihIctiqadat/0413ShaykhMufid.TashihIctiqadat.Zaydiyya0000325-ara1
+Move .\0424AbuTalibYahyaHaruni.Amali.Zaydiyya0000229-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0424AbuTalibYahyaHaruni/0424AbuTalibYahyaHaruni.Amali/0424AbuTalibYahyaHaruni.Amali.Zaydiyya0000229-ara1
+Move .\0424AbuTalibYahyaHaruni.IfadaFiTarikhAimma.Zaydiyya0000088-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0424AbuTalibYahyaHaruni/0424AbuTalibYahyaHaruni.IfadaFiTarikhAimma/0424AbuTalibYahyaHaruni.IfadaFiTarikhAimma.Zaydiyya0000088-ara1
+Move .\0424AbuTalibYahyaHaruni.Tahrir.Zaydiyya0000069-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0424AbuTalibYahyaHaruni/0424AbuTalibYahyaHaruni.Tahrir/0424AbuTalibYahyaHaruni.Tahrir.Zaydiyya0000069-ara1
+Move .\0424AbuTalibYahyaHaruni.Tahrir.Zaydiyya0000232-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0424AbuTalibYahyaHaruni/0424AbuTalibYahyaHaruni.Tahrir/0424AbuTalibYahyaHaruni.Tahrir.Zaydiyya0000232-ara1
+Move .\0424AbuTalibYahyaHaruni.TaysirMatalib.Zaydiyya0000352-ara1 
+    to D:/London/OpenITI/25Y_repos/0425AH/data/0424AbuTalibYahyaHaruni/0424AbuTalibYahyaHaruni.TaysirMatalib/0424AbuTalibYahyaHaruni.TaysirMatalib.Zaydiyya0000352-ara1
+Move .\0430MuwaffaqHusaynJurjani.Ictibar.Zaydiyya0000013-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0430MuwaffaqHusaynJurjani/0430MuwaffaqHusaynJurjani.Ictibar/0430MuwaffaqHusaynJurjani.Ictibar.Zaydiyya0000013-ara1
+Move .\0436SharifMurtada.ShafiFiImama.Zaydiyya0000119-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0436SharifMurtada/0436SharifMurtada.ShafiFiImama/0436SharifMurtada.ShafiFiImama.Zaydiyya0000119-ara1
+Move .\0445AbuCabdAllahCalawi.JamicKafi.Zaydiyya0000055-ara2 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0445AbuCabdAllahCalawi/0445AbuCabdAllahCalawi.JamicKafi/0445AbuCabdAllahCalawi.JamicKafi.Zaydiyya0000055-ara2
+Move .\0445AbuCabdAllahCalawi.JamicKafi.Zaydiyya0000364Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0445AbuCabdAllahCalawi/0445AbuCabdAllahCalawi.JamicKafi/0445AbuCabdAllahCalawi.JamicKafi.Zaydiyya0000364Vols-ara1
+Move .\0445AbuCabdAllahCalawi.JamicKafi.Zaydiyya0000412Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0445AbuCabdAllahCalawi/0445AbuCabdAllahCalawi.JamicKafi/0445AbuCabdAllahCalawi.JamicKafi.Zaydiyya0000412Vols-ara1
+Move .\0445AbuCabdAllahCalawi.Tacazi.Zaydiyya0000140-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0445AbuCabdAllahCalawi/0445AbuCabdAllahCalawi.Tacazi/0445AbuCabdAllahCalawi.Tacazi.Zaydiyya0000140-ara1
+Move .\0445AbuCabdAllahCalawi.TasmiyatManRawaCanImamZayd.Zaydiyya0000143-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0445AbuCabdAllahCalawi/0445AbuCabdAllahCalawi.TasmiyatManRawaCanImamZayd/0445AbuCabdAllahCalawi.TasmiyatManRawaCanImamZayd.Zaydiyya0000143-ara1
+Move .\0445IbnCaliShajari.FadlZiyaratHusayn.Zaydiyya0000123-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0445IbnCaliShajari/0445IbnCaliShajari.FadlZiyaratHusayn/0445IbnCaliShajari.FadlZiyaratHusayn.Zaydiyya0000123-ara1
+Move .\0449AbuFathKarajiki.KanzFawaid.Zaydiyya0000201-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0449AbuFathKarajiki/0449AbuFathKarajiki.KanzFawaid/0449AbuFathKarajiki.KanzFawaid.Zaydiyya0000201-ara1
+Move .\0449AbuFathKarajiki.MacdanJawahir.Zaydiyya0000228-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0449AbuFathKarajiki/0449AbuFathKarajiki.MacdanJawahir/0449AbuFathKarajiki.MacdanJawahir.Zaydiyya0000228-ara1
+Move .\0449AbuFathKarajiki.Tacajjub.Zaydiyya0000116-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0449AbuFathKarajiki/0449AbuFathKarajiki.Tacajjub/0449AbuFathKarajiki.Tacajjub.Zaydiyya0000116-ara1
+Move .\0450Najashi.Rijal.Zaydiyya0000188-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0450Najashi/0450Najashi.Rijal/0450Najashi.Rijal.Zaydiyya0000188-ara1
+Move .\0450TabghurinMalshuti.MatnJihalat.ShamIbadiyya0000434-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0450TabghurinMalshuti/0450TabghurinMalshuti.MatnJihalat/0450TabghurinMalshuti.MatnJihalat.ShamIbadiyya0000434-ara1
+Move .\0450TabghurinMalshuti.UsulDin.ShamIbadiyya0000431-ara1 
+    to D:/London/OpenITI/25Y_repos/0450AH/data/0450TabghurinMalshuti/0450TabghurinMalshuti.UsulDin/0450TabghurinMalshuti.UsulDin.ShamIbadiyya0000431-ara1
+Move .\0460ShaykhTusi.Amali.Zaydiyya0000277-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.Amali/0460ShaykhTusi.Amali.Zaydiyya0000277-ara1
+Move .\0460ShaykhTusi.Fihrist.Zaydiyya0000284-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.Fihrist/0460ShaykhTusi.Fihrist.Zaydiyya0000284-ara1
+Move .\0460ShaykhTusi.Ghayba.Zaydiyya0000283-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.Ghayba/0460ShaykhTusi.Ghayba.Zaydiyya0000283-ara1
+Move .\0460ShaykhTusi.IkhtiyarMacrifaRijal.Zaydiyya0000278-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.IkhtiyarMacrifaRijal/0460ShaykhTusi.IkhtiyarMacrifaRijal.Zaydiyya0000278-ara1
+Move .\0460ShaykhTusi.Rijal.Zaydiyya0000285-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.Rijal/0460ShaykhTusi.Rijal.Zaydiyya0000285-ara1
+Move .\0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.TahdhibAhkam/0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1
+Move .\0460ShaykhTusi.Tibyan.Zaydiyya0000279-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0460ShaykhTusi/0460ShaykhTusi.Tibyan/0460ShaykhTusi.Tibyan.Zaydiyya0000279-ara1
+Move .\0462AbuSulaymanDawudWarjalani.Jamic.ShamIbadiyya0000769-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0462AbuSulaymanDawudWarjalani/0462AbuSulaymanDawudWarjalani.Jamic/0462AbuSulaymanDawudWarjalani.Jamic.ShamIbadiyya0000769-ara1
+Move .\0463IbnCabdBarr.IsticabFiMacrifaAshab.Zaydiyya0000058-ara1 
+    to D:/London/OpenITI/25Y_repos/0475AH/data/0463IbnCabdBarr/0463IbnCabdBarr.IsticabFiMacrifaAshab/0463IbnCabdBarr.IsticabFiMacrifaAshab.Zaydiyya0000058-ara1
+Move .\0479MurshidYahyaJurjani.AmaliIthnayniyya.Zaydiyya0000131-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0479MurshidYahyaJurjani/0479MurshidYahyaJurjani.AmaliIthnayniyya/0479MurshidYahyaJurjani.AmaliIthnayniyya.Zaydiyya0000131-ara1
+Move .\0494IbnSacidIbnKarama.RisalatIblis.Zaydiyya0000040-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0494IbnSacidIbnKarama/0494IbnSacidIbnKarama.RisalatIblis/0494IbnSacidIbnKarama.RisalatIblis.Zaydiyya0000040-ara1
+Move .\0494IbnSacidIbnKarama.TahkimCuqul.Zaydiyya0000214-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0494IbnSacidIbnKarama/0494IbnSacidIbnKarama.TahkimCuqul/0494IbnSacidIbnKarama.TahkimCuqul.Zaydiyya0000214-ara1
+Move .\0494IbnSacidIbnKarama.TanbihGhalifin.Zaydiyya0000137-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0494IbnSacidIbnKarama/0494IbnSacidIbnKarama.TanbihGhalifin/0494IbnSacidIbnKarama.TanbihGhalifin.Zaydiyya0000137-ara1
+Move .\0499IbnHusaynJurjani.SiratImamMuayyad.Zaydiyya0000253-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0499IbnHusaynJurjani/0499IbnHusaynJurjani.SiratImamMuayyad/0499IbnHusaynJurjani.SiratImamMuayyad.Zaydiyya0000253-ara1
+Move .\0499IbnHusaynJurjani.TartibAmali.Zaydiyya0000230-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0499IbnHusaynJurjani/0499IbnHusaynJurjani.TartibAmali/0499IbnHusaynJurjani.TartibAmali.Zaydiyya0000230-ara1
+Move .\0499IbnHusaynJurjani.TartibAmali.Zaydiyya0000342-ara1 
+    to D:/London/OpenITI/25Y_repos/0500AH/data/0499IbnHusaynJurjani/0499IbnHusaynJurjani.TartibAmali/0499IbnHusaynJurjani.TartibAmali.Zaydiyya0000342-ara1
+Move .\0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000198-ara1 
+    to D:/London/OpenITI/25Y_repos/0525AH/data/0508MuhammadIbnIbrahimKindi/0508MuhammadIbnIbrahimKindi.BayanSharc/0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000198-ara1
+Move .\0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000199-ara1 
+    to D:/London/OpenITI/25Y_repos/0525AH/data/0508MuhammadIbnIbrahimKindi/0508MuhammadIbnIbrahimKindi.BayanSharc/0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000199-ara1
+Move .\0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000470-ara1 
+    to D:/London/OpenITI/25Y_repos/0525AH/data/0508MuhammadIbnIbrahimKindi/0508MuhammadIbnIbrahimKindi.BayanSharc/0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000470-ara1
+Move .\0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000967-ara1 
+    to D:/London/OpenITI/25Y_repos/0525AH/data/0508MuhammadIbnIbrahimKindi/0508MuhammadIbnIbrahimKindi.BayanSharc/0508MuhammadIbnIbrahimKindi.BayanSharc.ShamIbadiyya0000967-ara1
+Move .\0510CawtabiSuhari.Ansab.ShamIbadiyya0000248-ara1 
+    to D:/London/OpenITI/25Y_repos/0525AH/data/0510CawtabiSuhari/0510CawtabiSuhari.Ansab/0510CawtabiSuhari.Ansab.ShamIbadiyya0000248-ara1
+Move .\0510CawtabiSuhari.Diya.ShamIbadiyya0000760-ara1 
+    to D:/London/OpenITI/25Y_repos/0525AH/data/0510CawtabiSuhari/0510CawtabiSuhari.Diya/0510CawtabiSuhari.Diya.ShamIbadiyya0000760-ara1
+Move .\0548IbnHasanTabarsi.TafsirMajmacBayan.Zaydiyya0000301-ara1 
+    to D:/London/OpenITI/25Y_repos/0550AH/data/0548IbnHasanTabarsi/0548IbnHasanTabarsi.TafsirMajmacBayan/0548IbnHasanTabarsi.TafsirMajmacBayan.Zaydiyya0000301-ara1
+Move .\0557IbnCabdAllahKindi.JawharMuqtasar.ShamIbadiyya0000475-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0557IbnCabdAllahKindi/0557IbnCabdAllahKindi.JawharMuqtasar/0557IbnCabdAllahKindi.JawharMuqtasar.ShamIbadiyya0000475-ara1
+Move .\0566MutawakkilAhmad.HaqaiqMacrifa.Zaydiyya0000044-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0566MutawakkilAhmad/0566MutawakkilAhmad.HaqaiqMacrifa/0566MutawakkilAhmad.HaqaiqMacrifa.Zaydiyya0000044-ara1
+Move .\0566MutawakkilAhmad.UsulAhkam.Zaydiyya0000010-ara2 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0566MutawakkilAhmad/0566MutawakkilAhmad.UsulAhkam/0566MutawakkilAhmad.UsulAhkam.Zaydiyya0000010-ara2
+Move .\0566MutawakkilAhmad.UsulAhkam.Zaydiyya0000357-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0566MutawakkilAhmad/0566MutawakkilAhmad.UsulAhkam/0566MutawakkilAhmad.UsulAhkam.Zaydiyya0000357-ara1
+Move .\0566MutawakkilAhmad.UsulAhkam.Zaydiyya0000390Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0566MutawakkilAhmad/0566MutawakkilAhmad.UsulAhkam/0566MutawakkilAhmad.UsulAhkam.Zaydiyya0000390Vols-ara1
+Move .\0570AbuCammarCabdKafiIbadi.Mujaz.ShamIbadiyya0000730-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0570AbuCammarCabdKafiIbadi/0570AbuCammarCabdKafiIbadi.Mujaz/0570AbuCammarCabdKafiIbadi.Mujaz.ShamIbadiyya0000730-ara1
+Move .\0570AbuYacqubWarjalani.Asma.ShamIbadiyya0000636-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0570AbuYacqubWarjalani/0570AbuYacqubWarjalani.Asma/0570AbuYacqubWarjalani.Asma.ShamIbadiyya0000636-ara1
+Move .\0570AbuYacqubWarjalani.CadlWaInsaf.ShamIbadiyya0000100-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0570AbuYacqubWarjalani/0570AbuYacqubWarjalani.CadlWaInsaf/0570AbuYacqubWarjalani.CadlWaInsaf.ShamIbadiyya0000100-ara1
+Move .\0570AbuYacqubWarjalani.DalilWaBurhan.ShamIbadiyya0000007-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0570AbuYacqubWarjalani/0570AbuYacqubWarjalani.DalilWaBurhan/0570AbuYacqubWarjalani.DalilWaBurhan.ShamIbadiyya0000007-ara1
+Move .\0573IbnHibatAllahQutbDinRawandi.Kharaij.Zaydiyya0000120-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0573IbnHibatAllahQutbDinRawandi/0573IbnHibatAllahQutbDinRawandi.Kharaij/0573IbnHibatAllahQutbDinRawandi.Kharaij.Zaydiyya0000120-ara1
+Move .\0573NashwanHimyari.ShamsCulum.ShamIbadiyya0000880-ara1 
+    to D:/London/OpenITI/25Y_repos/0575AH/data/0573NashwanHimyari/0573NashwanHimyari.ShamsCulum/0573NashwanHimyari.ShamsCulum.ShamIbadiyya0000880-ara1
+Move .\0576IbnCabdSalamBahluli.ArbacunCalawiyya.Zaydiyya0000399-ara1 
+    to D:/London/OpenITI/25Y_repos/0600AH/data/0576IbnCabdSalamBahluli/0576IbnCabdSalamBahluli.ArbacunCalawiyya/0576IbnCabdSalamBahluli.ArbacunCalawiyya.Zaydiyya0000399-ara1
+Move .\0576IbnCabdSalamQadi.ArbacunCalawiyya.Zaydiyya0000340-ara1 
+    to D:/London/OpenITI/25Y_repos/0600AH/data/0576IbnCabdSalamQadi/0576IbnCabdSalamQadi.ArbacunCalawiyya/0576IbnCabdSalamQadi.ArbacunCalawiyya.Zaydiyya0000340-ara1
+Move .\0605IbnAscadMuradi.Muhadhdhab.Zaydiyya0000071-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0605IbnAscadMuradi/0605IbnAscadMuradi.Muhadhdhab/0605IbnAscadMuradi.Muhadhdhab.Zaydiyya0000071-ara1
+Move .\0614MansurCabdAllah.CiqdThamin.Zaydiyya0000349-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.CiqdThamin/0614MansurCabdAllah.CiqdThamin.Zaydiyya0000349-ara1
+Move .\0614MansurCabdAllah.Majmuc.Zaydiyya0000077Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.Majmuc/0614MansurCabdAllah.Majmuc.Zaydiyya0000077Vols-ara1
+Move .\0614MansurCabdAllah.Majmuc.Zaydiyya0000147-ara2 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.Majmuc/0614MansurCabdAllah.Majmuc.Zaydiyya0000147-ara2
+Move .\0614MansurCabdAllah.SafwatIkhtiyar.Zaydiyya0000005-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.SafwatIkhtiyar/0614MansurCabdAllah.SafwatIkhtiyar.Zaydiyya0000005-ara1
+Move .\0614MansurCabdAllah.SafwatIkhtiyar.Zaydiyya0000372-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.SafwatIkhtiyar/0614MansurCabdAllah.SafwatIkhtiyar.Zaydiyya0000372-ara1
+Move .\0614MansurCabdAllah.SharhRisalaNasiha.Zaydiyya0000144-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.SharhRisalaNasiha/0614MansurCabdAllah.SharhRisalaNasiha.Zaydiyya0000144-ara1
+Move .\0614MansurCabdAllah.ZubadAdilla.Zaydiyya0000136-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0614MansurCabdAllah/0614MansurCabdAllah.ZubadAdilla/0614MansurCabdAllah.ZubadAdilla.Zaydiyya0000136-ara1
+Move .\0625BahaDinAkwac.AkhbarArbacin.Zaydiyya0000383-ara1 
+    to D:/London/OpenITI/25Y_repos/0625AH/data/0625BahaDinAkwac/0625BahaDinAkwac.AkhbarArbacin/0625BahaDinAkwac.AkhbarArbacin.Zaydiyya0000383-ara1
+Move .\0631CuthmanAsamm.Nur.ShamIbadiyya0000197-ara1 
+    to D:/London/OpenITI/25Y_repos/0650AH/data/0631CuthmanAsamm/0631CuthmanAsamm.Nur/0631CuthmanAsamm.Nur.ShamIbadiyya0000197-ara1
+Move .\0642IbnNajjar.DhaylTarikhBaghdad.Shamela0023764C-ara1.completed 
+    to D:/London/OpenITI/25Y_repos/0650AH/data/0642IbnNajjar/0642IbnNajjar.DhaylTarikhBaghdad/0642IbnNajjar.DhaylTarikhBaghdad.Shamela0023764C-ara1.completed
+Move .\0642IbnNajjar.RaddCalaKhatibBaghdadi.Shamela0023764E-ara1.completed 
+    to D:/London/OpenITI/25Y_repos/0650AH/data/0642IbnNajjar/0642IbnNajjar.RaddCalaKhatibBaghdadi/0642IbnNajjar.RaddCalaKhatibBaghdadi.Shamela0023764E-ara1.completed
+Move .\0646IbnCumarIbnHajibKurdi.NajmThaqib.Zaydiyya0000370-ara1 
+    to D:/London/OpenITI/25Y_repos/0650AH/data/0646IbnCumarIbnHajibKurdi/0646IbnCumarIbnHajibKurdi.NajmThaqib/0646IbnCumarIbnHajibKurdi.NajmThaqib.Zaydiyya0000370-ara1
+Move .\0647IbnAbiNajmSacdi.BayanWaTabyin.Zaydiyya0000207-ara1 
+    to D:/London/OpenITI/25Y_repos/0650AH/data/0647IbnAbiNajmSacdi/0647IbnAbiNajmSacdi.BayanWaTabyin/0647IbnAbiNajmSacdi.BayanWaTabyin.Zaydiyya0000207-ara1
+Move .\0647IbnAbiNajmSacdi.Tibyan.Zaydiyya0000344-ara1 
+    to D:/London/OpenITI/25Y_repos/0650AH/data/0647IbnAbiNajmSacdi/0647IbnAbiNajmSacdi.Tibyan/0647IbnAbiNajmSacdi.Tibyan.Zaydiyya0000344-ara1
+Move .\0656AbuTayrIbnHusayn.HalifatQuran.Zaydiyya0000334-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0656AbuTayrIbnHusayn/0656AbuTayrIbnHusayn.HalifatQuran/0656AbuTayrIbnHusayn.HalifatQuran.Zaydiyya0000334-ara1
+Move .\0656HumaydanQasimi.Majmuc.Zaydiyya0000042-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0656HumaydanQasimi/0656HumaydanQasimi.Majmuc/0656HumaydanQasimi.Majmuc.Zaydiyya0000042-ara1
+Move .\0656IbnAbiHadid.HashimiyyatWaCalawiyyat.Zaydiyya0000036-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0656IbnAbiHadid/0656IbnAbiHadid.HashimiyyatWaCalawiyyat/0656IbnAbiHadid.HashimiyyatWaCalawiyyat.Zaydiyya0000036-ara1
+Move .\0656IbnAbiHadid.SharhNahjBalagha.Zaydiyya0000145-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0656IbnAbiHadid/0656IbnAbiHadid.SharhNahjBalagha/0656IbnAbiHadid.SharhNahjBalagha.Zaydiyya0000145-ara1
+Move .\0662HusaynIbnBadrDin.CiqdThamin.Zaydiyya0000138-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0662HusaynIbnBadrDin/0662HusaynIbnBadrDin.CiqdThamin/0662HusaynIbnBadrDin.CiqdThamin.Zaydiyya0000138-ara1
+Move .\0662HusaynIbnBadrDin.ShifaUwam.Zaydiyya0000361-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0662HusaynIbnBadrDin/0662HusaynIbnBadrDin.ShifaUwam/0662HusaynIbnBadrDin.ShifaUwam.Zaydiyya0000361-ara1
+Move .\0667CabdAllahIbnZaydCanasi.Irshad.Zaydiyya0000259-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0667CabdAllahIbnZaydCanasi/0667CabdAllahIbnZaydCanasi.Irshad/0667CabdAllahIbnZaydCanasi.Irshad.Zaydiyya0000259-ara1
+Move .\0667Cariqi.CaqaidAhlBayt.Zaydiyya0000356-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0667Cariqi/0667Cariqi.CaqaidAhlBayt/0667Cariqi.CaqaidAhlBayt.Zaydiyya0000356-ara1
+Move .\0670AhmadDarjini.TabaqatMashayikhBiMaghrib.ShamIbadiyya0000107-ara1 
+    to D:/London/OpenITI/25Y_repos/0675AH/data/0670AhmadDarjini/0670AhmadDarjini.TabaqatMashayikhBiMaghrib/0670AhmadDarjini.TabaqatMashayikhBiMaghrib.ShamIbadiyya0000107-ara1
+Move .\0676IbnHasanMuhaqqiqHilli.SharaicIslam.Zaydiyya0000244-ara1 
+    to D:/London/OpenITI/25Y_repos/0700AH/data/0676IbnHasanMuhaqqiqHilli/0676IbnHasanMuhaqqiqHilli.SharaicIslam/0676IbnHasanMuhaqqiqHilli.SharaicIslam.Zaydiyya0000244-ara1
+Move .\0697MutahharIbnYahyaHusayni.SilatIkhwan.Zaydiyya0000354-ara1 
+    to D:/London/OpenITI/25Y_repos/0700AH/data/0697MutahharIbnYahyaHusayni/0697MutahharIbnYahyaHusayni.SilatIkhwan/0697MutahharIbnYahyaHusayni.SilatIkhwan.Zaydiyya0000354-ara1
+Move .\0697MutahharIbnYahyaHusayni.SilatIkhwan.Zaydiyya0000355-ara1 
+    to D:/London/OpenITI/25Y_repos/0700AH/data/0697MutahharIbnYahyaHusayni/0697MutahharIbnYahyaHusayni.SilatIkhwan/0697MutahharIbnYahyaHusayni.SilatIkhwan.Zaydiyya0000355-ara1
+Move .\0700YahyaIbnQasimIbnYahya.SiratAbiTayr.Zaydiyya0000299-ara1 
+    to D:/London/OpenITI/25Y_repos/0700AH/data/0700YahyaIbnQasimIbnYahya/0700YahyaIbnQasimIbnYahya.SiratAbiTayr/0700YahyaIbnQasimIbnYahya.SiratAbiTayr.Zaydiyya0000299-ara1
+Move .\0700YahyaIbnQasimIbnYahya.SiratAbiTayr.Zaydiyya0000406-ara1 
+    to D:/London/OpenITI/25Y_repos/0700AH/data/0700YahyaIbnQasimIbnYahya/0700YahyaIbnQasimIbnYahya.SiratAbiTayr/0700YahyaIbnQasimIbnYahya.SiratAbiTayr.Zaydiyya0000406-ara1
+Move .\0709CaliCalawi.Majdi.Zaydiyya0000156-ara1 
+    to D:/London/OpenITI/25Y_repos/0725AH/data/0709CaliCalawi/0709CaliCalawi.Majdi/0709CaliCalawi.Majdi.Zaydiyya0000156-ara1
+Move .\0719IbnHanash.YaqutatGhiyasa.Zaydiyya0000381-ara1 
+    to D:/London/OpenITI/25Y_repos/0725AH/data/0719IbnHanash/0719IbnHanash.YaqutatGhiyasa/0719IbnHanash.YaqutatGhiyasa.Zaydiyya0000381-ara1
+Move .\0726CallamaHilli.NihayatAhkam.Zaydiyya0000245-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0726CallamaHilli/0726CallamaHilli.NihayatAhkam/0726CallamaHilli.NihayatAhkam.Zaydiyya0000245-ara1
+Move .\0726CallamaHilli.TahrirAhkam.Zaydiyya0000181-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0726CallamaHilli/0726CallamaHilli.TahrirAhkam/0726CallamaHilli.TahrirAhkam.Zaydiyya0000181-ara1
+Move .\0728IbnMutahharZaydi.CuqudCiqyan.Zaydiyya0000373Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0728IbnMutahharZaydi/0728IbnMutahharZaydi.CuqudCiqyan/0728IbnMutahharZaydi.CuqudCiqyan.Zaydiyya0000373Vols-ara1
+Move .\0728IbnTaymiyya.MinhajSunna.Zaydiyya0000108-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0728IbnTaymiyya/0728IbnTaymiyya.MinhajSunna/0728IbnTaymiyya.MinhajSunna.Zaydiyya0000108-ara1
+Move .\0730ShaficIbnCali.HusnManaqib.LMN20200820-ara1.completed 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0730ShaficIbnCali/0730ShaficIbnCali.HusnManaqib/0730ShaficIbnCali.HusnManaqib.LMN20200820-ara1.completed
+Move .\0733Nuwayri.NihayaArab.Zaydiyya0000261-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0733Nuwayri/0733Nuwayri.NihayaArab/0733Nuwayri.NihayaArab.Zaydiyya0000261-ara1
+Move .\0740IbnDawudHilli.Rijal.Zaydiyya0000187-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0740IbnDawudHilli/0740IbnDawudHilli.Rijal/0740IbnDawudHilli.Rijal.Zaydiyya0000187-ara1
+Move .\0748Dhahabi.MukhtasarMinDubaythi.Shamela0023764B-ara1.completed 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0748Dhahabi/0748Dhahabi.MukhtasarMinDubaythi/0748Dhahabi.MukhtasarMinDubaythi.Shamela0023764B-ara1.completed
+Move .\0748IbnDimyati.Mustafad.Shamela0023764D-ara1.completed 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0748IbnDimyati/0748IbnDimyati.Mustafad/0748IbnDimyati.Mustafad.Shamela0023764D-ara1.completed
+Move .\0749MuayyadYahya.DibajWadi.Zaydiyya0000272-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0749MuayyadYahya/0749MuayyadYahya.DibajWadi/0749MuayyadYahya.DibajWadi.Zaydiyya0000272-ara1
+Move .\0749MuayyadYahya.DibajWadi.Zaydiyya0000543-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0749MuayyadYahya/0749MuayyadYahya.DibajWadi/0749MuayyadYahya.DibajWadi.Zaydiyya0000543-ara1
+Move .\0749MuayyadYahya.Intisar.Zaydiyya0000162-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0749MuayyadYahya/0749MuayyadYahya.Intisar/0749MuayyadYahya.Intisar.Zaydiyya0000162-ara1
+Move .\0749MuayyadYahya.Intisar.Zaydiyya0000391Vols-ara2 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0749MuayyadYahya/0749MuayyadYahya.Intisar/0749MuayyadYahya.Intisar.Zaydiyya0000391Vols-ara2
+Move .\0749MuayyadYahya.Intisar.Zaydiyya0000393Vols-ara3 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0749MuayyadYahya/0749MuayyadYahya.Intisar/0749MuayyadYahya.Intisar.Zaydiyya0000393Vols-ara3
+Move .\0749MuayyadYahya.JawahirDurriyya.Zaydiyya0000260-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0749MuayyadYahya/0749MuayyadYahya.JawahirDurriyya/0749MuayyadYahya.JawahirDurriyya.Zaydiyya0000260-ara1
+Move .\0750IsmacilJaytali.AdabMutacallim.ShamIbadiyya0000292-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0750IsmacilJaytali/0750IsmacilJaytali.AdabMutacallim/0750IsmacilJaytali.AdabMutacallim.ShamIbadiyya0000292-ara1
+Move .\0750IsmacilJaytali.Caqida.ShamIbadiyya0000054-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0750IsmacilJaytali/0750IsmacilJaytali.Caqida/0750IsmacilJaytali.Caqida.ShamIbadiyya0000054-ara1
+Move .\0750IsmacilJaytali.ManasikHajj.ShamIbadiyya0000482-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0750IsmacilJaytali/0750IsmacilJaytali.ManasikHajj/0750IsmacilJaytali.ManasikHajj.ShamIbadiyya0000482-ara1
+Move .\0750IsmacilJaytali.QawacidIslam.ShamIbadiyya0000476-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0750IsmacilJaytali/0750IsmacilJaytali.QawacidIslam/0750IsmacilJaytali.QawacidIslam.ShamIbadiyya0000476-ara1
+Move .\0750IsmacilJaytali.ShurutBatina.ShamIbadiyya0000209-ara1 
+    to D:/London/OpenITI/25Y_repos/0750AH/data/0750IsmacilJaytali/0750IsmacilJaytali.ShurutBatina/0750IsmacilJaytali.ShurutBatina.ShamIbadiyya0000209-ara1
+Move .\0780IbnHasanQurashi.MinhajMuttaqin.Zaydiyya0000263-ara1 
+    to D:/London/OpenITI/25Y_repos/0800AH/data/0780IbnHasanQurashi/0780IbnHasanQurashi.MinhajMuttaqin/0780IbnHasanQurashi.MinhajMuttaqin.Zaydiyya0000263-ara1
+Move .\0792AbuSakinCamirShammakhi.Idah.ShamIbadiyya0000219-ara1 
+    to D:/London/OpenITI/25Y_repos/0800AH/data/0792AbuSakinCamirShammakhi/0792AbuSakinCamirShammakhi.Idah/0792AbuSakinCamirShammakhi.Idah.ShamIbadiyya0000219-ara1
+Move .\0792AbuSakinCamirShammakhi.MatnDiyanat.ShamIbadiyya0000056-ara1 
+    to D:/London/OpenITI/25Y_repos/0800AH/data/0792AbuSakinCamirShammakhi/0792AbuSakinCamirShammakhi.MatnDiyanat/0792AbuSakinCamirShammakhi.MatnDiyanat.ShamIbadiyya0000056-ara1
+Move .\0793IbrahimIbnMahdi.WasilaIlaRahman.Zaydiyya0000371-ara1 
+    to D:/London/OpenITI/25Y_repos/0800AH/data/0793IbrahimIbnMahdi/0793IbrahimIbnMahdi.WasilaIlaRahman/0793IbrahimIbnMahdi.WasilaIlaRahman.Zaydiyya0000371-ara1
+Move .\0800AbuHafsCamrIbnJamic.CaqidatTawhid.ShamIbadiyya0000313-ara1 
+    to D:/London/OpenITI/25Y_repos/0800AH/data/0800AbuHafsCamrIbnJamic/0800AbuHafsCamrIbnJamic.CaqidatTawhid/0800AbuHafsCamrIbnJamic.CaqidatTawhid.ShamIbadiyya0000313-ara1
+Move .\0808IbnKhaldun.Tarikh.Zaydiyya0000152-ara1 
+    to D:/London/OpenITI/25Y_repos/0825AH/data/0808IbnKhaldun/0808IbnKhaldun.Tarikh/0808IbnKhaldun.Tarikh.Zaydiyya0000152-ara1
+Move .\0808MuhammadDamiri.HayatHayawanKubra.Zaydiyya0000303-ara1 
+    to D:/London/OpenITI/25Y_repos/0825AH/data/0808MuhammadDamiri/0808MuhammadDamiri.HayatHayawanKubra/0808MuhammadDamiri.HayatHayawanKubra.Zaydiyya0000303-ara1
+Move .\0810IbnHadi.JawharShaffaf.Zaydiyya0000062-ara1 
+    to D:/London/OpenITI/25Y_repos/0825AH/data/0810IbnHadi/0810IbnHadi.JawharShaffaf/0810IbnHadi.JawharShaffaf.Zaydiyya0000062-ara1
+Move .\0822HadiIbnWazir.HidayatRaghibin.Zaydiyya0000091-ara1 
+    to D:/London/OpenITI/25Y_repos/0825AH/data/0822HadiIbnWazir/0822HadiIbnWazir.HidayatRaghibin/0822HadiIbnWazir.HidayatRaghibin.Zaydiyya0000091-ara1
+Move .\0822HadiIbnWazir.NihayatTanwih.Zaydiyya0000047-ara1 
+    to D:/London/OpenITI/25Y_repos/0825AH/data/0822HadiIbnWazir/0822HadiIbnWazir.NihayatTanwih/0822HadiIbnWazir.NihayatTanwih.Zaydiyya0000047-ara1
+Move .\0828IbnCinaba.CumdatTalib.Zaydiyya0000026-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0828IbnCinaba/0828IbnCinaba.CumdatTalib/0828IbnCinaba.CumdatTalib.Zaydiyya0000026-ara1
+Move .\0836FaqihYusuf.ThamaratYanica.Zaydiyya0000274-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0836FaqihYusuf/0836FaqihYusuf.ThamaratYanica/0836FaqihYusuf.ThamaratYanica.Zaydiyya0000274-ara1
+Move .\0839MahdiAhmadIbnYahya.BahrZakhkhar.Zaydiyya0000063-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0839MahdiAhmadIbnYahya/0839MahdiAhmadIbnYahya.BahrZakhkhar/0839MahdiAhmadIbnYahya.BahrZakhkhar.Zaydiyya0000063-ara1
+Move .\0839MahdiAhmadIbnYahya.MatnAzhar.Zaydiyya0000060-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0839MahdiAhmadIbnYahya/0839MahdiAhmadIbnYahya.MatnAzhar/0839MahdiAhmadIbnYahya.MatnAzhar.Zaydiyya0000060-ara1
+Move .\0839MahdiAhmadIbnYahya.MatnAzhar.Zaydiyya0000489-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0839MahdiAhmadIbnYahya/0839MahdiAhmadIbnYahya.MatnAzhar/0839MahdiAhmadIbnYahya.MatnAzhar.Zaydiyya0000489-ara1
+Move .\0839MahdiAhmadIbnYahya.TakmilatAhkam.Zaydiyya0000033-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0839MahdiAhmadIbnYahya/0839MahdiAhmadIbnYahya.TakmilatAhkam/0839MahdiAhmadIbnYahya.TakmilatAhkam.Zaydiyya0000033-ara1
+Move .\0840IbnCabdAllahJundariImamMurtada.SharhAzhar.Zaydiyya0000275-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0840IbnCabdAllahJundariImamMurtada/0840IbnCabdAllahJundariImamMurtada.SharhAzhar/0840IbnCabdAllahJundariImamMurtada.SharhAzhar.Zaydiyya0000275-ara1
+Move .\0840IbnMiftah.SharhAzhar.Zaydiyya0000570-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0840IbnMiftah/0840IbnMiftah.SharhAzhar/0840IbnMiftah.SharhAzhar.Zaydiyya0000570-ara1
+Move .\0840IbnWazirMuhammad.RawdBasim.Zaydiyya0000084-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0840IbnWazirMuhammad/0840IbnWazirMuhammad.RawdBasim/0840IbnWazirMuhammad.RawdBasim.Zaydiyya0000084-ara1
+Move .\0840MahdiAhmadIbnYahyaHasani.Faraid.Zaydiyya0000337-ara1 
+    to D:/London/OpenITI/25Y_repos/0850AH/data/0840MahdiAhmadIbnYahyaHasani/0840MahdiAhmadIbnYahyaHasani.Faraid/0840MahdiAhmadIbnYahyaHasani.Faraid.Zaydiyya0000337-ara1
+Move .\0900ImamHadiCizzDinIbnHasan.CinayaTamma.Zaydiyya0000045-ara1 
+    to D:/London/OpenITI/25Y_repos/0900AH/data/0900ImamHadiCizzDinIbnHasan/0900ImamHadiCizzDinIbnHasan.CinayaTamma/0900ImamHadiCizzDinIbnHasan.CinayaTamma.Zaydiyya0000045-ara1
+Move .\0900ImamHadiCizzDinIbnHasan.MicrajIlaKashfAsrar.Zaydiyya0000265-ara1 
+    to D:/London/OpenITI/25Y_repos/0900AH/data/0900ImamHadiCizzDinIbnHasan/0900ImamHadiCizzDinIbnHasan.MicrajIlaKashfAsrar/0900ImamHadiCizzDinIbnHasan.MicrajIlaKashfAsrar.Zaydiyya0000265-ara1
+Move .\0911Suyuti.LubbLubab.Zaydiyya0000205-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0911Suyuti/0911Suyuti.LubbLubab/0911Suyuti.LubbLubab.Zaydiyya0000205-ara1
+Move .\0914SarimDinIbnWazir.MukhtasarFiCulumHadith.Zaydiyya0000252-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0914SarimDinIbnWazir/0914SarimDinIbnWazir.MukhtasarFiCulumHadith/0914SarimDinIbnWazir.MukhtasarFiCulumHadith.Zaydiyya0000252-ara1
+Move .\0914SarimDinIbnWazir.MukhtasarFiCulumHadith.Zaydiyya0000470-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0914SarimDinIbnWazir/0914SarimDinIbnWazir.MukhtasarFiCulumHadith/0914SarimDinIbnWazir.MukhtasarFiCulumHadith.Zaydiyya0000470-ara1
+Move .\0914SarimDinWaziri.FusulLuluiyya.Zaydiyya0000066-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0914SarimDinWaziri/0914SarimDinWaziri.FusulLuluiyya/0914SarimDinWaziri.FusulLuluiyya.Zaydiyya0000066-ara1
+Move .\0914SarimDinWaziri.FusulLuluiyya.Zaydiyya0000273-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0914SarimDinWaziri/0914SarimDinWaziri.FusulLuluiyya/0914SarimDinWaziri.FusulLuluiyya.Zaydiyya0000273-ara1
+Move .\0914SarimDinWaziri.HidayatAfkar.Zaydiyya0000264-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0914SarimDinWaziri/0914SarimDinWaziri.HidayatAfkar/0914SarimDinWaziri.HidayatAfkar.Zaydiyya0000264-ara1
+Move .\0916IbnFanad.MaathirAbrar.Zaydiyya0000090-ara1 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0916IbnFanad/0916IbnFanad.MaathirAbrar/0916IbnFanad.MaathirAbrar.Zaydiyya0000090-ara1
+Move .\0927ShaykhCammiSacid.Jawabat.ShamIbadiyya0000511-ara1 
+    to D:/London/OpenITI/25Y_repos/0950AH/data/0927ShaykhCammiSacid/0927ShaykhCammiSacid.Jawabat/0927ShaykhCammiSacid.Jawabat.ShamIbadiyya0000511-ara1
+Move .\0928AbuCabbasShammakhi.MukhtasarCadlWaInsaf.ShamIbadiyya0000103-ara1 
+    to D:/London/OpenITI/25Y_repos/0950AH/data/0928AbuCabbasShammakhi/0928AbuCabbasShammakhi.MukhtasarCadlWaInsaf/0928AbuCabbasShammakhi.MukhtasarCadlWaInsaf.ShamIbadiyya0000103-ara1
+Move .\0928AbuCabbasShammakhi.Siyar.ShamIbadiyya0000115-ara1 
+    to D:/London/OpenITI/25Y_repos/0950AH/data/0928AbuCabbasShammakhi/0928AbuCabbasShammakhi.Siyar/0928AbuCabbasShammakhi.Siyar.ShamIbadiyya0000115-ara1
+Move .\0928RabicIbnHabibFarahidi.RisalaHujja.ShamIbadiyya0000215-ara1 
+    to D:/London/OpenITI/25Y_repos/0950AH/data/0928RabicIbnHabibFarahidi/0928RabicIbnHabibFarahidi.RisalaHujja/0928RabicIbnHabibFarahidi.RisalaHujja.ShamIbadiyya0000215-ara1
+Move .\0965ZaynDinCamili.RawdaBahiya.Zaydiyya0000218-ara1 
+    to D:/London/OpenITI/25Y_repos/0975AH/data/0965ZaynDinCamili/0965ZaynDinCamili.RawdaBahiya/0965ZaynDinCamili.RawdaBahiya.Zaydiyya0000218-ara1
+Move .\1008DawudAntaki.TadhkiratUliAlbab.Zaydiyya0000262-ara1 
+    to D:/London/OpenITI/25Y_repos/1025AH/data/1008DawudAntaki/1008DawudAntaki.TadhkiratUliAlbab/1008DawudAntaki.TadhkiratUliAlbab.Zaydiyya0000262-ara1
+Move .\1029QasimIbnMuhammadImam.HatfAnfAfak.Zaydiyya0000338-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1029QasimIbnMuhammadImam/1029QasimIbnMuhammadImam.HatfAnfAfak/1029QasimIbnMuhammadImam.HatfAnfAfak.Zaydiyya0000338-ara1
+Move .\1029QasimIbnMuhammadImam.Irshad.Zaydiyya0000043-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1029QasimIbnMuhammadImam/1029QasimIbnMuhammadImam.Irshad/1029QasimIbnMuhammadImam.Irshad.Zaydiyya0000043-ara1
+Move .\1029QasimIbnMuhammadImam.JawabMukhtar.Zaydiyya0000331-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1029QasimIbnMuhammadImam/1029QasimIbnMuhammadImam.JawabMukhtar/1029QasimIbnMuhammadImam.JawabMukhtar.Zaydiyya0000331-ara1
+Move .\1029QasimIbnMuhammadImam.Majmuc.Zaydiyya0000079-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1029QasimIbnMuhammadImam/1029QasimIbnMuhammadImam.Majmuc/1029QasimIbnMuhammadImam.Majmuc.Zaydiyya0000079-ara1
+Move .\1029QasimIbnMuhammadImam.MirqatWusul.Zaydiyya0000139-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1029QasimIbnMuhammadImam/1029QasimIbnMuhammadImam.MirqatWusul/1029QasimIbnMuhammadImam.MirqatWusul.Zaydiyya0000139-ara1
+Move .\1029QasimIbnMuhammadImam.Tahdhir.Zaydiyya0000330-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1029QasimIbnMuhammadImam/1029QasimIbnMuhammadImam.Tahdhir/1029QasimIbnMuhammadImam.Tahdhir.Zaydiyya0000330-ara1
+Move .\1039IbnLuqman.KashifLiDhawiCuqul.Zaydiyya0000215-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1039IbnLuqman/1039IbnLuqman.KashifLiDhawiCuqul/1039IbnLuqman.KashifLiDhawiCuqul.Zaydiyya0000215-ara1
+Move .\1050IbnMansurBiLlahYamani.AdabCulama.Zaydiyya0000339-ara1 
+    to D:/London/OpenITI/25Y_repos/1050AH/data/1050IbnMansurBiLlahYamani/1050IbnMansurBiLlahYamani.AdabCulama/1050IbnMansurBiLlahYamani.AdabCulama.Zaydiyya0000339-ara1
+Move .\1055AhmadSharafi.AliMudia.Zaydiyya0000037Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1055AhmadSharafi/1055AhmadSharafi.AliMudia/1055AhmadSharafi.AliMudia.Zaydiyya0000037Vols-ara1
+Move .\1055AhmadSharafi.DawlatBaniRasul.Zaydiyya0000298-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1055AhmadSharafi/1055AhmadSharafi.DawlatBaniRasul/1055AhmadSharafi.DawlatBaniRasul.Zaydiyya0000298-ara1
+Move .\1060IbnQaysar.SiratNasirIbnMurshid.ShamIbadiyya0000116-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1060IbnQaysar/1060IbnQaysar.SiratNasirIbnMurshid/1060IbnQaysar.SiratNasirIbnMurshid.ShamIbadiyya0000116-ara1
+Move .\1060IbnQaysar.SiratNasirIbnMurshid.ShamIbadiyya0000174-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1060IbnQaysar/1060IbnQaysar.SiratNasirIbnMurshid/1060IbnQaysar.SiratNasirIbnMurshid.ShamIbadiyya0000174-ara1
+Move .\1061AhmadHabisYamani.IdahFiSharhMisbah.Zaydiyya0000038-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1061AhmadHabisYamani/1061AhmadHabisYamani.IdahFiSharhMisbah/1061AhmadHabisYamani.IdahFiSharhMisbah.Zaydiyya0000038-ara1
+Move .\1061AhmadHabisYamani.IjazatIbnYahya.Zaydiyya0000378-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1061AhmadHabisYamani/1061AhmadHabisYamani.IjazatIbnYahya/1061AhmadHabisYamani.IjazatIbnYahya.Zaydiyya0000378-ara1
+Move .\1062CabdAllahSharafi.MasabihSatica.Zaydiyya0000020-ara2 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1062CabdAllahSharafi/1062CabdAllahSharafi.MasabihSatica/1062CabdAllahSharafi.MasabihSatica.Zaydiyya0000020-ara2
+Move .\1062CabdAllahSharafi.MasabihSatica.Zaydiyya0000295Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1062CabdAllahSharafi/1062CabdAllahSharafi.MasabihSatica/1062CabdAllahSharafi.MasabihSatica.Zaydiyya0000295Vols-ara1
+Move .\1068IbnCaliFuwati.BadrMunir.Zaydiyya0000328-ara1 
+    to D:/London/OpenITI/25Y_repos/1075AH/data/1068IbnCaliFuwati/1068IbnCaliFuwati.BadrMunir/1068IbnCaliFuwati.BadrMunir.Zaydiyya0000328-ara1
+Move .\1077Jurmuzi.JawharaMunira.Zaydiyya0000388-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1077Jurmuzi/1077Jurmuzi.JawharaMunira/1077Jurmuzi.JawharaMunira.Zaydiyya0000388-ara1
+Move .\1077Jurmuzi.NubdhaMushira.Zaydiyya0000093-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1077Jurmuzi/1077Jurmuzi.NubdhaMushira/1077Jurmuzi.NubdhaMushira.Zaydiyya0000093-ara1
+Move .\1077Jurmuzi.NubdhaMushira.Zaydiyya0000369-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1077Jurmuzi/1077Jurmuzi.NubdhaMushira/1077Jurmuzi.NubdhaMushira.Zaydiyya0000369-ara1
+Move .\1077Jurmuzi.TuhfatAsmac.Zaydiyya0000148-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1077Jurmuzi/1077Jurmuzi.TuhfatAsmac/1077Jurmuzi.TuhfatAsmac.Zaydiyya0000148-ara1
+Move .\1079HabalShacir.Diwan.Zaydiyya0000249-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1079HabalShacir/1079HabalShacir.Diwan/1079HabalShacir.Diwan.Zaydiyya0000249-ara1
+Move .\1079MuhammadIbnHasanIbnQasim.SabilRashad.Zaydiyya0000034-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1079MuhammadIbnHasanIbnQasim/1079MuhammadIbnHasanIbnQasim.SabilRashad/1079MuhammadIbnHasanIbnQasim.SabilRashad.Zaydiyya0000034-ara1
+Move .\1082IbnShadqamMadani.WaqcatJamal.Zaydiyya0000122-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1082IbnShadqamMadani/1082IbnShadqamMadani.WaqcatJamal/1082IbnShadqamMadani.WaqcatJamal.Zaydiyya0000122-ara1
+Move .\1083NasirIbrahimMuayyadi.IsbahCalaMisbah.Zaydiyya0000130-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1083NasirIbrahimMuayyadi/1083NasirIbrahimMuayyadi.IsbahCalaMisbah/1083NasirIbrahimMuayyadi.IsbahCalaMisbah.Zaydiyya0000130-ara1
+Move .\1083NasirIbrahimMuayyadi.IsbahCalaMisbah.Zaydiyya0000384-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1083NasirIbrahimMuayyadi/1083NasirIbrahimMuayyadi.IsbahCalaMisbah/1083NasirIbrahimMuayyadi.IsbahCalaMisbah.Zaydiyya0000384-ara1
+Move .\1087MutawakkilIsmacil.BayanSarih.Zaydiyya0000329-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1087MutawakkilIsmacil/1087MutawakkilIsmacil.BayanSarih/1087MutawakkilIsmacil.BayanSarih.Zaydiyya0000329-ara1
+Move .\1087MutawakkilIsmacil.CaqidaSahiha.Zaydiyya0000006-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1087MutawakkilIsmacil/1087MutawakkilIsmacil.CaqidaSahiha/1087MutawakkilIsmacil.CaqidaSahiha.Zaydiyya0000006-ara1
+Move .\1088AbuSitta.HashiyatTartib.ShamIbadiyya0000438-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1088AbuSitta/1088AbuSitta.HashiyatTartib/1088AbuSitta.HashiyatTartib.ShamIbadiyya0000438-ara1
+Move .\1090KhamisShiqsi.MinhajTalibin.ShamIbadiyya0000185-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1090KhamisShiqsi/1090KhamisShiqsi.MinhajTalibin/1090KhamisShiqsi.MinhajTalibin.ShamIbadiyya0000185-ara1
+Move .\1092AhmadIbnAbiRijal.MatlacBudur.Zaydiyya0000101-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1092AhmadIbnAbiRijal/1092AhmadIbnAbiRijal.MatlacBudur/1092AhmadIbnAbiRijal.MatlacBudur.Zaydiyya0000101-ara1
+Move .\1097CaliIbnSalahIbnCaliTabari.Kafil.Zaydiyya0000176-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1097CaliIbnSalahIbnCaliTabari/1097CaliIbnSalahIbnCaliTabari.Kafil/1097CaliIbnSalahIbnCaliTabari.Kafil.Zaydiyya0000176-ara1
+Move .\1097CaliIbnSalahIbnCaliTabari.Kafil.Zaydiyya0000407-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1097CaliIbnSalahIbnCaliTabari/1097CaliIbnSalahIbnCaliTabari.Kafil/1097CaliIbnSalahIbnCaliTabari.Kafil.Zaydiyya0000407-ara1
+Move .\1100MustafaTafrishi.NaqdRijal.Zaydiyya0000243-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1100MustafaTafrishi/1100MustafaTafrishi.NaqdRijal/1100MustafaTafrishi.NaqdRijal.Zaydiyya0000243-ara1
+Move .\1100YahyaIbnQasim.BahjatZaman.Zaydiyya0000094-ara1 
+    to D:/London/OpenITI/25Y_repos/1100AH/data/1100YahyaIbnQasim/1100YahyaIbnQasim.BahjatZaman/1100YahyaIbnQasim.BahjatZaman.Zaydiyya0000094-ara1
+Move .\1104IbnHasanHurrCamili.AmalAmil.Zaydiyya0000178-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1104IbnHasanHurrCamili/1104IbnHasanHurrCamili.AmalAmil/1104IbnHasanHurrCamili.AmalAmil.Zaydiyya0000178-ara1
+Move .\1104IbnHasanHurrCamili.WasailShica.Zaydiyya0000248-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1104IbnHasanHurrCamili/1104IbnHasanHurrCamili.WasailShica/1104IbnHasanHurrCamili.WasailShica.Zaydiyya0000248-ara1
+Move .\1104YahyaIbnCaliHabsi.TatimmatIfada.Zaydiyya0000351-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1104YahyaIbnCaliHabsi/1104YahyaIbnCaliHabsi.TatimmatIfada/1104YahyaIbnCaliHabsi.TatimmatIfada.Zaydiyya0000351-ara1
+Move .\1106YahyaIbnAhmadShatibi.DawaNafic.Zaydiyya0000348-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1106YahyaIbnAhmadShatibi/1106YahyaIbnAhmadShatibi.DawaNafic/1106YahyaIbnAhmadShatibi.DawaNafic.Zaydiyya0000348-ara1
+Move .\1111IbnNasirMuhalla.MatmahAmal.Zaydiyya0000035-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1111IbnNasirMuhalla/1111IbnNasirMuhalla.MatmahAmal/1111IbnNasirMuhalla.MatmahAmal.Zaydiyya0000035-ara1
+Move .\1111Majlisi.BiharAnwar.Zaydiyya0000202A-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1111Majlisi/1111Majlisi.BiharAnwar/1111Majlisi.BiharAnwar.Zaydiyya0000202A-ara1
+Move .\1111Majlisi.BiharAnwar.Zaydiyya0000202B-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1111Majlisi/1111Majlisi.BiharAnwar/1111Majlisi.BiharAnwar.Zaydiyya0000202B-ara1
+Move .\1111Majlisi.BiharAnwar.Zaydiyya0000202C-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1111Majlisi/1111Majlisi.BiharAnwar/1111Majlisi.BiharAnwar.Zaydiyya0000202C-ara1
+Move .\1111Majlisi.IjazatHadith.Zaydiyya0000113-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1111Majlisi/1111Majlisi.IjazatHadith/1111Majlisi.IjazatHadith.Zaydiyya0000113-ara1
+Move .\1115IshaqIbnMuhammadCabdi.Ihtiras.Zaydiyya0000413Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1115IshaqIbnMuhammadCabdi/1115IshaqIbnMuhammadCabdi.Ihtiras/1115IshaqIbnMuhammadCabdi.Ihtiras.Zaydiyya0000413Vols-ara1
+Move .\1125BashirFazari.RiyadAdib.ShamIbadiyya0000886-ara1 
+    to D:/London/OpenITI/25Y_repos/1125AH/data/1125BashirFazari/1125BashirFazari.RiyadAdib/1125BashirFazari.RiyadAdib.ShamIbadiyya0000886-ara1
+Move .\1150SalihSulayfi.MinhajTalibin.ShamIbadiyya0000786-ara1 
+    to D:/London/OpenITI/25Y_repos/1150AH/data/1150SalihSulayfi/1150SalihSulayfi.MinhajTalibin/1150SalihSulayfi.MinhajTalibin.ShamIbadiyya0000786-ara1
+Move .\1152IbrahimShajari.TabaqatZaydiyya.Zaydiyya0000336-ara1 
+    to D:/London/OpenITI/25Y_repos/1175AH/data/1152IbrahimShajari/1152IbrahimShajari.TabaqatZaydiyya/1152IbrahimShajari.TabaqatZaydiyya.Zaydiyya0000336-ara1
+Move .\1152IbrahimShajari.TabaqatZaydiyyaKubra.Zaydiyya0000100-ara1 
+    to D:/London/OpenITI/25Y_repos/1175AH/data/1152IbrahimShajari/1152IbrahimShajari.TabaqatZaydiyyaKubra/1152IbrahimShajari.TabaqatZaydiyyaKubra.Zaydiyya0000100-ara1
+Move .\1182IbnIsmacilSancani.IrshadDhawiAlbab.Zaydiyya0000453-ara1 
+    to D:/London/OpenITI/25Y_repos/1200AH/data/1182IbnIsmacilSancani/1182IbnIsmacilSancani.IrshadDhawiAlbab/1182IbnIsmacilSancani.IrshadDhawiAlbab.Zaydiyya0000453-ara1
+Move .\1182IbnIsmacilSancani.UsulFiqh.Zaydiyya0000127-ara1 
+    to D:/London/OpenITI/25Y_repos/1200AH/data/1182IbnIsmacilSancani/1182IbnIsmacilSancani.UsulFiqh/1182IbnIsmacilSancani.UsulFiqh.Zaydiyya0000127-ara1
+Move .\1187IbrahimHuthiHusayni.NafahatCanbar.Zaydiyya0000376Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/1200AH/data/1187IbrahimHuthiHusayni/1187IbrahimHuthiHusayni.NafahatCanbar/1187IbrahimHuthiHusayni.NafahatCanbar.Zaydiyya0000376Vols-ara1
+Move .\1190IbnQasimShuhari.BulughArab.Zaydiyya0000398-ara1 
+    to D:/London/OpenITI/25Y_repos/1200AH/data/1190IbnQasimShuhari/1190IbnQasimShuhari.BulughArab/1190IbnQasimShuhari.BulughArab.Zaydiyya0000398-ara1
+Move .\1198AhmadIbnSalahKhatib.AmanMinMasailThaman.Zaydiyya0000343-ara1 
+    to D:/London/OpenITI/25Y_repos/1200AH/data/1198AhmadIbnSalahKhatib/1198AhmadIbnSalahKhatib.AmanMinMasailThaman/1198AhmadIbnSalahKhatib.AmanMinMasailThaman.Zaydiyya0000343-ara1
+Move .\1200CabdAllahIbnBashirHadrami.KawkabDurri.ShamIbadiyya0000074-ara1 
+    to D:/London/OpenITI/25Y_repos/1200AH/data/1200CabdAllahIbnBashirHadrami/1200CabdAllahIbnBashirHadrami.KawkabDurri/1200CabdAllahIbnBashirHadrami.KawkabDurri.ShamIbadiyya0000074-ara1
+Move .\1207SacidKindi.TafsirMuyassar.ShamIbadiyya0000075-ara1 
+    to D:/London/OpenITI/25Y_repos/1225AH/data/1207SacidKindi/1207SacidKindi.TafsirMuyassar/1207SacidKindi.TafsirMuyassar.ShamIbadiyya0000075-ara1
+Move .\1221HasanHaydara.MatlacAqmar.Zaydiyya0000021-ara1 
+    to D:/London/OpenITI/25Y_repos/1225AH/data/1221HasanHaydara/1221HasanHaydara.MatlacAqmar/1221HasanHaydara.MatlacAqmar.Zaydiyya0000021-ara1
+Move .\1221HusaynSiyaghi.ManhajMunir.Zaydiyya0000059-ara1 
+    to D:/London/OpenITI/25Y_repos/1225AH/data/1221HusaynSiyaghi/1221HusaynSiyaghi.ManhajMunir/1221HusaynSiyaghi.ManhajMunir.Zaydiyya0000059-ara1
+Move .\1223DiyaDinThamini.MatnKitabNil.ShamIbadiyya0000562-ara1 
+    to D:/London/OpenITI/25Y_repos/1225AH/data/1223DiyaDinThamini/1223DiyaDinThamini.MatnKitabNil/1223DiyaDinThamini.MatnKitabNil.ShamIbadiyya0000562-ara1
+Move .\1223DiyaDinThamini.TajManzur.ShamIbadiyya0000773-ara1 
+    to D:/London/OpenITI/25Y_repos/1225AH/data/1223DiyaDinThamini/1223DiyaDinThamini.TajManzur/1223DiyaDinThamini.TajManzur.ShamIbadiyya0000773-ara1
+Move .\1237AbuNabhanJacidIbnKhamisKharusi.TafsirSuratFatiha.ShamIbadiyya0000437-ara1 
+    to D:/London/OpenITI/25Y_repos/1250AH/data/1237AbuNabhanJacidIbnKhamisKharusi/1237AbuNabhanJacidIbnKhamisKharusi.TafsirSuratFatiha/1237AbuNabhanJacidIbnKhamisKharusi.TafsirSuratFatiha.ShamIbadiyya0000437-ara1
+Move .\1250IbnCaliShawkani.DarariMudia.Zaydiyya0000266-ara1 
+    to D:/London/OpenITI/25Y_repos/1250AH/data/1250IbnCaliShawkani/1250IbnCaliShawkani.DarariMudia/1250IbnCaliShawkani.DarariMudia.Zaydiyya0000266-ara1
+Move .\1256NasirCabdAllah.AnmudhajKhatir.Zaydiyya0000001-ara1 
+    to D:/London/OpenITI/25Y_repos/1275AH/data/1256NasirCabdAllah/1256NasirCabdAllah.AnmudhajKhatir/1256NasirCabdAllah.AnmudhajKhatir.Zaydiyya0000001-ara1
+Move .\1258MahdiAhmadIbnHusayn.MajmucRasail.Zaydiyya0000085-ara1 
+    to D:/London/OpenITI/25Y_repos/1275AH/data/1258MahdiAhmadIbnHusayn/1258MahdiAhmadIbnHusayn.MajmucRasail/1258MahdiAhmadIbnHusayn.MajmucRasail.Zaydiyya0000085-ara1
+Move .\1263IbnAbiNabhanKharusi.TahdhibBiNahw.ShamIbadiyya0000884-ara1 
+    to D:/London/OpenITI/25Y_repos/1275AH/data/1263IbnAbiNabhanKharusi/1263IbnAbiNabhanKharusi.TahdhibBiNahw/1263IbnAbiNabhanKharusi.TahdhibBiNahw.ShamIbadiyya0000884-ara1
+Move .\1263IbnAbiNabhanKharusi.TanwirCuqul.ShamIbadiyya0000259-ara1 
+    to D:/London/OpenITI/25Y_repos/1275AH/data/1263IbnAbiNabhanKharusi/1263IbnAbiNabhanKharusi.TanwirCuqul/1263IbnAbiNabhanKharusi.TanwirCuqul.ShamIbadiyya0000259-ara1
+Move .\1264CaliNabhaniTanufi.Diwan.ShamIbadiyya0000654-ara1 
+    to D:/London/OpenITI/25Y_repos/1275AH/data/1264CaliNabhaniTanufi/1264CaliNabhaniTanufi.Diwan/1264CaliNabhaniTanufi.Diwan.ShamIbadiyya0000654-ara1
+Move .\1269MansurAhmad.SafinaMunjiya.Zaydiyya0000133-ara1 
+    to D:/London/OpenITI/25Y_repos/1275AH/data/1269MansurAhmad/1269MansurAhmad.SafinaMunjiya/1269MansurAhmad.SafinaMunjiya.Zaydiyya0000133-ara1
+Move .\1282AhmadQurashi.MukhtasarMufid.Zaydiyya0000135-ara1 
+    to D:/London/OpenITI/25Y_repos/1300AH/data/1282AhmadQurashi/1282AhmadQurashi.MukhtasarMufid/1282AhmadQurashi.MukhtasarMufid.Zaydiyya0000135-ara1
+Move .\1286IcjazKanturi.KashfHujubWaAstar.Zaydiyya0000200-ara1 
+    to D:/London/OpenITI/25Y_repos/1300AH/data/1286IcjazKanturi/1286IcjazKanturi.KashfHujubWaAstar/1286IcjazKanturi.KashfHujubWaAstar.Zaydiyya0000200-ara1
+Move .\1287SacidIbnKhalfanKhalili.IghathatMalhuf.ShamIbadiyya0000220-ara1 
+    to D:/London/OpenITI/25Y_repos/1300AH/data/1287SacidIbnKhalfanKhalili/1287SacidIbnKhalfanKhalili.IghathatMalhuf/1287SacidIbnKhalfanKhalili.IghathatMalhuf.ShamIbadiyya0000220-ara1
+Move .\1300MansurKharusi.SharhLamiyaIbnNadrKitabHajj.ShamIbadiyya0000771-ara1 
+    to D:/London/OpenITI/25Y_repos/1300AH/data/1300MansurKharusi/1300MansurKharusi.SharhLamiyaIbnNadrKitabHajj/1300MansurKharusi.SharhLamiyaIbnNadrKitabHajj.ShamIbadiyya0000771-ara1
+Move .\1313SayyidCaliBurujirdi.Taraif.Zaydiyya0000190-ara1 
+    to D:/London/OpenITI/25Y_repos/1325AH/data/1313SayyidCaliBurujirdi/1313SayyidCaliBurujirdi.Taraif/1313SayyidCaliBurujirdi.Taraif.Zaydiyya0000190-ara1
+Move .\1317KhayrDinAlusi.JalaCaynayn.Zaydiyya0000379-ara1 
+    to D:/London/OpenITI/25Y_repos/1325AH/data/1317KhayrDinAlusi/1317KhayrDinAlusi.JalaCaynayn/1317KhayrDinAlusi.JalaCaynayn.Zaydiyya0000379-ara1
+Move .\1319MahdiMuhammadHuthi.BudurMudia.Zaydiyya0000081-ara1 
+    to D:/London/OpenITI/25Y_repos/1325AH/data/1319MahdiMuhammadHuthi/1319MahdiMuhammadHuthi.BudurMudia/1319MahdiMuhammadHuthi.BudurMudia.Zaydiyya0000081-ara1
+Move .\1319MahdiMuhammadHuthi.MawzicaHasana.Zaydiyya0000028-ara1 
+    to D:/London/OpenITI/25Y_repos/1325AH/data/1319MahdiMuhammadHuthi/1319MahdiMuhammadHuthi.MawzicaHasana/1319MahdiMuhammadHuthi.MawzicaHasana.Zaydiyya0000028-ara1
+Move .\1324IbrahimNazji.NujcatRaid.Zaydiyya0000023-ara1 
+    to D:/London/OpenITI/25Y_repos/1325AH/data/1324IbrahimNazji/1324IbrahimNazji.NujcatRaid/1324IbrahimNazji.NujcatRaid.Zaydiyya0000023-ara1
+Move .\1325IbnMutahharHalabi.NahjHaqq.Zaydiyya0000258-ara1 
+    to D:/London/OpenITI/25Y_repos/1325AH/data/1325IbnMutahharHalabi/1325IbnMutahharHalabi.NahjHaqq/1325IbnMutahharHalabi.NahjHaqq.Zaydiyya0000258-ara1
+Move .\1326HartwigDerenbourg.MukhtarMinDiwanCumara.Shamela0009248B-ara1.mARkdown 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1326HartwigDerenbourg/1326HartwigDerenbourg.MukhtarMinDiwanCumara/1326HartwigDerenbourg.MukhtarMinDiwanCumara.Shamela0009248B-ara1.mARkdown
+Move .\1332NurDinSalimi.BadhlMajhud.ShamIbadiyya0000391-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.BadhlMajhud/1332NurDinSalimi.BadhlMajhud.ShamIbadiyya0000391-ara1
+Move .\1332NurDinSalimi.BahjatAnwar.ShamIbadiyya0000038-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.BahjatAnwar/1332NurDinSalimi.BahjatAnwar.ShamIbadiyya0000038-ara1
+Move .\1332NurDinSalimi.BahjatAnwar.ShamIbadiyya0000146-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.BahjatAnwar/1332NurDinSalimi.BahjatAnwar.ShamIbadiyya0000146-ara1
+Move .\1332NurDinSalimi.FatawaHawlBacdAyat.ShamIbadiyya0000514-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.FatawaHawlBacdAyat/1332NurDinSalimi.FatawaHawlBacdAyat.ShamIbadiyya0000514-ara1
+Move .\1332NurDinSalimi.GhayatMuradFiIctiqad.ShamIbadiyya0000055-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.GhayatMuradFiIctiqad/1332NurDinSalimi.GhayatMuradFiIctiqad.ShamIbadiyya0000055-ara1
+Move .\1332NurDinSalimi.HujjajMuqannaca.ShamIbadiyya0000486-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.HujjajMuqannaca/1332NurDinSalimi.HujjajMuqannaca.ShamIbadiyya0000486-ara1
+Move .\1332NurDinSalimi.HujjajMuqannaca.ShamIbadiyya0000487-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.HujjajMuqannaca/1332NurDinSalimi.HujjajMuqannaca.ShamIbadiyya0000487-ara1
+Move .\1332NurDinSalimi.Jawabat.ShamIbadiyya0000095-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.Jawabat/1332NurDinSalimi.Jawabat.ShamIbadiyya0000095-ara1
+Move .\1332NurDinSalimi.JawharNizam.ShamIbadiyya0000471-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.JawharNizam/1332NurDinSalimi.JawharNizam.ShamIbadiyya0000471-ara1
+Move .\1332NurDinSalimi.LamcaMurdiyya.ShamIbadiyya0000233-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.LamcaMurdiyya/1332NurDinSalimi.LamcaMurdiyya.ShamIbadiyya0000233-ara1
+Move .\1332NurDinSalimi.MacarijAmal.ShamIbadiyya0000229-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.MacarijAmal/1332NurDinSalimi.MacarijAmal.ShamIbadiyya0000229-ara1
+Move .\1332NurDinSalimi.MacarijAmal.ShamIbadiyya0000975-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.MacarijAmal/1332NurDinSalimi.MacarijAmal.ShamIbadiyya0000975-ara1
+Move .\1332NurDinSalimi.Mashariq.ShamIbadiyya0000135-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.Mashariq/1332NurDinSalimi.Mashariq.ShamIbadiyya0000135-ara1
+Move .\1332NurDinSalimi.NajasatDamMasfuh.ShamIbadiyya0000501-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.NajasatDamMasfuh/1332NurDinSalimi.NajasatDamMasfuh.ShamIbadiyya0000501-ara1
+Move .\1332NurDinSalimi.RawdBayan.ShamIbadiyya0000024-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.RawdBayan/1332NurDinSalimi.RawdBayan.ShamIbadiyya0000024-ara1
+Move .\1332NurDinSalimi.SharhBulughAmal.ShamIbadiyya0000883-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.SharhBulughAmal/1332NurDinSalimi.SharhBulughAmal.ShamIbadiyya0000883-ara1
+Move .\1332NurDinSalimi.SharhJamicSahih.ShamIbadiyya0000433-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.SharhJamicSahih/1332NurDinSalimi.SharhJamicSahih.ShamIbadiyya0000433-ara1
+Move .\1332NurDinSalimi.SharhTalcatShams.ShamIbadiyya0000150-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.SharhTalcatShams/1332NurDinSalimi.SharhTalcatShams.ShamIbadiyya0000150-ara1
+Move .\1332NurDinSalimi.TalqinSubyan.ShamIbadiyya0000200-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.TalqinSubyan/1332NurDinSalimi.TalqinSubyan.ShamIbadiyya0000200-ara1
+Move .\1332NurDinSalimi.TuhfatAcyan.ShamIbadiyya0000281-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332NurDinSalimi/1332NurDinSalimi.TuhfatAcyan/1332NurDinSalimi.TuhfatAcyan.ShamIbadiyya0000281-ara1
+Move .\1332QutbAtfayyish.HamayanZad.ShamIbadiyya0000050-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.HamayanZad/1332QutbAtfayyish.HamayanZad.ShamIbadiyya0000050-ara1
+Move .\1332QutbAtfayyish.HujjaFiBayanMahajja.ShamIbadiyya0000057-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.HujjaFiBayanMahajja/1332QutbAtfayyish.HujjaFiBayanMahajja.ShamIbadiyya0000057-ara1
+Move .\1332QutbAtfayyish.JamicSaghir1.ShamIbadiyya0000276-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.JamicSaghir1/1332QutbAtfayyish.JamicSaghir1.ShamIbadiyya0000276-ara1
+Move .\1332QutbAtfayyish.JamicSaghir3.ShamIbadiyya0000277-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.JamicSaghir3/1332QutbAtfayyish.JamicSaghir3.ShamIbadiyya0000277-ara1
+Move .\1332QutbAtfayyish.JawabLiAhlZawara.ShamIbadiyya0000727-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.JawabLiAhlZawara/1332QutbAtfayyish.JawabLiAhlZawara.ShamIbadiyya0000727-ara1
+Move .\1332QutbAtfayyish.KashfKurab.ShamIbadiyya0000728-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.KashfKurab/1332QutbAtfayyish.KashfKurab.ShamIbadiyya0000728-ara1
+Move .\1332QutbAtfayyish.LamTacrifIbadiyyaYaCuqbaYaJazairi.ShamIbadiyya0000066-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.LamTacrifIbadiyyaYaCuqbaYaJazairi/1332QutbAtfayyish.LamTacrifIbadiyyaYaCuqbaYaJazairi.ShamIbadiyya0000066-ara1
+Move .\1332QutbAtfayyish.SharhLamiyatAfcal.ShamIbadiyya0000887-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.SharhLamiyatAfcal/1332QutbAtfayyish.SharhLamiyatAfcal.ShamIbadiyya0000887-ara1
+Move .\1332QutbAtfayyish.SharhNilWaShifaCalil.ShamIbadiyya0000109-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.SharhNilWaShifaCalil/1332QutbAtfayyish.SharhNilWaShifaCalil.ShamIbadiyya0000109-ara1
+Move .\1332QutbAtfayyish.SharhNilWaShifaCalil.ShamIbadiyya0000926-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.SharhNilWaShifaCalil/1332QutbAtfayyish.SharhNilWaShifaCalil.ShamIbadiyya0000926-ara1
+Move .\1332QutbAtfayyish.Tafsir.ShamIbadiyya0000193-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.Tafsir/1332QutbAtfayyish.Tafsir.ShamIbadiyya0000193-ara1
+Move .\1332QutbAtfayyish.TakhlisCani.ShamIbadiyya0000888-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1332QutbAtfayyish/1332QutbAtfayyish.TakhlisCani/1332QutbAtfayyish.TakhlisCani.ShamIbadiyya0000888-ara1
+Move .\1337AhmadJindari.JamicWajiz.Zaydiyya0000276-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1337AhmadJindari/1337AhmadJindari.JamicWajiz/1337AhmadJindari.JamicWajiz.Zaydiyya0000276-ara1
+Move .\1337AhmadJindari.RawdFuad.Zaydiyya0000335-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1337AhmadJindari/1337AhmadJindari.RawdFuad/1337AhmadJindari.RawdFuad.Zaydiyya0000335-ara1
+Move .\1338AbuMuslimBahlani.DarakMuna.ShamIbadiyya0000651-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1338AbuMuslimBahlani/1338AbuMuslimBahlani.DarakMuna/1338AbuMuslimBahlani.DarakMuna.ShamIbadiyya0000651-ara1
+Move .\1338AbuMuslimBahlani.Diwan.ShamIbadiyya0000653-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1338AbuMuslimBahlani/1338AbuMuslimBahlani.Diwan/1338AbuMuslimBahlani.Diwan.ShamIbadiyya0000653-ara1
+Move .\1338AbuMuslimBahlani.NitharJawhar.ShamIbadiyya0000446-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1338AbuMuslimBahlani/1338AbuMuslimBahlani.NitharJawhar/1338AbuMuslimBahlani.NitharJawhar.ShamIbadiyya0000446-ara1
+Move .\1339IsmacilBashaBaghdadi.HadiyatCarifin.Zaydiyya0000247-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1339IsmacilBashaBaghdadi/1339IsmacilBashaBaghdadi.HadiyatCarifin/1339IsmacilBashaBaghdadi.HadiyatCarifin.Zaydiyya0000247-ara1
+Move .\1341SayfIbnNasirKharusi.JamicArkanIslam.ShamIbadiyya0000203-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1341SayfIbnNasirKharusi/1341SayfIbnNasirKharusi.JamicArkanIslam/1341SayfIbnNasirKharusi.JamicArkanIslam.ShamIbadiyya0000203-ara1
+Move .\1343HasanIbnYahyaQasimi.NurSatic.Zaydiyya0000031-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1343HasanIbnYahyaQasimi/1343HasanIbnYahyaQasimi.NurSatic/1343HasanIbnYahyaQasimi.NurSatic.Zaydiyya0000031-ara1
+Move .\1349RamadanHamud.BudhurHayat.ShamIbadiyya0000201-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1349RamadanHamud/1349RamadanHamud.BudhurHayat/1349RamadanHamud.BudhurHayat.ShamIbadiyya0000201-ara1
+Move .\1350IbnCaqilCalawi.CatbJamil.Zaydiyya0000141-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1350IbnCaqilCalawi/1350IbnCaqilCalawi.CatbJamil/1350IbnCaqilCalawi.CatbJamil.Zaydiyya0000141-ara1
+Move .\1350IbnCaqilCalawi.NasaihKafiya.Zaydiyya0000017-ara1 
+    to D:/London/OpenITI/25Y_repos/1350AH/data/1350IbnCaqilCalawi/1350IbnCaqilCalawi.NasaihKafiya/1350IbnCaqilCalawi.NasaihKafiya.Zaydiyya0000017-ara1
+Move .\1351MuhammadMudacis.KashifAmin.Zaydiyya0000039-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1351MuhammadMudacis/1351MuhammadMudacis.KashifAmin/1351MuhammadMudacis.KashifAmin.Zaydiyya0000039-ara1
+Move .\1351YusufIlyanSarkis.MucjamMatbucat.Zaydiyya0000223-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1351YusufIlyanSarkis/1351YusufIlyanSarkis.MucjamMatbucat/1351YusufIlyanSarkis.MucjamMatbucat.Zaydiyya0000223-ara1
+Move .\1359CabbasQummi.MafatihJinan.Zaydiyya0000236-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1359CabbasQummi/1359CabbasQummi.MafatihJinan/1359CabbasQummi.MafatihJinan.Zaydiyya0000236-ara1
+Move .\1359SulaymanBaruni.MukhtasarTarikhIbadiyya.ShamIbadiyya0000147-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1359SulaymanBaruni/1359SulaymanBaruni.MukhtasarTarikhIbadiyya/1359SulaymanBaruni.MukhtasarTarikhIbadiyya.ShamIbadiyya0000147-ara1
+Move .\1359SulaymanBaruni.RisalaIlaSalimRawahi.ShamIbadiyya0000555-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1359SulaymanBaruni/1359SulaymanBaruni.RisalaIlaSalimRawahi/1359SulaymanBaruni.RisalaIlaSalimRawahi.ShamIbadiyya0000555-ara1
+Move .\1361SacidIbnNasirGhaythi.IdahTawhid.ShamIbadiyya0000279-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1361SacidIbnNasirGhaythi/1361SacidIbnNasirGhaythi.IdahTawhid/1361SacidIbnNasirGhaythi.IdahTawhid.ShamIbadiyya0000279-ara1
+Move .\1364CamirIbnKHamisMaliki.GhayatMatlub.ShamIbadiyya0000459-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1364CamirIbnKHamisMaliki/1364CamirIbnKHamisMaliki.GhayatMatlub/1364CamirIbnKHamisMaliki.GhayatMatlub.ShamIbadiyya0000459-ara1
+Move .\1364CamirIbnKHamisMaliki.GhayatMatlub.ShamIbadiyya0000942-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1364CamirIbnKHamisMaliki/1364CamirIbnKHamisMaliki.GhayatMatlub/1364CamirIbnKHamisMaliki.GhayatMatlub.ShamIbadiyya0000942-ara1
+Move .\1371MuhsinAmin.AbuHusaynZaydShahid.Zaydiyya0000195-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1371MuhsinAmin/1371MuhsinAmin.AbuHusaynZaydShahid/1371MuhsinAmin.AbuHusaynZaydShahid.Zaydiyya0000195-ara1
+Move .\1372AhmadIbnMuhammadRahuni.RafcKhasasa.Zaydiyya0000405-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1372AhmadIbnMuhammadRahuni/1372AhmadIbnMuhammadRahuni.RafcKhasasa/1372AhmadIbnMuhammadRahuni.RafcKhasasa.Zaydiyya0000405-ara1
+Move .\1373AhmadShamat.AimmatAhlBaytZaydiyya.Zaydiyya0000382-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1373AhmadShamat/1373AhmadShamat.AimmatAhlBaytZaydiyya/1373AhmadShamat.AimmatAhlBaytZaydiyya.Zaydiyya0000382-ara1
+Move .\1373AhmadShamat.ThimarMujtanat.Zaydiyya0000022-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1373AhmadShamat/1373AhmadShamat.ThimarMujtanat/1373AhmadShamat.ThimarMujtanat.Zaydiyya0000022-ara1
+Move .\1375AhmadIbnHasanQasimi.CilmWasim.Zaydiyya0000046-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1375AhmadIbnHasanQasimi/1375AhmadIbnHasanQasimi.CilmWasim/1375AhmadIbnHasanQasimi.CilmWasim.Zaydiyya0000046-ara1
+Move .\1375AhmadIbnHasanQasimi.JawahirMudia.Zaydiyya0000346-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1375AhmadIbnHasanQasimi/1375AhmadIbnHasanQasimi.JawahirMudia/1375AhmadIbnHasanQasimi.JawahirMudia.Zaydiyya0000346-ara1
+Move .\1375AhmadIbnHasanQasimi.TuhfatAclam.Zaydiyya0000125-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1375AhmadIbnHasanQasimi/1375AhmadIbnHasanQasimi.TuhfatAclam/1375AhmadIbnHasanQasimi.TuhfatAclam.Zaydiyya0000125-ara1
+Move .\1375CabdAllahIbnImamHadiQasimi.JadawilSughra.Zaydiyya0000099-ara1 
+    to D:/London/OpenITI/25Y_repos/1375AH/data/1375CabdAllahIbnImamHadiQasimi/1375CabdAllahIbnImamHadiQasimi.JadawilSughra/1375CabdAllahIbnImamHadiQasimi.JadawilSughra.Zaydiyya0000099-ara1
+Move .\1377SharafDinCamili.Murajacat.Zaydiyya0000199-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1377SharafDinCamili/1377SharafDinCamili.Murajacat/1377SharafDinCamili.Murajacat.Zaydiyya0000199-ara1
+Move .\1377SharafDinCamili.NassWaIjtihad.Zaydiyya0000161-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1377SharafDinCamili/1377SharafDinCamili.NassWaIjtihad/1377SharafDinCamili.NassWaIjtihad.Zaydiyya0000161-ara1
+Move .\1380MuhammadZabara.AimmatYamanBiQarnRabicCashr.Zaydiyya0000400-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1380MuhammadZabara/1380MuhammadZabara.AimmatYamanBiQarnRabicCashr/1380MuhammadZabara.AimmatYamanBiQarnRabicCashr.Zaydiyya0000400-ara1
+Move .\1385AbuIshaqAtfayyish.DacayaIlaSabilMuminin.ShamIbadiyya0000379-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1385AbuIshaqAtfayyish/1385AbuIshaqAtfayyish.DacayaIlaSabilMuminin/1385AbuIshaqAtfayyish.DacayaIlaSabilMuminin.ShamIbadiyya0000379-ara1
+Move .\1385AbuIshaqAtfayyish.FiraqBaynIbadiyyaWaKhawarij.ShamIbadiyya0000249-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1385AbuIshaqAtfayyish/1385AbuIshaqAtfayyish.FiraqBaynIbadiyyaWaKhawarij/1385AbuIshaqAtfayyish.FiraqBaynIbadiyyaWaKhawarij.ShamIbadiyya0000249-ara1
+Move .\1387MuhammadFuadCabdBaqi.MucjamAlfazQuranMufahras.Zaydiyya0000577-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1387MuhammadFuadCabdBaqi/1387MuhammadFuadCabdBaqi.MucjamAlfazQuranMufahras/1387MuhammadFuadCabdBaqi.MucjamAlfazQuranMufahras.Zaydiyya0000577-ara1
+Move .\1387MuhammadIbnSalimRuqayshi.NurWaqqad.ShamIbadiyya0000237-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1387MuhammadIbnSalimRuqayshi/1387MuhammadIbnSalimRuqayshi.NurWaqqad/1387MuhammadIbnSalimRuqayshi.NurWaqqad.ShamIbadiyya0000237-ara1
+Move .\1389AghaBuzurgTihrani.DharicaFiTasanifShica.Zaydiyya0000134-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1389AghaBuzurgTihrani/1389AghaBuzurgTihrani.DharicaFiTasanifShica/1389AghaBuzurgTihrani.DharicaFiTasanifShica.Zaydiyya0000134-ara1
+Move .\1390AhmadIbnQasimCanasi.TajMudhhab.Zaydiyya0000061-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390AhmadIbnQasimCanasi/1390AhmadIbnQasimCanasi.TajMudhhab/1390AhmadIbnQasimCanasi.TajMudhhab.Zaydiyya0000061-ara1
+Move .\1390CabdHusaynAmini.Ghadir.Zaydiyya0000142-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390CabdHusaynAmini/1390CabdHusaynAmini.Ghadir/1390CabdHusaynAmini.Ghadir.Zaydiyya0000142-ara1
+Move .\1390CabdHusaynAmini.SahibIbnCabbad.Zaydiyya0000168-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390CabdHusaynAmini/1390CabdHusaynAmini.SahibIbnCabbad/1390CabdHusaynAmini.SahibIbnCabbad.Zaydiyya0000168-ara1
+Move .\1390HamadSulaymi.HidayatMubassirin.ShamIbadiyya0000823-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390HamadSulaymi/1390HamadSulaymi.HidayatMubassirin/1390HamadSulaymi.HidayatMubassirin.ShamIbadiyya0000823-ara1
+Move .\1390HamadSulaymi.HidayatMubassirin.ShamIbadiyya0000824-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390HamadSulaymi/1390HamadSulaymi.HidayatMubassirin/1390HamadSulaymi.HidayatMubassirin.ShamIbadiyya0000824-ara1
+Move .\1390HamadSulaymi.KursiFaraid.ShamIbadiyya0000208-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390HamadSulaymi/1390HamadSulaymi.KursiFaraid/1390HamadSulaymi.KursiFaraid.ShamIbadiyya0000208-ara1
+Move .\1390MahmudAbuRayya.AdwaCalaSunna.Zaydiyya0000153-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1390MahmudAbuRayya/1390MahmudAbuRayya.AdwaCalaSunna/1390MahmudAbuRayya.AdwaCalaSunna.Zaydiyya0000153-ara1
+Move .\1391IbrahimKinaci.DucaCindaKhatmQuran.Zaydiyya0000237-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1391IbrahimKinaci/1391IbrahimKinaci.DucaCindaKhatmQuran/1391IbrahimKinaci.DucaCindaKhatmQuran.Zaydiyya0000237-ara1
+Move .\1392KhalfanSiyabi.BahjatMajalis.ShamIbadiyya0000167-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1392KhalfanSiyabi/1392KhalfanSiyabi.BahjatMajalis/1392KhalfanSiyabi.BahjatMajalis.ShamIbadiyya0000167-ara1
+Move .\1392KhalfanSiyabi.QutraGhaythiyya.ShamIbadiyya0000003-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1392KhalfanSiyabi/1392KhalfanSiyabi.QutraGhaythiyya/1392KhalfanSiyabi.QutraGhaythiyya.ShamIbadiyya0000003-ara1
+Move .\1393IbrahimAbuYaqzan.AshiccatNur.ShamIbadiyya0000258-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1393IbrahimAbuYaqzan/1393IbrahimAbuYaqzan.AshiccatNur/1393IbrahimAbuYaqzan.AshiccatNur.ShamIbadiyya0000258-ara1
+Move .\1393IbrahimAbuYaqzan.HikmatTashricIslami.ShamIbadiyya0000399-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1393IbrahimAbuYaqzan/1393IbrahimAbuYaqzan.HikmatTashricIslami/1393IbrahimAbuYaqzan.HikmatTashricIslami.ShamIbadiyya0000399-ara1
+Move .\1393IbrahimAbuYaqzan.WabaFujur.ShamIbadiyya0000964-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1393IbrahimAbuYaqzan/1393IbrahimAbuYaqzan.WabaFujur/1393IbrahimAbuYaqzan.WabaFujur.ShamIbadiyya0000964-ara1
+Move .\1395IbrahimCabri.AhkamTalaq.ShamIbadiyya0000497-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1395IbrahimCabri/1395IbrahimCabri.AhkamTalaq/1395IbrahimCabri.AhkamTalaq.ShamIbadiyya0000497-ara1
+Move .\1395IbrahimCabri.Ajwiba.ShamIbadiyya0000504-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1395IbrahimCabri/1395IbrahimCabri.Ajwiba/1395IbrahimCabri.Ajwiba.ShamIbadiyya0000504-ara1
+Move .\1400MuhammadBaqirSadr.BankLaribawi.Zaydiyya0000456-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1400MuhammadBaqirSadr/1400MuhammadBaqirSadr.BankLaribawi/1400MuhammadBaqirSadr.BankLaribawi.Zaydiyya0000456-ara1
+Move .\1400MuhammadBaqirSadr.FakFiTarikh.Zaydiyya0000194-ara1 
+    to D:/London/OpenITI/25Y_repos/1400AH/data/1400MuhammadBaqirSadr/1400MuhammadBaqirSadr.FakFiTarikh/1400MuhammadBaqirSadr.FakFiTarikh.Zaydiyya0000194-ara1
+Move .\1407CaliIbnMuhammadCujri.AnzarSadida.Zaydiyya0000083-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1407CaliIbnMuhammadCujri/1407CaliIbnMuhammadCujri.AnzarSadida/1407CaliIbnMuhammadCujri.AnzarSadida.Zaydiyya0000083-ara1
+Move .\1407CaliIbnMuhammadCujri.MiftahSacada.Zaydiyya0000015-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1407CaliIbnMuhammadCujri/1407CaliIbnMuhammadCujri.MiftahSacada/1407CaliIbnMuhammadCujri.MiftahSacada.Zaydiyya0000015-ara1
+Move .\1409RuhAllahKhumayni.ArbacunHadithan.Zaydiyya0000111-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1409RuhAllahKhumayni/1409RuhAllahKhumayni.ArbacunHadithan/1409RuhAllahKhumayni.ArbacunHadithan.Zaydiyya0000111-ara1
+Move .\1409RuhAllahKhumayni.ArbacunHadithan.Zaydiyya0000256-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1409RuhAllahKhumayni/1409RuhAllahKhumayni.ArbacunHadithan/1409RuhAllahKhumayni.ArbacunHadithan.Zaydiyya0000256-ara1
+Move .\1409RuhAllahKhumayni.SharhDucaSahar.Zaydiyya0000189-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1409RuhAllahKhumayni/1409RuhAllahKhumayni.SharhDucaSahar/1409RuhAllahKhumayni.SharhDucaSahar.Zaydiyya0000189-ara1
+Move .\1409RuhAllahKhumayni.TahrirWasila.Zaydiyya0000347-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1409RuhAllahKhumayni/1409RuhAllahKhumayni.TahrirWasila/1409RuhAllahKhumayni.TahrirWasila.Zaydiyya0000347-ara1
+Move .\1412SayyidTabatabai.TafsirQuran.Zaydiyya0000282-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1412SayyidTabatabai/1412SayyidTabatabai.TafsirQuran/1412SayyidTabatabai.TafsirQuran.Zaydiyya0000282-ara1
+Move .\1420CabdAllahBaraduni.Diwan.Zaydiyya0000467-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1420CabdAllahBaraduni/1420CabdAllahBaraduni.Diwan/1420CabdAllahBaraduni.Diwan.Zaydiyya0000467-ara1
+Move .\1421MuhammadHadiAmini.MucjamMatbucatNajafiyya.Zaydiyya0000225-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1421MuhammadHadiAmini/1421MuhammadHadiAmini.MucjamMatbucatNajafiyya/1421MuhammadHadiAmini.MucjamMatbucatNajafiyya.Zaydiyya0000225-ara1
+Move .\1425MuhammadIbnCalawiMaliki.TahqiqAmal.Zaydiyya0000171-ara1 
+    to D:/London/OpenITI/25Y_repos/1425AH/data/1425MuhammadIbnCalawiMaliki/1425MuhammadIbnCalawiMaliki.TahqiqAmal/1425MuhammadIbnCalawiMaliki.TahqiqAmal.Zaydiyya0000171-ara1
+Move .\1428MajdDinMuayyadi.CuyunMukhtar.Zaydiyya0000018-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.CuyunMukhtar/1428MajdDinMuayyadi.CuyunMukhtar.Zaydiyya0000018-ara1
+Move .\1428MajdDinMuayyadi.HajjWaCumra.Zaydiyya0000072-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.HajjWaCumra/1428MajdDinMuayyadi.HajjWaCumra.Zaydiyya0000072-ara1
+Move .\1428MajdDinMuayyadi.JamicaMuhimma.Zaydiyya0000002-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.JamicaMuhimma/1428MajdDinMuayyadi.JamicaMuhimma.Zaydiyya0000002-ara1
+Move .\1428MajdDinMuayyadi.LawamicAnwar.Zaydiyya0000098-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.LawamicAnwar/1428MajdDinMuayyadi.LawamicAnwar.Zaydiyya0000098-ara1
+Move .\1428MajdDinMuayyadi.MajmacFawaid.Zaydiyya0000132-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.MajmacFawaid/1428MajdDinMuayyadi.MajmacFawaid.Zaydiyya0000132-ara1
+Move .\1428MajdDinMuayyadi.Tuhaf.Zaydiyya0000086-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.Tuhaf/1428MajdDinMuayyadi.Tuhaf.Zaydiyya0000086-ara1
+Move .\1428MajdDinMuayyadi.Tuhaf.Zaydiyya0000392-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1428MajdDinMuayyadi/1428MajdDinMuayyadi.Tuhaf/1428MajdDinMuayyadi.Tuhaf.Zaydiyya0000392-ara1
+Move .\1431BadrDinHuthi.GharaSarica.Zaydiyya0000461-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1431BadrDinHuthi/1431BadrDinHuthi.GharaSarica/1431BadrDinHuthi.GharaSarica.Zaydiyya0000461-ara1
+Move .\1431BadrDinHuthi.KashfTaghrir.Zaydiyya0000469-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1431BadrDinHuthi/1431BadrDinHuthi.KashfTaghrir/1431BadrDinHuthi.KashfTaghrir.Zaydiyya0000469-ara1
+Move .\1431BadrDinHuthi.TahrirAfkar.Zaydiyya0000080-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1431BadrDinHuthi/1431BadrDinHuthi.TahrirAfkar/1431BadrDinHuthi.TahrirAfkar.Zaydiyya0000080-ara1
+Move .\1431BadrDinHuthi.ZiyaratQubur.Zaydiyya0000468-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1431BadrDinHuthi/1431BadrDinHuthi.ZiyaratQubur/1431BadrDinHuthi.ZiyaratQubur.Zaydiyya0000468-ara1
+Move .\1431BadrDinHuthi.ZuhriAhadithhuWaSirathu.Zaydiyya0000286-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1431BadrDinHuthi/1431BadrDinHuthi.ZuhriAhadithhuWaSirathu/1431BadrDinHuthi.ZuhriAhadithhuWaSirathu.Zaydiyya0000286-ara1
+Move .\1432HadiCaliIbnMuayyad.DurrManzum.Zaydiyya0000053-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1432HadiCaliIbnMuayyad/1432HadiCaliIbnMuayyad.DurrManzum/1432HadiCaliIbnMuayyad.DurrManzum.Zaydiyya0000053-ara1
+Move .\1435HusaynIbnYahyaHuthi.JawabRaqi.Zaydiyya0000030-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1435HusaynIbnYahyaHuthi/1435HusaynIbnYahyaHuthi.JawabRaqi/1435HusaynIbnYahyaHuthi.JawabRaqi.Zaydiyya0000030-ara1
+Move .\1437IsmacilKibsi.HunaQuran.Zaydiyya0000476-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1437IsmacilKibsi/1437IsmacilKibsi.HunaQuran/1437IsmacilKibsi.HunaQuran.Zaydiyya0000476-ara1
+Move .\1439HamudCabbasMuayyad.NurAsna.Zaydiyya0000054-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1439HamudCabbasMuayyad/1439HamudCabbasMuayyad.NurAsna/1439HamudCabbasMuayyad.NurAsna.Zaydiyya0000054-ara1
+Move .\1450AhmadMuhammadHadi.Tarikh.Zaydiyya0000211-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450AhmadMuhammadHadi/1450AhmadMuhammadHadi.Tarikh/1450AhmadMuhammadHadi.Tarikh.Zaydiyya0000211-ara1
+Move .\1450AhmadWashali.TaharaWaSalat.Zaydiyya0000070-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450AhmadWashali/1450AhmadWashali.TaharaWaSalat/1450AhmadWashali.TaharaWaSalat.Zaydiyya0000070-ara1
+Move .\1450AsgharMuntazarQaim.DawrQabailYamaniyya.Zaydiyya0000238-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450AsgharMuntazarQaim/1450AsgharMuntazarQaim.DawrQabailYamaniyya/1450AsgharMuntazarQaim.DawrQabailYamaniyya.Zaydiyya0000238-ara1
+Move .\1450CabdAllahHamidDin.Zaydiyya.Zaydiyya0000459-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdAllahHamidDin/1450CabdAllahHamidDin.Zaydiyya/1450CabdAllahHamidDin.Zaydiyya.Zaydiyya0000459-ara1
+Move .\1450CabdAllahHusaynDaylami.MacaImamiyya.Zaydiyya0000118-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdAllahHusaynDaylami/1450CabdAllahHusaynDaylami.MacaImamiyya/1450CabdAllahHusaynDaylami.MacaImamiyya.Zaydiyya0000118-ara1
+Move .\1450CabdAllahHusaynDaylami.SayfMaslul.Zaydiyya0000460-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdAllahHusaynDaylami/1450CabdAllahHusaynDaylami.SayfMaslul/1450CabdAllahHusaynDaylami.SayfMaslul.Zaydiyya0000460-ara1
+Move .\1450CabdAllahIbnHamudCizzi.RuyatAllah.Zaydiyya0000270-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdAllahIbnHamudCizzi/1450CabdAllahIbnHamudCizzi.RuyatAllah/1450CabdAllahIbnHamudCizzi.RuyatAllah.Zaydiyya0000270-ara1
+Move .\1450CabdCazizMaqalih.Diwan.Zaydiyya0000466-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdCazizMaqalih/1450CabdCazizMaqalih.Diwan/1450CabdCazizMaqalih.Diwan.Zaydiyya0000466-ara1
+Move .\1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamHadi.Zaydiyya0000350-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdKarimWazzaf/1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamHadi/1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamHadi.Zaydiyya0000350-ara1
+Move .\1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamQasim.Zaydiyya0000151-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdKarimWazzaf/1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamQasim/1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamQasim.Zaydiyya0000151-ara1
+Move .\1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamZayd.Zaydiyya0000395-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdKarimWazzaf/1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamZayd/1450CabdKarimWazzaf.QawlAwwalWaThaniLiImamZayd.Zaydiyya0000395-ara1
+Move .\1450CabdMajidCabdRahmanHuthi.MutashabihQuran.Zaydiyya0000359-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdMajidCabdRahmanHuthi/1450CabdMajidCabdRahmanHuthi.MutashabihQuran/1450CabdMajidCabdRahmanHuthi.MutashabihQuran.Zaydiyya0000359-ara1
+Move .\1450CabdSalamCabbasWajih.MasadirFiMaktabatYaman.Zaydiyya0000097-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdSalamCabbasWajih/1450CabdSalamCabbasWajih.MasadirFiMaktabatYaman/1450CabdSalamCabbasWajih.MasadirFiMaktabatYaman.Zaydiyya0000097-ara1
+Move .\1450CabdSalamCabbasWajih.MucjamRijalIctibar.Zaydiyya0000358-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdSalamCabbasWajih/1450CabdSalamCabbasWajih.MucjamRijalIctibar/1450CabdSalamCabbasWajih.MucjamRijalIctibar.Zaydiyya0000358-ara1
+Move .\1450CabdSalamWajih.AclamMuallifinZaydiyya.Zaydiyya0000209-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CabdSalamWajih/1450CabdSalamWajih.AclamMuallifinZaydiyya/1450CabdSalamWajih.AclamMuallifinZaydiyya.Zaydiyya0000209-ara1
+Move .\1450CaliCabdKarimFadil.ZaydiyyaTaifaWaMadhhab.Zaydiyya0000458-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CaliCabdKarimFadil/1450CaliCabdKarimFadil.ZaydiyyaTaifaWaMadhhab/1450CaliCabdKarimFadil.ZaydiyyaTaifaWaMadhhab.Zaydiyya0000458-ara1
+Move .\1450CaliKuraniCamili.AlfSual.Zaydiyya0000220-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CaliKuraniCamili/1450CaliKuraniCamili.AlfSual/1450CaliKuraniCamili.AlfSual.Zaydiyya0000220-ara1
+Move .\1450CaliKuraniCamili.CasrZuhur.Zaydiyya0000191-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CaliKuraniCamili/1450CaliKuraniCamili.CasrZuhur/1450CaliKuraniCamili.CasrZuhur.Zaydiyya0000191-ara1
+Move .\1450CaliSacidSayf.AdrihaFiYaman.Zaydiyya0000386-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450CaliSacidSayf/1450CaliSacidSayf.AdrihaFiYaman/1450CaliSacidSayf.AdrihaFiYaman.Zaydiyya0000386-ara1
+Move .\1450FatimaAhsanMahdi.IlaykiUkhtiMumina.Zaydiyya0000463-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450FatimaAhsanMahdi/1450FatimaAhsanMahdi.IlaykiUkhtiMumina/1450FatimaAhsanMahdi.IlaykiUkhtiMumina.Zaydiyya0000463-ara1
+Move .\1450HasanFarhanMaliki.DaciyaWaLaysaNabiyan.Zaydiyya0000397-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanFarhanMaliki/1450HasanFarhanMaliki.DaciyaWaLaysaNabiyan/1450HasanFarhanMaliki.DaciyaWaLaysaNabiyan.Zaydiyya0000397-ara1
+Move .\1450HasanFarhanMaliki.FiCabdAllahIbnSaba.Zaydiyya0000105-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanFarhanMaliki/1450HasanFarhanMaliki.FiCabdAllahIbnSaba/1450HasanFarhanMaliki.FiCabdAllahIbnSaba.Zaydiyya0000105-ara1
+Move .\1450HasanFarhanMaliki.FiSuhbaWaSahaba.Zaydiyya0000103-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanFarhanMaliki/1450HasanFarhanMaliki.FiSuhbaWaSahaba/1450HasanFarhanMaliki.FiSuhbaWaSahaba.Zaydiyya0000103-ara1
+Move .\1450HasanFarhanMaliki.NahwInqadhTarikhIslami.Zaydiyya0000110-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanFarhanMaliki/1450HasanFarhanMaliki.NahwInqadhTarikhIslami/1450HasanFarhanMaliki.NahwInqadhTarikhIslami.Zaydiyya0000110-ara1
+Move .\1450HasanFarhanMaliki.QiraaFiKutubCaqaid.Zaydiyya0000109-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanFarhanMaliki/1450HasanFarhanMaliki.QiraaFiKutubCaqaid/1450HasanFarhanMaliki.QiraaFiKutubCaqaid.Zaydiyya0000109-ara1
+Move .\1450HasanFarhanMaliki.SuhbaWaSahaba.Zaydiyya0000107-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanFarhanMaliki/1450HasanFarhanMaliki.SuhbaWaSahaba/1450HasanFarhanMaliki.SuhbaWaSahaba.Zaydiyya0000107-ara1
+Move .\1450HasanIbnFarhanMaliki.MacaSulaymanCalwan.Zaydiyya0000403-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HasanIbnFarhanMaliki/1450HasanIbnFarhanMaliki.MacaSulaymanCalwan/1450HasanIbnFarhanMaliki.MacaSulaymanCalwan.Zaydiyya0000403-ara1
+Move .\1450HashimiYamani.Maqalat.Zaydiyya0000475-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450HashimiYamani/1450HashimiYamani.Maqalat/1450HashimiYamani.Maqalat.Zaydiyya0000475-ara1
+Move .\1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000367-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450KazimZaydi/1450KazimZaydi.MajmucRasailKazim/1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000367-ara1
+Move .\1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000494-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450KazimZaydi/1450KazimZaydi.MajmucRasailKazim/1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000494-ara1
+Move .\1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000516-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450KazimZaydi/1450KazimZaydi.MajmucRasailKazim/1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000516-ara1
+Move .\1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000589-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450KazimZaydi/1450KazimZaydi.MajmucRasailKazim/1450KazimZaydi.MajmucRasailKazim.Zaydiyya0000589-ara1
+Move .\1450MajalisAlMuhammad.MaqalatIslamiyya.Zaydiyya0000474-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MajalisAlMuhammad/1450MajalisAlMuhammad.MaqalatIslamiyya/1450MajalisAlMuhammad.MaqalatIslamiyya.Zaydiyya0000474-ara1
+Move .\1450MajidIbnHashimMutawakkil.QuranFiFikrIslami.Zaydiyya0000462-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MajidIbnHashimMutawakkil/1450MajidIbnHashimMutawakkil.QuranFiFikrIslami/1450MajidIbnHashimMutawakkil.QuranFiFikrIslami.Zaydiyya0000462-ara1
+Move .\1450MuallifMajhul.AhadithMukhtara.Zaydiyya0000129-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.AhadithMukhtara/1450MuallifMajhul.AhadithMukhtara.Zaydiyya0000129-ara1
+Move .\1450MuallifMajhul.AhadithMukhtaraFiFaraidWaSiyar.Zaydiyya0000203-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.AhadithMukhtaraFiFaraidWaSiyar/1450MuallifMajhul.AhadithMukhtaraFiFaraidWaSiyar.Zaydiyya0000203-ara1
+Move .\1450MuallifMajhul.AnwarYaqin.Zaydiyya0000288-ara2 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.AnwarYaqin/1450MuallifMajhul.AnwarYaqin.Zaydiyya0000288-ara2
+Move .\1450MuallifMajhul.AnwarYaqin.Zaydiyya0000410Vols-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.AnwarYaqin/1450MuallifMajhul.AnwarYaqin.Zaydiyya0000410Vols-ara1
+Move .\1450MuallifMajhul.BahthFiTahrimMutca.Zaydiyya0000048-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.BahthFiTahrimMutca/1450MuallifMajhul.BahthFiTahrimMutca.Zaydiyya0000048-ara1
+Move .\1450MuallifMajhul.Hasana.Zaydiyya0000216-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.Hasana/1450MuallifMajhul.Hasana.Zaydiyya0000216-ara1
+Move .\1450MuallifMajhul.Huquq.Zaydiyya0000217-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.Huquq/1450MuallifMajhul.Huquq.Zaydiyya0000217-ara1
+Move .\1450MuallifMajhul.ImamZayd.Zaydiyya0000210-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.ImamZayd/1450MuallifMajhul.ImamZayd.Zaydiyya0000210-ara1
+Move .\1450MuallifMajhul.IsmacilWaIshaq.Zaydiyya0000206-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.IsmacilWaIshaq/1450MuallifMajhul.IsmacilWaIshaq.Zaydiyya0000206-ara1
+Move .\1450MuallifMajhul.KhatmMayyit.Zaydiyya0000234-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.KhatmMayyit/1450MuallifMajhul.KhatmMayyit.Zaydiyya0000234-ara1
+Move .\1450MuallifMajhul.KhatmMayyit.Zaydiyya0000235-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.KhatmMayyit/1450MuallifMajhul.KhatmMayyit.Zaydiyya0000235-ara1
+Move .\1450MuallifMajhul.MawsucatRijalZaydiyya.Zaydiyya0000257-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.MawsucatRijalZaydiyya/1450MuallifMajhul.MawsucatRijalZaydiyya.Zaydiyya0000257-ara1
+Move .\1450MuallifMajhul.RawaicJumal.Zaydiyya0000241-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.RawaicJumal/1450MuallifMajhul.RawaicJumal.Zaydiyya0000241-ara1
+Move .\1450MuallifMajhul.Sacda.Zaydiyya0000246-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.Sacda/1450MuallifMajhul.Sacda.Zaydiyya0000246-ara1
+Move .\1450MuallifMajhul.SiratRasulAllah.Zaydiyya0000025-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.SiratRasulAllah/1450MuallifMajhul.SiratRasulAllah.Zaydiyya0000025-ara1
+Move .\1450MuallifMajhul.SunnatiAmWaCitrati.Zaydiyya0000213-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.SunnatiAmWaCitrati/1450MuallifMajhul.SunnatiAmWaCitrati.Zaydiyya0000213-ara1
+Move .\1450MuallifMajhul.TuhfatWalhan.Zaydiyya0000233-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.TuhfatWalhan/1450MuallifMajhul.TuhfatWalhan.Zaydiyya0000233-ara1
+Move .\1450MuallifMajhul.UsulDin.Zaydiyya0000208-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuallifMajhul/1450MuallifMajhul.UsulDin/1450MuallifMajhul.UsulDin.Zaydiyya0000208-ara1
+Move .\1450MuassasatImamZayd.Tacarif.Zaydiyya0000396-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuassasatImamZayd/1450MuassasatImamZayd.Tacarif/1450MuassasatImamZayd.Tacarif.Zaydiyya0000396-ara1
+Move .\1450MufarrijAhmadRabaci.SiratAmirayn.Zaydiyya0000092-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MufarrijAhmadRabaci/1450MufarrijAhmadRabaci.SiratAmirayn/1450MufarrijAhmadRabaci.SiratAmirayn.Zaydiyya0000092-ara1
+Move .\1450MuhammadCabdAllahCawadMuayyidi.MarkabNafis.Zaydiyya0000007-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadCabdAllahCawadMuayyidi/1450MuhammadCabdAllahCawadMuayyidi.MarkabNafis/1450MuhammadCabdAllahCawadMuayyidi.MarkabNafis.Zaydiyya0000007-ara1
+Move .\1450MuhammadCabdAllahCawadMuayyidi.NazaratFiZaydiyya.Zaydiyya0000008-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadCabdAllahCawadMuayyidi/1450MuhammadCabdAllahCawadMuayyidi.NazaratFiZaydiyya/1450MuhammadCabdAllahCawadMuayyidi.NazaratFiZaydiyya.Zaydiyya0000008-ara1
+Move .\1450MuhammadCabdAllahCawadMuayyidi.SahihSunna.Zaydiyya0000032-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadCabdAllahCawadMuayyidi/1450MuhammadCabdAllahCawadMuayyidi.SahihSunna/1450MuhammadCabdAllahCawadMuayyidi.SahihSunna.Zaydiyya0000032-ara1
+Move .\1450MuhammadIbnCabdAllahCizzi.QawlMubin.Zaydiyya0000096-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadIbnCabdAllahCizzi/1450MuhammadIbnCabdAllahCizzi.QawlMubin/1450MuhammadIbnCabdAllahCizzi.QawlMubin.Zaydiyya0000096-ara1
+Move .\1450MuhammadIbnHasanCujri.IclamAclam.Zaydiyya0000149-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadIbnHasanCujri/1450MuhammadIbnHasanCujri.IclamAclam/1450MuhammadIbnHasanCujri.IclamAclam.Zaydiyya0000149-ara1
+Move .\1450MuhammadIbnYahyaHuthi.MukhtarMinSahihAhadith.Zaydiyya0000004-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadIbnYahyaHuthi/1450MuhammadIbnYahyaHuthi.MukhtarMinSahihAhadith/1450MuhammadIbnYahyaHuthi.MukhtarMinSahihAhadith.Zaydiyya0000004-ara1
+Move .\1450MuhammadQasimDaci.Istifa.Zaydiyya0000385-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadQasimDaci/1450MuhammadQasimDaci.Istifa/1450MuhammadQasimDaci.Istifa.Zaydiyya0000385-ara1
+Move .\1450MuhammadSadiqNajmi.AdwaCalaSahihayn.Zaydiyya0000454-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadSadiqNajmi/1450MuhammadSadiqNajmi.AdwaCalaSahihayn/1450MuhammadSadiqNajmi.AdwaCalaSahihayn.Zaydiyya0000454-ara1
+Move .\1450MuhammadTijaniSamawi.ThummaIhtadayt.Zaydiyya0000185-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadTijaniSamawi/1450MuhammadTijaniSamawi.ThummaIhtadayt/1450MuhammadTijaniSamawi.ThummaIhtadayt.Zaydiyya0000185-ara1
+Move .\1450MuhammadYahyaCazzan.HayyCalaKhayrCamal.Zaydiyya0000157-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCazzan/1450MuhammadYahyaCazzan.HayyCalaKhayrCamal/1450MuhammadYahyaCazzan.HayyCalaKhayrCamal.Zaydiyya0000157-ara1
+Move .\1450MuhammadYahyaCazzan.HayyCalaKhayrCamal.Zaydiyya0000465-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCazzan/1450MuhammadYahyaCazzan.HayyCalaKhayrCamal/1450MuhammadYahyaCazzan.HayyCalaKhayrCamal.Zaydiyya0000465-ara1
+Move .\1450MuhammadYahyaCazzan.MuntazicMinMuhitBiImama.Zaydiyya0000227-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCazzan/1450MuhammadYahyaCazzan.MuntazicMinMuhitBiImama/1450MuhammadYahyaCazzan.MuntazicMinMuhitBiImama.Zaydiyya0000227-ara1
+Move .\1450MuhammadYahyaCazzan.TawdihFiDammWaIrsal.Zaydiyya0000464-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCazzan/1450MuhammadYahyaCazzan.TawdihFiDammWaIrsal/1450MuhammadYahyaCazzan.TawdihFiDammWaIrsal.Zaydiyya0000464-ara1
+Move .\1450MuhammadYahyaCizzan.MucjamRuwat.Zaydiyya0000029-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCizzan/1450MuhammadYahyaCizzan.MucjamRuwat/1450MuhammadYahyaCizzan.MucjamRuwat.Zaydiyya0000029-ara1
+Move .\1450MuhammadYahyaCizzan.QurashiyyatKhilafa.Zaydiyya0000106-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCizzan/1450MuhammadYahyaCizzan.QurashiyyatKhilafa/1450MuhammadYahyaCizzan.QurashiyyatKhilafa.Zaydiyya0000106-ara1
+Move .\1450MuhammadYahyaCizzan.SahabaCindaZaydiyya.Zaydiyya0000104-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MuhammadYahyaCizzan/1450MuhammadYahyaCizzan.SahabaCindaZaydiyya/1450MuhammadYahyaCizzan.SahabaCindaZaydiyya.Zaydiyya0000104-ara1
+Move .\1450MujammacFikrIslami.MawsucaMuallafiImamiyya.Zaydiyya0000242-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MujammacFikrIslami/1450MujammacFikrIslami.MawsucaMuallafiImamiyya/1450MujammacFikrIslami.MawsucaMuallafiImamiyya.Zaydiyya0000242-ara1
+Move .\1450MurtadaCaskari.MacalimMadrasatayn.Zaydiyya0000169-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450MurtadaCaskari/1450MurtadaCaskari.MacalimMadrasatayn/1450MurtadaCaskari.MacalimMadrasatayn.Zaydiyya0000169-ara1
+Move .\1450QasimHasanQasimSiraji.TarikhMadinatHuth.Zaydiyya0000610-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450QasimHasanQasimSiraji/1450QasimHasanQasimSiraji.TarikhMadinatHuth/1450QasimHasanQasimSiraji.TarikhMadinatHuth.Zaydiyya0000610-ara1
+Move .\1450QasimIbnAhmadHusayni.MansubatWaMandubat.Zaydiyya0000067-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450QasimIbnAhmadHusayni/1450QasimIbnAhmadHusayni.MansubatWaMandubat/1450QasimIbnAhmadHusayni.MansubatWaMandubat.Zaydiyya0000067-ara1
+Move .\1450SafaCamiri.MutawakkilFiYaman.Zaydiyya0000333-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SafaCamiri/1450SafaCamiri.MutawakkilFiYaman/1450SafaCamiri.MutawakkilFiYaman.Zaydiyya0000333-ara1
+Move .\1450SaibCabdHamid.IbnTaymiyyaHayathu.Zaydiyya0000102-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SaibCabdHamid/1450SaibCabdHamid.IbnTaymiyyaHayathu/1450SaibCabdHamid.IbnTaymiyyaHayathu.Zaydiyya0000102-ara1
+Move .\1450SalahIbnAhmadFulayta.MansikHajj.Zaydiyya0000375-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SalahIbnAhmadFulayta/1450SalahIbnAhmadFulayta.MansikHajj/1450SalahIbnAhmadFulayta.MansikHajj.Zaydiyya0000375-ara1
+Move .\1450SalahIbnAhmadFulayta.MansikZiyara.Zaydiyya0000255-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SalahIbnAhmadFulayta/1450SalahIbnAhmadFulayta.MansikZiyara/1450SalahIbnAhmadFulayta.MansikZiyara.Zaydiyya0000255-ara1
+Move .\1450SayyidSistani.Istiftaat.Zaydiyya0000251-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SayyidSistani/1450SayyidSistani.Istiftaat/1450SayyidSistani.Istiftaat.Zaydiyya0000251-ara1
+Move .\1450SirajDinCidlan.BulughAmalFiAdhan.Zaydiyya0000231-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SirajDinCidlan/1450SirajDinCidlan.BulughAmalFiAdhan/1450SirajDinCidlan.BulughAmalFiAdhan.Zaydiyya0000231-ara1
+Move .\1450SirajDinCidlan.RisalaFiDammWaTamin.Zaydiyya0000240-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450SirajDinCidlan/1450SirajDinCidlan.RisalaFiDammWaTamin/1450SirajDinCidlan.RisalaFiDammWaTamin.Zaydiyya0000240-ara1
+Move .\1450WilferdMadelung.ZaydiImamsOfTabaristan.Zaydiyya0000095-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450WilferdMadelung/1450WilferdMadelung.ZaydiImamsOfTabaristan/1450WilferdMadelung.ZaydiImamsOfTabaristan.Zaydiyya0000095-ara1
+Move .\1450YahyaCabdKarimFadil.ManHumZaydiyya.Zaydiyya0000016-ara1 
+    to D:/London/OpenITI/25Y_repos/1450AH/data/1450YahyaCabdKarimFadil/1450YahyaCabdKarimFadil.ManHumZaydiyya/1450YahyaCabdKarimFadil.ManHumZaydiyya.Zaydiyya0000016-ara1
+Move .\0921JibrailIbnQilaci.MadihaFiJabalLubnan.GVDB20200821-ara1.completed 
+    to D:/London/OpenITI/25Y_repos/0925AH/data/0921JibrailIbnQilaci/0921JibrailIbnQilaci.MadihaFiJabalLubnan/0921JibrailIbnQilaci.MadihaFiJabalLubnan.GVDB20200821-ara1.completed

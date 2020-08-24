@@ -11,6 +11,7 @@ folder = "."
 target_base_pth = r"D:\London\OpenITI\25Y_repos"
 ignore = (".yml", ".md", ".py", ".git", ".gitignore")
 
+changed_repos = set()
 
 for fn in os.listdir(folder):
     if fn.endswith(ignore):
@@ -21,7 +22,29 @@ for fn in os.listdir(folder):
         fp = os.path.join(folder, fn)
         print(fp)
         if os.path.isfile(fp):
-            initialize_new_text(fp, target_base_pth, execute=False)
+            initialize_new_text(fp, target_base_pth, execute=True)
+            y = int(fn[:4])
+            repo = "{0:04d}AH".format(y-(y%25))
+            changed_repos.add(os.path.join(target_base_pth, repo))
+            repo = "{0:04d}AH".format(int(fn[:4]))
+
+
+if changed_repos:
+    print("Changed repos:")
+    for repo in sorted(list(changed_repos)):
+        print(repo)
+    with open("changed_repos.txt", mode="w", encoding="utf-8") as file:
+        file.write("\n".join(sorted(list(changed_repos))))
+
+    # this doesn't work yet...
+    print("Run the following commands in Git bash to push the changes:")
+    cmd = "while read -r line do \
+    (cd $line; \
+    git add .; \
+    git commit -m 'Added files from barzakh'; \
+    git push origin master; \
+    done;) < changed_repos.txt"
+    print(cmd)
  
 
 #initialize_new_texts_in_folder(".", r"D:\London\OpenITI\25Yrepos")
