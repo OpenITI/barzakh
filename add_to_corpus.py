@@ -9,10 +9,13 @@ from openiti.new_books.add.add_books import initialize_new_text
 
 folder = "."
 target_base_pth = r"D:\London\OpenITI\25Y_repos"
-ignore = (".yml", ".md", ".py", ".git", ".gitignore")
+ignore = (".yml", ".md", ".py", ".git", ".gitignore", ".txt")
+
+logfp = "log.md"
 
 changed_repos = set()
 
+#with open(logfp, mode="a", encoding="utf-8") as log_file:
 for fn in os.listdir(folder):
     if fn.endswith(ignore):
         print(fn, "ignored because of its extension")
@@ -27,6 +30,7 @@ for fn in os.listdir(folder):
             repo = "{0:04d}AH".format(y-(y%25))
             changed_repos.add(os.path.join(target_base_pth, repo))
             repo = "{0:04d}AH".format(int(fn[:4]))
+            #log_file.write("Moved" + fp + "\n")
 
 
 if changed_repos:
