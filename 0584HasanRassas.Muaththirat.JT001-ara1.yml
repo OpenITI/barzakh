@@ -6,6 +6,7 @@
 80#VERS#LINKS####: NOT_FOUND
 90#VERS#ANNOTATOR: PV
 90#VERS#COMMENT##: PV extracted this text from the digital edition 
-    in TEI xml provided by Jan Thiele.
+    in TEI xml provided by Jan Thiele. 
+    The xml does not include page numbers.
 90#VERS#DATE#####: 2020-09-22
-90#VERS#ISSUES###: NO_MAJOR_ISSUES
+90#VERS#ISSUES###: PAGINATION
