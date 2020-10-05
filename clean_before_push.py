@@ -99,7 +99,8 @@ remove = [x.split("\t")[0] for x in remove.splitlines()]
 remove = re.compile("[{}]+".format("".join(remove)))
 
 repl_dict = {"…": "...", "ک": "ك", "ی": "ي", "۰": "٠", "۱": "١", "۳": "٣",
-             "۹": "٩", "–": "-", "—": "-", "⁄": "/"}
+             "۹": "٩", "–": "-", "—": "-", "⁄": "/", "ٱ": "ا", "اۤ": "آ",
+             "ۤ": "", }
 
 def clean(text):
     text = deNoise(text)
@@ -108,7 +109,7 @@ def clean(text):
     #text = re.sub("﻿", "", text) # remove zero width no-break space
     all_chars = "".join(set(text))
     filtered_chars = re.sub(allowed_chars, "", all_chars)
-    filtered_chars = re.sub("[0-9a-zA-Z \n\t\[\]]+", "", filtered_chars)
+    filtered_chars = re.sub("[0-9a-zA-Zū'ʿ \n\t\[\]]+", "", filtered_chars)
     not_found = []
     for c in sorted(filtered_chars):
         try:
