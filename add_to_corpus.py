@@ -32,6 +32,7 @@ for fn in os.listdir(folder):
             repo = "{0:04d}AH".format(int(fn[:4]))
             #log_file.write("Moved" + fp + "\n")
 
+print("Done!")
 
 if changed_repos:
     print("Changed repos:")
