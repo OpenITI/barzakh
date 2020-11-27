@@ -87,6 +87,7 @@ $	DOLLAR SIGN
 ”	RIGHT DOUBLE QUOTATION MARK
 ¶	PILCROW SIGN
 ¬	NOT SIGN
+•	BULLET
 """
 allowed_chars = [x.split("\t")[0] for x in allowed_chars.splitlines()]
 allowed_chars = re.compile("[{}]+".format("".join(allowed_chars)))
@@ -117,7 +118,9 @@ def clean(text):
         except:
             not_found.append(c)
         if c not in not_found: 
-            print(re.findall("[^%s]{,10}%s[^%s]{,10}"%(c,c,c), text)[:20])
+            for x in re.findall("[^%s]{,20}%s[^%s]{,20}"%(c,c,c), text)[:10]:
+                print(x)
+                print("-"*30)
             print("({} times in text)".format(len(re.findall(c, text))))
             resp = input("Do you want to replace all? Y/N  ")
             if resp in "Yy":
@@ -154,8 +157,12 @@ def rewrap(text, maxlength=72):
     if r in "Yy":
         return new
 
+start = 629
+start = 1324
 for fn in os.listdir("."):
-    if fn.endswith(("-ara1", ".completed")):
+    #if fn.endswith(("-ara1", ".completed")):
+    d = re.findall("^\d{4}", fn)
+    if d and not fn.endswith("yml") and int(d[0]) >= start:
         print(fn)
         with open(fn, mode="r", encoding="utf-8-sig") as file:
             text = file.read()
