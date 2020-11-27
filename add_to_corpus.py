@@ -9,7 +9,7 @@ from openiti.new_books.add.add_books import initialize_new_text
 
 folder = "."
 target_base_pth = r"D:\London\OpenITI\25Y_repos"
-ignore = (".yml", ".md", ".py", ".git", ".gitignore", ".txt")
+ignore = (".yml", ".md", ".py", ".git", ".gitignore", ".txt", ".docx")
 
 logfp = "log.md"
 
@@ -46,7 +46,7 @@ if changed_repos:
     cmd = "while read -r line do \
     (cd $line; \
     git add .; \
-    git commit -m 'Added files from barzakh'; \
+    git commit -m 'Add files from barzakh'; \
     git push origin master; \
     done;) < changed_repos.txt"
     print(cmd)
