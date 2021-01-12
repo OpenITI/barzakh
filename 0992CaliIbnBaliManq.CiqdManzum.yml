@@ -1,4 +1,4 @@
-00#BOOK#URI######: 0968Tashkuprizadah.CiqdManzum
+00#BOOK#URI######: 0992CaliIbnBaliManq.CiqdManzum
 10#BOOK#GENRES###: src@keyword, src@keyword, src@keyword
 10#BOOK#TITLEA#AR: al-ʿIqd al-manẓūm fī ḏikr afāḍil al-Rūm
 10#BOOK#TITLEB#AR: 
@@ -6,7 +6,7 @@
 30#BOOK#WROTE##AH: YEAR-MON-DA (X+ for unknown)
 40#BOOK#ABRIDGED#: URI of a book from OpenITI, or [Author's Title]
 40#BOOK#COMMENTD#: URI of a book from OpenITI, or [Author's Title]
-40#BOOK#FOLLOWED#: URI of a book from OpenITI, or [Author's Title]
+40#BOOK#FOLLOWED#: 0968Tashkubruizadah.ShaqaiqNucmaniyya
 40#BOOK#PRECEDED#: URI of a book from OpenITI, or [Author's Title]
 80#BOOK#EDITIONS#: permalink, permalink, permalink
 80#BOOK#LINKS####: permalink, permalink, permalink
