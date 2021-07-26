@@ -1,0 +1,14 @@
+00#VERS#CLENGTH##: 
+00#VERS#LENGTH###: 
+00#VERS#URI######: 0684IbnShaddad.TarikhMalikZahir.Kraken210218232411-ara1
+80#VERS#BASED####: http://www.worldcat.org/oclc/993380098
+80#VERS#COLLATED#: http://www.worldcat.org/oclc/993380098
+80#VERS#LINKS####: https://www.noor-book.com/%D9%83%D8%AA%D8%A7%D8%A8-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D8%A7%D9%84%D8%B8%D8%A7%D9%87%D8%B1-pdf
+90#VERS#ANNOTATOR: Gowaart Van Den Bossche
+90#VERS#COMMENT##: OCRed through Kraken:
+    * kraken version: 3.0.0.0b21.dev6
+    * segmentation model: DEFAULT
+    * OCR model: arabPers-WithDiffTypefaces.mlmodel
+ Annotator comments: text annotated and cleaned, but only superficially: footnotes removed, pagination implemented, poetry tagged and mistakes corrected when I saw them, but doubtlessly many typos remain. A common typo was lam-alif for a comma at the end of a line. Some lines failed entirely. I have typed these when I came across them but more may remain. Generally quality seemed to be fairly good though. Only half of the book survives, so I have added two empty headers above the first header, so that the structure is consistent across the digital text(first level for years, second level for events and obituaries respectively, and third header for individual events -- this changes at the end where a sort of appendix is added to the text which follows a different format. Note that this is not editorial, the manuscript contains the same appendix and it was clearly compiled as such by the author). 
+90#VERS#DATE#####: 2021-02-18
+90#VERS#ISSUES###: MANY_TYPOS
