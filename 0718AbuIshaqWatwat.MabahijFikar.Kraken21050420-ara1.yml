@@ -1,6 +1,6 @@
 00#VERS#CLENGTH##: 
 00#VERS#LENGTH###: 
-00#VERS#URI######: 
+00#VERS#URI######: 0718AbuIshaqWatwat.MabahijFikar.Kraken21050420-ara1
 80#VERS#BASED####: 
 80#VERS#COLLATED#: 
 80#VERS#LINKS####: 
@@ -8,4 +8,4 @@
 90#VERS#COMMENT##: OCRed through Kraken; arabPers-WithDiffTypefaces.mlmodel; default segmenter; partial post-correction by SPL; 
   re-keying of poetry by SPL; additional corrections by LMN
 90#VERS#DATE#####: 2021-05-04
-90#VERS#ISSUES###: PAGINATION
+90#VERS#ISSUES###: PAGINATION, UNCORRECTED_OCR

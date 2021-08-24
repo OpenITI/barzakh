@@ -9,4 +9,4 @@
     * segmentation model: DEFAULT
     * OCR model: arabPers-WithDiffTypefaces.mlmodel. Very good quality OCR. Pagination out by +1. Qawaids are usually introduced by a number, although other types of information are too (e.g., book titles),
 90#VERS#DATE#####: 2021-04-05
-90#VERS#ISSUES###: PAGINATION
+90#VERS#ISSUES###: PAGINATION, UNCORRECTED_OCR

@@ -9,4 +9,4 @@
     * segmentation model: DEFAULT
     * OCR model: arabPers-WithDiffTypefaces.mlmodel The page is out -1 on the PDF. Qawaids are generally in seperate sections delineated by an annotated header.
 90#VERS#DATE#####: 2021-03-16
-90#VERS#ISSUES###: PAGINATION
+90#VERS#ISSUES###: PAGINATION, UNCORRECTED_OCR
