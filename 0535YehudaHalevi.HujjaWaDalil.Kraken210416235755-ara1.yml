@@ -1,6 +1,6 @@
 00#VERS#CLENGTH##: 
 00#VERS#LENGTH###: 
-E35YehudaHalevi.HujjaWaDalil.Kraken210416235755-ara1
+00#VERS#URI######: 0535YehudaHalevi.HujjaWaDalil.Kraken210416235755-ara1
 80#VERS#BASED####: 
 80#VERS#COLLATED#: 
 80#VERS#LINKS####: 
@@ -8,5 +8,7 @@ E35YehudaHalevi.HujjaWaDalil.Kraken210416235755-ara1
 90#VERS#COMMENT##: OCRed through Kraken:
     * segmentation model: DEFAULT
     * OCR model: arabPers-WithDiffTypefaces.mlmodel
+    PV added first-level headings, removed footnotes 
+    and checked numbered paragraphs (without access to pdf)
 90#VERS#DATE#####: 2021-04-16
 90#VERS#ISSUES###: 
