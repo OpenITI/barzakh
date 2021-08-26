@@ -9,6 +9,6 @@
     * Kraken version: 3.0.0.0b21.dev6
     * segmentation model: DEFAULT
     * OCR model: 04-01-2021_ArabPersGeneralized.mlmodel
-    Footnotes and editorial sections removed by LMN; some regular mistakes in the OCR raw output have been cleaned up such as isolated hamzas at the beginning and end of lines; structural annotation temporary.
+    Footnotes and editorial sections removed by LMN; some regular mistakes in the OCR raw output have been cleaned up such as isolated hamzas at the beginning and end of lines; structural annotation temporary; major problems with layout analysis in sections with poetry.
 90#VERS#DATE#####: 2021-07-14
 90#VERS#ISSUES###: 
