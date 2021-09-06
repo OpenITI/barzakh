@@ -1,6 +1,6 @@
 00#VERS#CLENGTH##: 
 00#VERS#LENGTH###: 
-00#VERS#URI######: 1300Anonymous.SijillatMustansiriyya.Kraken210223142009-ara1
+00#VERS#URI######: 0550Anonymous.SijillatMustansiriyya.Kraken210223142009-ara1
 80#VERS#BASED####: 
 80#VERS#COLLATED#: 
 80#VERS#LINKS####: 
@@ -10,4 +10,4 @@
     * OCR model: arabPers-WithDiffTypefaces.mlmodel
     * raw-OCR needed review - MAB
 90#VERS#DATE#####: 2021-02-23
-90#VERS#ISSUES###: 
+90#VERS#ISSUES###: UNCORRECTED_OCR
