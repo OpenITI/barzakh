@@ -33,5 +33,10 @@
     PV moved the page numbers to their correct location in the text.
     PV also added structural annotation.
     PV copied the images from the edition and added links to them in the text.
+    The Paris manuscript contains three separate colophons: 
+    one by the translator, Yaḥyā b. al-Biṭrīq;
+    one by a copyist, dated Saturday 6 Jumādā II 1119 (3 September 1707), in Fez;
+    one by another copyist, dated 25 Shaʿbān 1144 (21 February 1732), in Jerusalem.
+    PV marked each colophon with a ### |PARATEXT| tag.
 90#VERS#DATE#####: 2021-11-16
-90#VERS#ISSUES###: NO_MAJOR_ISSUES, IMAGES
+90#VERS#ISSUES###: NO_MAJOR_ISSUES, IMAGES, PARATEXT
