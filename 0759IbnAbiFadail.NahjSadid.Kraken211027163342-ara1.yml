@@ -1,0 +1,13 @@
+00#VERS#CLENGTH##: 523234
+00#VERS#LENGTH###: 120903
+00#VERS#URI######: 0759IbnAbiFadail.NahjSadid.Kraken211027163342-ara1
+80#VERS#BASED####: http://www.worldcat.org/oclc/1043566979
+80#VERS#COLLATED#:
+80#VERS#LINKS####: https://archive.org/details/20200617_20200617_0921
+90#VERS#ANNOTATOR:
+90#VERS#COMMENT##: OCRed through Kraken:
+    * Kraken version: 3.0.0.0b21.dev6
+    * segmentation model: DEFAULT
+    * OCR model: 04-01-2021_ArabPersGeneralized.mlmodel
+90#VERS#DATE#####: 2021-10-27
+90#VERS#ISSUES###: UNCORRECTED_OCR
