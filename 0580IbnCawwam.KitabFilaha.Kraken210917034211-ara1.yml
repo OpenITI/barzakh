@@ -1,0 +1,16 @@
+00#VERS#CLENGTH##: 618101
+00#VERS#LENGTH###: 181251
+00#VERS#URI######: 0580IbnCawwam.KitabFilaha.Kraken210917034211-ara1
+80#VERS#BASED####: http://www.worldcat.org/oclc/311067792,
+    http://www.worldcat.org/oclc/311067801
+80#VERS#COLLATED#:
+80#VERS#LINKS####: https://download.digitale-
+    sammlungen.de/pdf/16317884968888bsb10210856.pdf, https://download.digitale-
+    sammlungen.de/pdf/16317886328888bsb10210857.pdf
+90#VERS#ANNOTATOR:
+90#VERS#COMMENT##: OCRed through Kraken:
+    * Kraken version: 3.0.0.0b21.dev6
+    * segmentation model: DEFAULT
+    * OCR model: 04-01-2021_ArabPersGeneralized.mlmodel
+90#VERS#DATE#####: 2021-09-17
+90#VERS#ISSUES###: UNCORRECTED_OCR
