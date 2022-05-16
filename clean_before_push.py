@@ -52,6 +52,27 @@ allowed_chars = """\
 ٧	ARABIC-INDIC DIGIT SEVEN
 ٨	ARABIC-INDIC DIGIT EIGHT
 ٩	ARABIC-INDIC DIGIT NINE
+ٹ	ARABIC LETTER TTEH
+پ	ARABIC LETTER PEH
+چ	ARABIC LETTER TCHEH
+ڈ	ARABIC LETTER DDAL
+ڑ	ARABIC LETTER RREH
+ژ	ARABIC LETTER JEH
+ک	ARABIC LETTER KEHEH
+ݣ	ARABIC LETTER KEHEH WITH THREE DOTS ABOVE
+ڭ	ARABIC LETTER NG
+گ	ARABIC LETTER GAF
+ں	ARABIC LETTER NOON GHUNNA
+ۀ	ARABIC LETTER HEH WITH YEH ABOVE
+ہ	ARABIC LETTER HEH GOAL
+ۂ	ARABIC LETTER HEH GOAL WITH HAMZA ABOVE
+ی	ARABIC LETTER FARSI YEH
+ے	ARABIC LETTER YEH BARREE
+ۓ	ARABIC LETTER YEH BARREE WITH HAMZA ABOVE
+ھ	ARABIC LETTER HEH DOACHASHMEE
+ە	ARABIC LETTER AE
+‌	ZERO WIDTH NON-JOINER
+ٔ	ARABIC HAMZA ABOVE (needed for the Farsi izafeh)
 #	NUMBER SIGN
 %	PERCENT SIGN
 (	LEFT PARENTHESIS
@@ -76,6 +97,7 @@ allowed_chars = """\
 $	DOLLAR SIGN
 *	ASTERISK
 -	HYPHEN-MINUS
+_	LOW LINE (i.e., underscore)
 «	LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
 »	RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
 ؛	ARABIC SEMICOLON
@@ -86,23 +108,244 @@ $	DOLLAR SIGN
 ?	QUESTION MARK
 “	LEFT DOUBLE QUOTATION MARK
 ”	RIGHT DOUBLE QUOTATION MARK
+’	RIGHT SINGLE QUOTATION MARK
 ¶	PILCROW SIGN
 ¬	NOT SIGN
 •	BULLET
+<	LESS-THAN SIGN
+>	GREATER-THAN SIGN
+{	LEFT CURLY BRACKET
+}	RIGHT CURLY BRACKET
++	PLUS SIGN
+;	SEMICOLON
+@	COMMERCIAL AT
+ְ	HEBREW POINT SHEVA
+ֳ	HEBREW POINT HATAF QAMATS
+ִ	HEBREW POINT HIRIQ
+ֵ	HEBREW POINT TSERE
+ֶ	HEBREW POINT SEGOL
+ַ	HEBREW POINT PATAH
+ָ	HEBREW POINT QAMATS
+ֹ	HEBREW POINT HOLAM
+ּ	HEBREW POINT DAGESH OR MAPIQ
+א	HEBREW LETTER ALEF
+ב	HEBREW LETTER BET
+ג	HEBREW LETTER GIMEL
+ד	HEBREW LETTER DALET
+ה	HEBREW LETTER HE
+ו	HEBREW LETTER VAV
+ז	HEBREW LETTER ZAYIN
+ח	HEBREW LETTER HET
+ט	HEBREW LETTER TET
+י	HEBREW LETTER YOD
+ך	HEBREW LETTER FINAL KAF
+כ	HEBREW LETTER KAF
+ל	HEBREW LETTER LAMED
+ם	HEBREW LETTER FINAL MEM
+מ	HEBREW LETTER MEM
+ן	HEBREW LETTER FINAL NUN
+נ	HEBREW LETTER NUN
+ס	HEBREW LETTER SAMEKH
+ע	HEBREW LETTER AYIN
+ף	HEBREW LETTER FINAL PE
+פ	HEBREW LETTER PE
+ץ	HEBREW LETTER FINAL TSADI
+צ	HEBREW LETTER TSADI
+ק	HEBREW LETTER QOF
+ר	HEBREW LETTER RESH
+ש	HEBREW LETTER SHIN
+ת	HEBREW LETTER TAV
+І	CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+А	CYRILLIC CAPITAL LETTER A
+Б	CYRILLIC CAPITAL LETTER BE
+В	CYRILLIC CAPITAL LETTER VE
+Г	CYRILLIC CAPITAL LETTER GHE
+Д	CYRILLIC CAPITAL LETTER DE
+Е	CYRILLIC CAPITAL LETTER IE
+Ж	CYRILLIC CAPITAL LETTER ZHE
+З	CYRILLIC CAPITAL LETTER ZE
+И	CYRILLIC CAPITAL LETTER I
+Й	CYRILLIC CAPITAL LETTER SHORT I
+К	CYRILLIC CAPITAL LETTER KA
+Л	CYRILLIC CAPITAL LETTER EL
+М	CYRILLIC CAPITAL LETTER EM
+Н	CYRILLIC CAPITAL LETTER EN
+О	CYRILLIC CAPITAL LETTER O
+П	CYRILLIC CAPITAL LETTER PE
+Р	CYRILLIC CAPITAL LETTER ER
+С	CYRILLIC CAPITAL LETTER ES
+Т	CYRILLIC CAPITAL LETTER TE
+У	CYRILLIC CAPITAL LETTER U
+Ф	CYRILLIC CAPITAL LETTER EF
+Х	CYRILLIC CAPITAL LETTER HA
+Ц	CYRILLIC CAPITAL LETTER TSE
+Ч	CYRILLIC CAPITAL LETTER CHE
+Ш	CYRILLIC CAPITAL LETTER SHA
+Щ	CYRILLIC CAPITAL LETTER SHCHA
+Ъ	CYRILLIC CAPITAL LETTER HARD SIGN
+Ы	CYRILLIC CAPITAL LETTER YERU
+Ь	CYRILLIC CAPITAL LETTER SOFT SIGN
+Э	CYRILLIC CAPITAL LETTER E
+Ю	CYRILLIC CAPITAL LETTER YU
+Я	CYRILLIC CAPITAL LETTER YA
+а	CYRILLIC SMALL LETTER A
+б	CYRILLIC SMALL LETTER BE
+в	CYRILLIC SMALL LETTER VE
+г	CYRILLIC SMALL LETTER GHE
+д	CYRILLIC SMALL LETTER DE
+е	CYRILLIC SMALL LETTER IE
+ж	CYRILLIC SMALL LETTER ZHE
+з	CYRILLIC SMALL LETTER ZE
+и	CYRILLIC SMALL LETTER I
+й	CYRILLIC SMALL LETTER SHORT I
+к	CYRILLIC SMALL LETTER KA
+л	CYRILLIC SMALL LETTER EL
+м	CYRILLIC SMALL LETTER EM
+н	CYRILLIC SMALL LETTER EN
+о	CYRILLIC SMALL LETTER O
+п	CYRILLIC SMALL LETTER PE
+р	CYRILLIC SMALL LETTER ER
+с	CYRILLIC SMALL LETTER ES
+т	CYRILLIC SMALL LETTER TE
+у	CYRILLIC SMALL LETTER U
+ф	CYRILLIC SMALL LETTER EF
+х	CYRILLIC SMALL LETTER HA
+ц	CYRILLIC SMALL LETTER TSE
+ч	CYRILLIC SMALL LETTER CHE
+ш	CYRILLIC SMALL LETTER SHA
+щ	CYRILLIC SMALL LETTER SHCHA
+ъ	CYRILLIC SMALL LETTER HARD SIGN
+ы	CYRILLIC SMALL LETTER YERU
+ь	CYRILLIC SMALL LETTER SOFT SIGN
+э	CYRILLIC SMALL LETTER E
+ю	CYRILLIC SMALL LETTER YU
+я	CYRILLIC SMALL LETTER YA
+і	CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+Ѣ	CYRILLIC CAPITAL LETTER YAT
+ѣ	CYRILLIC SMALL LETTER YAT
+Ѳ	CYRILLIC CAPITAL LETTER FITA
 """
 allowed_chars = [x.split("\t")[0] for x in allowed_chars.splitlines()]
-allowed_chars = re.compile("[{}]+".format("".join(allowed_chars)))
+allowed_chars = [c for c in allowed_chars if c not in ("-", ".")]
 
-remove = """\
+transcription_chars = "0-9a-zA-ZāĀēĒṭṬṯṮūŪīĪİıōŌṣṢšŠḍḌḏḎǧǦġĠḫḪḳḲẓẒžŽčČçÇñÑãÃáÁàÀäÄéÉèÈêÊëËïÏîÎôÔóÓòÒōÕöÖüÜûÛúÚùÙʿʾ' "
+escaped_chars = r"\"\n\t\[\]\.\-\\"
+allowed_chars_regex = re.compile(r"[{}{}{}]+".format("".join(allowed_chars), transcription_chars, escaped_chars))
+unwanted_chars_regex = re.compile(r"[^{}{}{}]+".format("".join(allowed_chars), transcription_chars, escaped_chars))
+
+HAMZA_ABOVE = "ٔ"
+HAMZA_BELOW = "ٕ"
+MADDAH_ABOVE = "ٓ"
+SMALL_MADDAH = "ۤ"
+zw = """\
 ‌	ZERO WIDTH NON-JOINER
 ‍	ZERO WIDTH JOINER
 """
-remove = [x.split("\t")[0] for x in remove.splitlines()]
-remove = re.compile("[{}]+".format("".join(remove)))
+ZWNJ = [x.split("\t")[0] for x in zw.splitlines()][0]
+ZWJ  = [x.split("\t")[0] for x in zw.splitlines()][1]
 
-repl_dict = {"…": "...", "ک": "ك", "ی": "ي", "۰": "٠", "۱": "١", "۳": "٣",
-             "۹": "٩", "–": "-", "—": "-", "⁄": "/", "ٱ": "ا", "اۤ": "آ",
-             "ۤ": "", "أٓ": "آ"}
+
+##repl_dict = {"…": "...",
+##             "٭": "*",   # ARABIC FIVE POINTED STAR
+##             "ک": "ك",   # Persian glyphs for Arabic letters
+##             "ی": "ي",
+##             "۰": "٠",   # EXTENDED ARABIC-INDIC DIGITs
+##             "۱": "١",
+##             "۲": "٢", 
+##             "۳": "٣",
+##             "۴": "٤",
+##             "۵": "٥",
+##             "۶": "٦",
+##             "۷": "٧",
+##             "۸": "٨",
+##             "۹": "٩",
+##             "–": "-",   # EN DASH
+##             "—": "-",   # EM DASH
+##             "⁄": "/",   # FRACTION SLASH
+##             "ٱ": "ا",   # U+0671 : ARABIC LETTER ALEF WASLA
+##             "اۤ": "آ",   # ARABIC LETTER ALEF + ARABIC SMALL HIGH MADDA
+##             "ۤ": "",     # ARABIC SMALL HIGH MADDA
+##             "أٓ": "آ"}
+
+repl_tup = [
+    ("…", "..."),
+    ("٭", "*"),   # ARABIC FIVE POINTED STAR
+    ("∗", "*"),   # ASTERISK OPERATOR
+    ("❊", "*"),   # EIGHT TEARDROP-SPOKED PROPELLER ASTERISK
+    ("۰", "٠"),   # EXTENDED ARABIC-INDIC DIGITs
+    ("۱", "١"),
+    ("۲", "٢"), 
+    ("۳", "٣"),
+    ("۴", "٤"),
+    ("۵", "٥"),
+    ("۶", "٦"),
+    ("۷", "٧"),
+    ("۸", "٨"),
+    ("۹", "٩"),
+    ("–", "-"),   # EN DASH
+    ("—", "-"),   # EM DASH
+    ("۔", "."),   # ARABIC FULL STOP
+    ("⁄", "/"),   # FRACTION SLASH
+    ("ھ", "ه"),   # ARABIC LETTER HEH DOACHASHMEE
+    ("ٱ", "ا"),   # U+0671 , ARABIC LETTER ALEF WASLA
+    ("ا"+MADDAH_ABOVE, "آ"),
+    (MADDAH_ABOVE+"ا", "آ"),
+    ("ا"+SMALL_MADDAH, "آ"),
+    (SMALL_MADDAH+"ا", "آ"),
+    ("ا"+HAMZA_BELOW, "إ"),
+    (HAMZA_BELOW+"ا", "إ"),
+    ("ا"+HAMZA_ABOVE, "أ"),
+    (HAMZA_ABOVE+"ا", "أ"),
+    ("و"+HAMZA_ABOVE, "ؤ"),
+    (HAMZA_ABOVE+"و", "ؤ"),
+    ("ى"+HAMZA_ABOVE, "ئ"),
+    (HAMZA_ABOVE+"ى", "ئ"),
+    ("أ"+MADDAH_ABOVE, "آ"),
+    (MADDAH_ABOVE+"أ", "آ"),
+    ("أ"+SMALL_MADDAH, "آ"),
+    (SMALL_MADDAH+"أ", "آ"),
+    ("﻿", ""),   # ZERO WIDTH NO-BREAK SPACE [ZWNBSP] (alias BYTE ORDER MARK [BOM]) 
+    ]
+
+# replace some glyphs for specific languages
+# (based partly on https://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=arabicletterusagenotes&filename=ArabicLetterUsageNotes.pdf)
+
+repl_tup_ara = [    # Persian/Urdu glyphs for Arabic letters, normalized in Arabic texts:
+    ("ک", "ك"),   
+    ("ی", "ي"),
+    ("ے", "ي"),
+    ("ۓ", "ئ"),
+    ("ڭ", "ك"),
+    ("ں", "ن"),
+    ("ھ", "ه"),     # ARABIC LETTER HEH DOACHASHMEE
+    ("ہ", "ه"),     # ARABIC LETTER HEH GOAL
+    ("ۂ", "ة"),     # ARABIC LETTER HEH GOAL WITH HAMZA ABOVE
+    ("ۀ", "ة"),     # ARABIC LETTER HEH WITH YEH ABOVE
+    (ZWNJ, ""),     # ZERO WIDTH NON JOINER
+    (HAMZA_ABOVE, ""),
+    ]
+
+repl_tup_per = [    # Arabic glyphs not used for Persian:
+    ("ك", "ک"),   
+    ("ي", "ی"),
+    ("ے", "ی"),
+    ("ى", "ی"),     # Alif maksura
+    ("ۓ", "ئ"),
+    ("ڭ", "گ"),
+    ("ں", "ن"),
+    ("ھ", "ه"),     # ARABIC LETTER HEH DOACHASHMEE
+    ("ہ", "ه"),     # ARABIC LETTER HEH GOAL
+    ("﻿", ZWNJ),     # ZERO WIDTH NO-BREAK SPACE [ZWNBSP] (alias BYTE ORDER MARK [BOM])
+    ("ۂ"+ZWNJ+"?", "ه"+HAMZA_ABOVE+ZWNJ), # ARABIC LETTER HEH GOAL WITH HAMZA ABOVE
+    ("ۀ"+ZWNJ+"?", "ه"+HAMZA_ABOVE+ZWNJ), # ARABIC LETTER HEH WITH YEH ABOVE
+    ]
+
+repl_tup_urd = [
+    ("ك", "ک"),
+    ("ي", "ی"),
+    ("ي", "ی"),
+    ]
+
 
 def add_paragraph_marks(text, keep_line_endings=True, maxlength=72):
     """Add paragraph marks (hashtags and tildas) to one file.
@@ -157,7 +400,38 @@ def wrap(text, max_length=72):
 
     return "".join(wrapped)
 
-def clean(text, fn):
+
+def get_all_non_allowed_chars_in_file(fp, print_output=False):
+    with open(fp, mode="r", encoding="utf-8") as file:
+        text = file.read()
+    text = normalize_composites(denoise(text))
+    all_chars = "".join(set(text))
+    filtered_chars = re.sub(allowed_chars_regex, "", all_chars)
+    return filtered_chars
+
+def get_all_non_allowed_chars_in_folder(folder):
+    all_chars = set()
+    for fn in os.listdir(folder):
+        fp = os.path.join(folder, fn)
+        if os.path.isfile(fp) and not fn.endswith((".py", ".yml", ".docx", ".md")):
+            print(fn)
+            all_chars = all_chars.union(set(get_all_non_allowed_chars_in_file(fp)))
+            print(len(all_chars))
+    # print the non-allowed characters in the folder:
+    all_chars = "".join(all_chars)
+    not_found = []
+    for c in sorted(all_chars):
+        try:
+            print(c, "\t", unicodedata.name(c))
+        except:
+            not_found.append(c)
+    if not_found:
+        print("NOT FOUND:")
+        for c in not_found:
+            print(c)
+
+
+def clean(text, fn, auto=False):
     # check presence of metadata header:
     if not text.strip().startswith("######OpenITI#"):
         if not "#META#Header#End#" in text:
@@ -181,36 +455,50 @@ def clean(text, fn):
     # clean text from unwanted characters:
     text = deNoise(text)
     text = normalize_composites(text)
-    text = re.sub(remove, "", text)
-    text = re.sub("أٓ", "آ", text)
+    #text = re.sub(remove, "", text)
+    #text = re.sub("أٓ", "آ", text)
 
-    all_chars = "".join(set(text))
-    filtered_chars = re.sub(allowed_chars, "", all_chars)
-    filtered_chars = re.sub("[0-9a-zA-Zū'ʿ \n\t\[\]]+", "", filtered_chars)
-    not_found = []
-    for c in sorted(filtered_chars):
-        try:
-            print(c, "\t", unicodedata.name(c))
-        except:
-            not_found.append(c)
-        if c not in not_found: 
-            for x in re.findall("[^%s]{,20}%s[^%s]{,20}"%(c,c,c), text)[:10]:
-                print(x)
-                print("-"*30)
-            print("({} times in text)".format(len(re.findall(c, text))))
-            resp = input("Do you want to replace all? Y/N  ")
-            if resp in "Yy":
-                if c in repl_dict:
-                    text = re.sub(c, repl_dict[c], text)
-                else:
-                    print("What character do you want to replace it by? ")
-                    r = input("(None if you don't want to replace)  ")
-                    if r != "None":
-                        text = re.sub(c, r, text)
-                print("replaced", unicodedata.name(c))
-    if not_found:
-        print("not found:", not_found)
-    #return text
+    if auto:  # automatically remove all unwanted characters
+        for pattern, repl in repl_tup:
+            text = re.sub(pattern, repl, text)
+        if re.findall("-(?:[a-z]{3})*ara", fn):
+            for pattern, repl in repl_tup_ara:
+                text = re.sub(pattern, repl, text)
+        if re.findall("-(?:[a-z]{3})*per", fn):
+            for pattern, repl in repl_tup_per:
+                text = re.sub(pattern, repl, text)
+        if re.findall("-(?:[a-z]{3})*urd", fn):
+            for pattern, repl in repl_tup_urd:
+                text = re.sub(pattern, repl, text)
+        text = re.sub(unwanted_chars_regex, "", text)
+    else:    # manually decide which characters to remove/replace
+        all_chars = "".join(set(text))
+        filtered_chars = re.sub(allowed_chars_regex, "", all_chars)
+        #filtered_chars = re.sub("[0-9a-zA-ZāĀēĒṭṬṯṮūŪīĪİıōŌṣṢšŠḍḌḏḎǧǦġĠḫḪḳḲẓẒčČçÇñÑãÃáÁàÀäÄéÉèÈêÊëËïÏîÎôÔóÓòÒōÕöÖüÜûÛúÚùÙʿʾ' \"\n\t\[\]]+", "", filtered_chars)
+        not_found = []
+        for c in sorted(filtered_chars):
+            try:
+                print(c, "\t", unicodedata.name(c))
+            except:
+                not_found.append(c)
+            if c not in not_found: 
+                for x in re.findall("[^%s]{,20}%s[^%s]{,20}"%(c,c,c), text)[:10]:
+                    print(x)
+                    print("-"*30)
+                print("({} times in text)".format(len(re.findall(c, text))))
+                resp = input("Do you want to replace all? Y/N  ")
+                if resp in "Yy":
+                    if c in repl_dict:
+                        text = re.sub(c, repl_dict[c], text)
+                    else:
+                        print("What character do you want to replace it by? ")
+                        r = input("(None if you don't want to replace)  ")
+                        if r != "None":
+                            text = re.sub(c, r, text)
+                    print("replaced", unicodedata.name(c))
+        if not_found:
+            print("not found:", not_found)
+        #return text
 
     # add paragraph marks:
     if not "~~" in text:
@@ -253,8 +541,21 @@ def rewrap(text, maxlength=72):
     if r in "Yy":
         return new
 
+
+
+
+AUTO_CLEAN = True
+folder = "."
+
+if AUTO_CLEAN:
+    get_all_non_allowed_chars_in_folder(folder)
+    r = input("All of these characters will be deleted. Agree? Y/N: ")
+    if r.lower() != "y":
+        AUTO_CLEAN = False
+        print("AUTOMATIC REPLACEMENT DECLINED.")
+
 start = 0
-for fn in os.listdir("."):
+for fn in os.listdir(folder):
     #if fn.endswith(("-ara1", ".completed")):
     d = re.findall("^\d{4}", fn)
     if d and not fn.endswith("yml") and int(d[0]) >= start:
@@ -266,7 +567,7 @@ for fn in os.listdir("."):
         print(fn)
         with open(fn, mode="r", encoding="utf-8-sig") as file:
             text = file.read()
-            text = clean(text, fn)
+            text = clean(text, fn, AUTO_CLEAN)
 ##            text = re.sub(" ###", "\n\n###", text)
 ##            text = re.sub("(#META#Header#End#)~~[\r\n]+~~", r"\1\n\n# ", text)
 ##            text = re.sub("(#META#Header#End#)~~[\r\n]+", r"\1\n\n", text)
@@ -299,6 +600,6 @@ for fn in os.listdir("."):
 
 """
 0363QadiNucman.Idah.EShia0027411-ara1
-̈ 	 COMBINING DIAERESIS   
+̈	COMBINING DIAERESIS   
 � 	 REPLACEMENT CHARACTER
 """
