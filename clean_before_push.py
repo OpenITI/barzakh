@@ -431,7 +431,27 @@ def get_all_non_allowed_chars_in_folder(folder):
             print(c)
 
 
+def ask_replace_permission(text, pattern, repl, auto=False):
+    if auto:
+        return re.sub(pattern, repl, text)
+    matches = re.findall(".*"+pattern+".*", text)
+    if matches:
+        for m in matches[:10]:
+            print(m)
+        print("I will replace this pattern:", [pattern])
+        for c in pattern:
+            print("   ", c, "\t", unicodedata.name(c))
+        print("By:")
+        for c in repl:
+            print("   ", c, "\t", unicodedata.name(c))
+        print("(found", len(matches), "times in the text")
+        r = input("Agree? Y/N: ")
+        if r.lower() == "y":
+            text = re.sub(pattern, repl, text)
+    return text
+
 def clean(text, fn, auto=False):
+    print(fn)
     # check presence of metadata header:
     if not text.strip().startswith("######OpenITI#"):
         if not "#META#Header#End#" in text:
@@ -458,20 +478,28 @@ def clean(text, fn, auto=False):
     #text = re.sub(remove, "", text)
     #text = re.sub("أٓ", "آ", text)
 
-    if auto:  # automatically remove all unwanted characters
-        for pattern, repl in repl_tup:
-            text = re.sub(pattern, repl, text)
-        if re.findall("-(?:[a-z]{3})*ara", fn):
-            for pattern, repl in repl_tup_ara:
-                text = re.sub(pattern, repl, text)
-        if re.findall("-(?:[a-z]{3})*per", fn):
-            for pattern, repl in repl_tup_per:
-                text = re.sub(pattern, repl, text)
-        if re.findall("-(?:[a-z]{3})*urd", fn):
-            for pattern, repl in repl_tup_urd:
-                text = re.sub(pattern, repl, text)
+    # replace all patterns for which an auto replacement has been defined:
+    print("Going through general replacement patterns...")
+    for pattern, repl in repl_tup:
+        text = ask_replace_permission(text, pattern, repl, auto)
+    if re.findall("-(?:[a-z]{3})*ara", fn):
+        print("Going through replacement patterns for Arabic text...")
+        for pattern, repl in repl_tup_ara:
+            print([pattern])
+            text = ask_replace_permission(text, pattern, repl, auto)
+    if re.findall("-(?:[a-z]{3})*per", fn):
+        print("Going through replacement patterns for Persian text...")
+        for pattern, repl in repl_tup_per:
+            text = ask_replace_permissionre.sub(text, pattern, repl, auto)
+    if re.findall("-(?:[a-z]{3})*urd", fn):
+        print("Going through replacement patterns for Urdu text...")
+        for pattern, repl in repl_tup_urd:
+            text = ask_replace_permission(text, pattern, repl, auto)
+
+    # replace all remaining unwanted characters:
+    if auto:
         text = re.sub(unwanted_chars_regex, "", text)
-    else:    # manually decide which characters to remove/replace
+    else:       
         all_chars = "".join(set(text))
         filtered_chars = re.sub(allowed_chars_regex, "", all_chars)
         #filtered_chars = re.sub("[0-9a-zA-ZāĀēĒṭṬṯṮūŪīĪİıōŌṣṢšŠḍḌḏḎǧǦġĠḫḪḳḲẓẒčČçÇñÑãÃáÁàÀäÄéÉèÈêÊëËïÏîÎôÔóÓòÒōÕöÖüÜûÛúÚùÙʿʾ' \"\n\t\[\]]+", "", filtered_chars)
@@ -514,7 +542,7 @@ def clean(text, fn, auto=False):
     text = re.sub("(#META#Header#End#)~~[\r\n]+~~", r"\1\n\n# ", text)
     text = re.sub("(#META#Header#End#)~~[\r\n]+", r"\1\n\n", text)
     text = re.sub(r"[\r\n]+~~ *(?:[\r\n]+|\Z)", "\n", text)
-    text = re.sub("(?<=# |~~) *ا +| +ا *(?=[\r\n])", "", text)
+    text = re.sub("(?<=# |~~) *ا +| +ا *(?=[\r\n])", "", text) # fix leading and trailing alif issue (OCR)
     text = re.sub("~~ ", "~~", text)
 
 
@@ -549,7 +577,7 @@ folder = "."
 
 if AUTO_CLEAN:
     get_all_non_allowed_chars_in_folder(folder)
-    r = input("All of these characters will be deleted. Agree? Y/N: ")
+    r = input("All of these characters will be deleted or replaced. Agree? Y/N: ")
     if r.lower() != "y":
         AUTO_CLEAN = False
         print("AUTOMATIC REPLACEMENT DECLINED.")
