@@ -245,43 +245,53 @@ ZWNJ = [x.split("\t")[0] for x in zw.splitlines()][0]
 ZWJ  = [x.split("\t")[0] for x in zw.splitlines()][1]
 
 
-##repl_dict = {"…": "...",
-##             "٭": "*",   # ARABIC FIVE POINTED STAR
-##             "ک": "ك",   # Persian glyphs for Arabic letters
-##             "ی": "ي",
-##             "۰": "٠",   # EXTENDED ARABIC-INDIC DIGITs
-##             "۱": "١",
-##             "۲": "٢", 
-##             "۳": "٣",
-##             "۴": "٤",
-##             "۵": "٥",
-##             "۶": "٦",
-##             "۷": "٧",
-##             "۸": "٨",
-##             "۹": "٩",
-##             "–": "-",   # EN DASH
-##             "—": "-",   # EM DASH
-##             "⁄": "/",   # FRACTION SLASH
-##             "ٱ": "ا",   # U+0671 : ARABIC LETTER ALEF WASLA
-##             "اۤ": "آ",   # ARABIC LETTER ALEF + ARABIC SMALL HIGH MADDA
-##             "ۤ": "",     # ARABIC SMALL HIGH MADDA
-##             "أٓ": "آ"}
+repl_dict = {"…": "...",
+             "٭": "*",   # ARABIC FIVE POINTED STAR
+             "ک": "ك",   # Persian glyphs for Arabic letters
+             "ی": "ي",
+             "۰": "٠",   # EXTENDED ARABIC-INDIC DIGITs
+             "۱": "١",
+             "۲": "٢", 
+             "۳": "٣",
+             "۴": "٤",
+             "۵": "٥",
+             "۶": "٦",
+             "۷": "٧",
+             "۸": "٨",
+             "۹": "٩",
+             "–": "-",   # EN DASH
+             "—": "-",   # EM DASH
+             "⁄": "/",   # FRACTION SLASH
+             "ٱ": "ا",   # U+0671 : ARABIC LETTER ALEF WASLA
+             "اۤ": "آ",   # ARABIC LETTER ALEF + ARABIC SMALL HIGH MADDA
+             "ۤ": "",     # ARABIC SMALL HIGH MADDA
+             "أٓ": "آ"}
 
 repl_tup = [
     ("…", "..."),
     ("٭", "*"),   # ARABIC FIVE POINTED STAR
     ("∗", "*"),   # ASTERISK OPERATOR
     ("❊", "*"),   # EIGHT TEARDROP-SPOKED PROPELLER ASTERISK
-    ("۰", "٠"),   # EXTENDED ARABIC-INDIC DIGITs
-    ("۱", "١"),
-    ("۲", "٢"), 
-    ("۳", "٣"),
-    ("۴", "٤"),
-    ("۵", "٥"),
-    ("۶", "٦"),
-    ("۷", "٧"),
-    ("۸", "٨"),
-    ("۹", "٩"),
+    ("٠", "0"),   # ARABIC-INDIC DIGITs
+    ("١", "1"),
+    ("٢", "2"), 
+    ("٣", "3"),
+    ("٤", "4"),
+    ("٥", "5"),
+    ("٦", "6"),
+    ("٧", "7"),
+    ("٨", "8"),
+    ("٩", "9"),
+    ("۰", "0"),   # EXTENDED ARABIC-INDIC DIGITs
+    ("۱", "1"),
+    ("۲", "2"), 
+    ("۳", "3"),
+    ("۴", "4"),
+    ("۵", "5"),
+    ("۶", "6"),
+    ("۷", "7"),
+    ("۸", "8"),
+    ("۹", "9"),
     ("–", "-"),   # EN DASH
     ("—", "-"),   # EM DASH
     ("۔", "."),   # ARABIC FULL STOP
@@ -289,22 +299,26 @@ repl_tup = [
     ("ھ", "ه"),   # ARABIC LETTER HEH DOACHASHMEE
     ("ٱ", "ا"),   # U+0671 , ARABIC LETTER ALEF WASLA
     ("ا"+MADDAH_ABOVE, "آ"),
-    (MADDAH_ABOVE+"ا", "آ"),
+    #(MADDAH_ABOVE+"ا", "آ"),
     ("ا"+SMALL_MADDAH, "آ"),
     (SMALL_MADDAH+"ا", "آ"),
     ("ا"+HAMZA_BELOW, "إ"),
     (HAMZA_BELOW+"ا", "إ"),
     ("ا"+HAMZA_ABOVE, "أ"),
-    (HAMZA_ABOVE+"ا", "أ"),
+    #(HAMZA_ABOVE+"ا", "أ"),
     ("و"+HAMZA_ABOVE, "ؤ"),
-    (HAMZA_ABOVE+"و", "ؤ"),
+    #(HAMZA_ABOVE+"و", "ؤ"),
     ("ى"+HAMZA_ABOVE, "ئ"),
-    (HAMZA_ABOVE+"ى", "ئ"),
+    #(HAMZA_ABOVE+"ى", "ئ"),
     ("أ"+MADDAH_ABOVE, "آ"),
-    (MADDAH_ABOVE+"أ", "آ"),
+    #(MADDAH_ABOVE+"أ", "آ"),
     ("أ"+SMALL_MADDAH, "آ"),
     (SMALL_MADDAH+"أ", "آ"),
-    ("﻿", ""),   # ZERO WIDTH NO-BREAK SPACE [ZWNBSP] (alias BYTE ORDER MARK [BOM]) 
+    ("﻿", ""),   # ZERO WIDTH NO-BREAK SPACE [ZWNBSP] (alias BYTE ORDER MARK [BOM])
+    (HAMZA_ABOVE, ""),
+    (MADDAH_ABOVE, ""),
+    (SMALL_MADDAH, ""),
+    (HAMZA_BELOW, "")
     ]
 
 # replace some glyphs for specific languages
@@ -319,8 +333,8 @@ repl_tup_ara = [    # Persian/Urdu glyphs for Arabic letters, normalized in Arab
     ("ں", "ن"),
     ("ھ", "ه"),     # ARABIC LETTER HEH DOACHASHMEE
     ("ہ", "ه"),     # ARABIC LETTER HEH GOAL
-    ("ۂ", "ة"),     # ARABIC LETTER HEH GOAL WITH HAMZA ABOVE
-    ("ۀ", "ة"),     # ARABIC LETTER HEH WITH YEH ABOVE
+    ("ۂ", "ه"),     # ARABIC LETTER HEH GOAL WITH HAMZA ABOVE
+    ("ۀ", "ه"),     # ARABIC LETTER HEH WITH YEH ABOVE
     (ZWNJ, ""),     # ZERO WIDTH NON JOINER
     (HAMZA_ABOVE, ""),
     ]
@@ -343,7 +357,7 @@ repl_tup_per = [    # Arabic glyphs not used for Persian:
 repl_tup_urd = [
     ("ك", "ک"),
     ("ي", "ی"),
-    ("ي", "ی"),
+    ("ى", "ی"),     # Alif maksura
     ]
 
 
@@ -490,7 +504,7 @@ def clean(text, fn, auto=False):
     if re.findall("-(?:[a-z]{3})*per", fn):
         print("Going through replacement patterns for Persian text...")
         for pattern, repl in repl_tup_per:
-            text = ask_replace_permissionre.sub(text, pattern, repl, auto)
+            text = ask_replace_permission(text, pattern, repl, auto)
     if re.findall("-(?:[a-z]{3})*urd", fn):
         print("Going through replacement patterns for Urdu text...")
         for pattern, repl in repl_tup_urd:
@@ -503,6 +517,7 @@ def clean(text, fn, auto=False):
         all_chars = "".join(set(text))
         filtered_chars = re.sub(allowed_chars_regex, "", all_chars)
         #filtered_chars = re.sub("[0-9a-zA-ZāĀēĒṭṬṯṮūŪīĪİıōŌṣṢšŠḍḌḏḎǧǦġĠḫḪḳḲẓẒčČçÇñÑãÃáÁàÀäÄéÉèÈêÊëËïÏîÎôÔóÓòÒōÕöÖüÜûÛúÚùÙʿʾ' \"\n\t\[\]]+", "", filtered_chars)
+        print("REMAINING SUSPICIOUS CHARACTERS AFTER FIRST CLEANING:", len(filtered_chars))
         not_found = []
         for c in sorted(filtered_chars):
             try:
@@ -539,11 +554,15 @@ def clean(text, fn, auto=False):
 
     # final cleaning:
     text = re.sub(" ###", "\n\n###", text)
-    text = re.sub("(#META#Header#End#)~~[\r\n]+~~", r"\1\n\n# ", text)
-    text = re.sub("(#META#Header#End#)~~[\r\n]+", r"\1\n\n", text)
+    #text = re.sub(r"(#META#Header#End#)~~[ \r\n]+~~", r"\1\n\n# ", text)
+    #text = re.sub("(#META#Header#End#)~~[ \r\n]+", r"\1\n\n", text)
+    text = re.sub(r"\A~~[ \r\n]+~~", r"\n\n# ", text)
+    text = re.sub(r"\A~~[ \r\n]+", r"\n\n", text)
     text = re.sub(r"[\r\n]+~~ *(?:[\r\n]+|\Z)", "\n", text)
-    text = re.sub("(?<=# |~~) *ا +| +ا *(?=[\r\n])", "", text) # fix leading and trailing alif issue (OCR)
+    text = re.sub("(?<=# |~~) *ا\s+| +ا *(?=[\r\n])", "", text) # fix leading and trailing alif issue (OCR)
     text = re.sub("~~ ", "~~", text)
+    text = re.sub(r"\b([وفبلك]*(?:ا?ل)?)شئ\b", r"\1شيء", text)  # al-shay'
+
 
 
     return header + "#META#Header#End#" + text
@@ -575,13 +594,13 @@ def rewrap(text, maxlength=72):
 AUTO_CLEAN = True
 folder = "."
 
-if AUTO_CLEAN:
-    get_all_non_allowed_chars_in_folder(folder)
-    r = input("All of these characters will be deleted or replaced. Agree? Y/N: ")
-    if r.lower() != "y":
-        AUTO_CLEAN = False
-        print("AUTOMATIC REPLACEMENT DECLINED.")
-
+##if AUTO_CLEAN:
+##    get_all_non_allowed_chars_in_folder(folder)
+##    r = input("All of these characters will be deleted or replaced. Agree? Y/N: ")
+##    if r.lower() != "y":
+##        AUTO_CLEAN = False
+##        print("AUTOMATIC REPLACEMENT DECLINED.")
+##
 start = 0
 for fn in os.listdir(folder):
     #if fn.endswith(("-ara1", ".completed")):
