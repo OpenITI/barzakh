@@ -5,6 +5,8 @@ import re
 import textwrap
 from shutil import copyfile
 
+# Whitelist of characters that are allowed in OpenITI texts:
+
 allowed_chars = """\
 ء	ARABIC LETTER HAMZA
 آ	ARABIC LETTER ALEF WITH MADDA ABOVE
@@ -228,10 +230,18 @@ _	LOW LINE (i.e., underscore)
 allowed_chars = [x.split("\t")[0] for x in allowed_chars.splitlines()]
 allowed_chars = [c for c in allowed_chars if c not in ("-", ".")]
 
+# In addition to the above characters, also include Latin script, whitespace and punctuation:
 transcription_chars = "0-9a-zA-ZāĀēĒṭṬṯṮūŪīĪİıōŌṣṢšŠḍḌḏḎǧǦġĠḫḪḳḲẓẒžŽčČçÇñÑãÃáÁàÀäÄéÉèÈêÊëËïÏîÎôÔóÓòÒōÕöÖüÜûÛúÚùÙʿʾ' "
 escaped_chars = r"\"\n\t\[\]\.\-\\"
+
+# build a regex to match all allowed characters (and all those that are not allowed):
 allowed_chars_regex = re.compile(r"[{}{}{}]+".format("".join(allowed_chars), transcription_chars, escaped_chars))
 unwanted_chars_regex = re.compile(r"[^{}{}{}]+".format("".join(allowed_chars), transcription_chars, escaped_chars))
+
+
+# Create replacement tuples:
+
+# first, create some variables for a couple of special characters: 
 
 HAMZA_ABOVE = "ٔ"
 HAMZA_BELOW = "ٕ"
@@ -244,6 +254,7 @@ zw = """\
 ZWNJ = [x.split("\t")[0] for x in zw.splitlines()][0]
 ZWJ  = [x.split("\t")[0] for x in zw.splitlines()][1]
 
+# then, build replacement tuples for characters that should be replaced in any text:
 
 repl_dict = {"…": "...",
              "٭": "*",   # ARABIC FIVE POINTED STAR
@@ -321,7 +332,7 @@ repl_tup = [
     (HAMZA_BELOW, "")
     ]
 
-# replace some glyphs for specific languages
+# finally, replace some glyphs in a specific language only:
 # (based partly on https://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=arabicletterusagenotes&filename=ArabicLetterUsageNotes.pdf)
 
 repl_tup_ara = [    # Persian/Urdu glyphs for Arabic letters, normalized in Arabic texts:
@@ -384,7 +395,7 @@ def add_paragraph_marks(text, keep_line_endings=True, maxlength=72):
         new_text = ""
         for line in re.split(r"([\r\n]+)", text):
             if not line.startswith(("P", "#", "~~")) \
-               and not re.match(r"([\r\n]+)", line):
+               and not re.match(r"[\r\n]+", line):
                 line = "~~"+line
             new_text += line
     else:
@@ -430,7 +441,7 @@ def get_all_non_allowed_chars_in_folder(folder):
         if os.path.isfile(fp) and not fn.endswith((".py", ".yml", ".docx", ".md")):
             print(fn)
             all_chars = all_chars.union(set(get_all_non_allowed_chars_in_file(fp)))
-            print(len(all_chars))
+            print("Subtotal: number of unallowed characters:", len(all_chars))
     # print the non-allowed characters in the folder:
     all_chars = "".join(all_chars)
     not_found = []
@@ -592,17 +603,20 @@ def rewrap(text, maxlength=72):
 
 
 AUTO_CLEAN = True
-folder = "."
+folder = "temp"
 
-##if AUTO_CLEAN:
-##    get_all_non_allowed_chars_in_folder(folder)
-##    r = input("All of these characters will be deleted or replaced. Agree? Y/N: ")
-##    if r.lower() != "y":
-##        AUTO_CLEAN = False
-##        print("AUTOMATIC REPLACEMENT DECLINED.")
-##
+if AUTO_CLEAN:
+    print("LISTING ALL CHARACTERS THAT ARE NOT ALLOWED IN OPENITI TEXTS")
+    print("AND THAT ARE NOT REMOVED BY THE NORMALIZATION AND DENOISE FUNCTIONS:")
+    get_all_non_allowed_chars_in_folder(folder)
+    r = input("All of these characters will be deleted or replaced. Agree? Y/N: ")
+    if r.lower() != "y":
+        AUTO_CLEAN = False
+        print("AUTOMATIC REPLACEMENT DECLINED.")
+
 start = 0
 for fn in os.listdir(folder):
+    fp = os.path.join(folder, fn)
     #if fn.endswith(("-ara1", ".completed")):
     d = re.findall("^\d{4}", fn)
     if d and not fn.endswith("yml") and int(d[0]) >= start:
@@ -612,7 +626,7 @@ for fn in os.listdir(folder):
             print("changed filename:", fn, ">", fn[:-4])
             fn = fn[:-4]
         print(fn)
-        with open(fn, mode="r", encoding="utf-8-sig") as file:
+        with open(fp, mode="r", encoding="utf-8-sig") as file:
             text = file.read()
             text = clean(text, fn, AUTO_CLEAN)
 ##            text = re.sub(" ###", "\n\n###", text)
@@ -623,7 +637,7 @@ for fn in os.listdir(folder):
 ##            text = re.sub("~~ ", "~~", text)
             #text = rewrap(text, 72)
         if text:
-            with open(fn, mode="w", encoding="utf-8-sig") as file:
+            with open(fp, mode="w", encoding="utf-8-sig") as file:
                 file.write(text.strip())
         else:
             print("rewriting file", fn, "aborted")
@@ -634,12 +648,13 @@ for fn in os.listdir(folder):
         else:
             yml_fn = fn + ".yml"
         print("**YML: "+yml_fn)
-        with open(yml_fn, mode="r", encoding="utf-8") as file:
+        yml_fp = os.path.join(folder, yml_fn)
+        with open(yml_fp, mode="r", encoding="utf-8") as file:
             yml_str = file.read()
         if not yml_fn[:-4] in yml_str:
             if "00#VERS#URI######:" in yml_str:
                 yml_str = re.sub("00#VERS#URI######:.*", "00#VERS#URI######: "+yml_fn[:-4], yml_str)
-                with open(yml_fn, mode="w", encoding="utf-8") as file:
+                with open(yml_fp, mode="w", encoding="utf-8") as file:
                     file.write(yml_str)
             else:
                 print(yml_str)
