@@ -9,5 +9,8 @@
     * Kraken version: 3.0.0.0b21.dev6
     * segmentation model: DEFAULT
     * OCR model: 12-24-2021_ArabPersGeneralized.mlmodel
+    Uncorrected OCR; the pages contain both the main text and the commentary;
+    but the OCR did not pick up on this division, making it impossible to 
+    divide the texts into parts.
 90#VERS#DATE#####: 2022-07-27
-90#VERS#ISSUES###: UNCORRECTED_OCR
+90#VERS#ISSUES###: UNCORRECTED_OCR, MULTIPLE_TEXTS
