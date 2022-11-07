@@ -1,0 +1,17 @@
+00#VERS#CLENGTH##: 
+00#VERS#LENGTH###: 
+00#VERS#URI######: 0355Suli.Awraq.EScript221025-ara1
+80#VERS#BASED####: https://worldcat.org/en/title/45148905
+80#VERS#COLLATED#: https://worldcat.org/en/title/45148905
+80#VERS#LINKS####: none
+90#VERS#ANNOTATOR: 
+90#VERS#COMMENT##: This text file contains parts of the Kitāb al-Awrāq that
+    are absent from the published editions, collected by Hilāl Nājī (d. 1432/2011). 
+    OCRed in eScriptorium with 12-24-2021_ArabPersGeneralized.mlmodel; 
+    PDF provided by user LO; 
+    segmentation and region annotation fixed by LMN; editorial material and indices removed by LMN.
+    OCR-model: arabictestoutputmodel_new_20_0
+    page numbers added mechanically on the premise that the first page of the text, 
+    page 21, was on page 10 of the PDF provided.
+90#VERS#DATE#####: 
+90#VERS#ISSUES###: UNCORRECTED_OCR, PARTIAL_TEXT
