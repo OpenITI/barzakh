@@ -6,7 +6,12 @@
 80#VERS#LINKS####: none
 90#VERS#ANNOTATOR: 
 90#VERS#COMMENT##: This text file contains parts of the Kitāb al-Awrāq that
-    are absent from the published editions, collected by Hilāl Nājī (d. 1432/2011). 
+    are absent from the published editions, edited by Hilāl Nājī (d. 1432/2011)
+    from a manuscript in the library of al-Azhar in Cairo 
+    (number 847 khāṣṣ, 7083 Abāẓa-Adab), covering the years 295-315AH.
+    Nājī writes (introduction p. 12) that he had edited the years 316-318 AH in an article
+    titled "Qiṭʿa nādira min Awrāq al-Ṣūlī" 
+    ("Qiṭʿa lam tunshar min Kitāb al-Awrāq li-al-Ṣūlī", in Dirāsāt Sharqiyya 1990/5-6)) 
     OCRed in eScriptorium with 12-24-2021_ArabPersGeneralized.mlmodel; 
     PDF provided by user LO; 
     segmentation and region annotation fixed by LMN; editorial material and indices removed by LMN.
