@@ -10,4 +10,4 @@
     * segmentation model: DEFAULT
     * OCR model: 10-2022_ArabicTestOutputModel_New_20_0.mlmodel
 90#VERS#DATE#####: 2023-01-06
-90#VERS#ISSUES###: UNCORRECTED_OCR
+90#VERS#ISSUES###: UNCORRECTED_OCR, FOOTNOTES
