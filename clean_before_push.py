@@ -603,7 +603,7 @@ def rewrap(text, maxlength=72):
 
 
 AUTO_CLEAN = True
-folder = "temp"
+folder = "."
 
 if AUTO_CLEAN:
     print("LISTING ALL CHARACTERS THAT ARE NOT ALLOWED IN OPENITI TEXTS")
