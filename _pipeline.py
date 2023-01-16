@@ -909,7 +909,10 @@ def main(folder, out_folder, start_date=0, end_date=10000,
     
     Args:
         folder (str): path to the folder containing the new files
-        out_folder (str): parent folder of the AH folders
+        out_folder (str): parent folder of the AH folders of the Arabic files;
+            assumed is that the parent folder of the AH folders of files in other languages
+            is the same but followed by an underscore and the capitalized language code
+            (e.g., 25Y_repos > 25Y_repos_PER)
         start_date (int): only files written by authors who died after this date will be processed
         end_date (int): only files written by authors who died before this date will be processed
         auto_clean (bool): if True, unallowed characters will be automatically removed
@@ -935,7 +938,7 @@ def main(folder, out_folder, start_date=0, end_date=10000,
     for fn in sorted(os.listdir(folder)):
         # ignore all files that are not text files:
         print(fn)
-        if fn.endswith((".yml", ".md", ".py", ".txt", ".docx", ".jpg", ".jpeg", ".png")):
+        if fn.endswith((".yml", ".md", ".py", ".txt", ".docx", ".jpg", ".jpeg", ".png", ".zip")):
             print("--> aborted: extension")
             continue
         elif fn.startswith("."):
@@ -945,6 +948,9 @@ def main(folder, out_folder, start_date=0, end_date=10000,
             print("--> aborted: not a file")
             continue
         print(fn)
+
+        # get the language code:
+        lang_code = re.findall(".+-([a-z]{3})", fn)[0]
 
         # check filename and extension:
         fn = check_uri(folder, fn)
@@ -1013,8 +1019,15 @@ def main(folder, out_folder, start_date=0, end_date=10000,
         if re.findall(do_not_move_regex, fn):
             print(fn, "cleaned but not moved to folder: on ignore list")
         elif os.path.isfile(fp):
+            # make sure the Arabic files are in a different folder from the Persian, Urdu, etc. files:
+            if lang_code == "ara":
+                lang_out_folder = out_folder
+            else:
+                lang_out_folder = out_folder + "_" + lang_code.upper()
+            print("outfolder:", lang_out_folder)
+
             # DEBUG:
-            # initialize_new_text(fp, out_folder, execute=True)
+            # initialize_new_text(fp, lang_out_folder, execute=True)
 
             # store repo to a list of all repos to which new texts were added:
             y = int(fn[:4])
@@ -1022,6 +1035,9 @@ def main(folder, out_folder, start_date=0, end_date=10000,
                 repo = "{:04d}AH".format((int(y/25) + 1)*25)
             else:
                 repo = "{:04d}AH".format(y)
+            # take into account the different repo name format for Arabic and other languages:
+            if lang_code != "ara":
+                repo = lang_code.upper() + repo
             changed_repos.add(os.path.join(out_folder, repo))
 
     if changed_repos:
