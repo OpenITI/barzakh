@@ -1000,9 +1000,9 @@ def main(folder, out_folder, start_date=0, end_date=10000,
             text = header + "#META#Header#End#" + text
         
         # DEBUG:
-        # # write the changes to the text file:
-        # with open(fp, mode="w", encoding="utf-8") as file:
-        #    file.write(text)
+        # write the changes to the text file:
+        with open(fp, mode="w", encoding="utf-8") as file:
+            file.write(text)
 
  
         # check whether any related yml files are well-formed:
@@ -1027,7 +1027,7 @@ def main(folder, out_folder, start_date=0, end_date=10000,
             print("outfolder:", lang_out_folder)
 
             # DEBUG:
-            # initialize_new_text(fp, lang_out_folder, execute=True)
+            initialize_new_text(fp, lang_out_folder, execute=True)
 
             # store repo to a list of all repos to which new texts were added:
             y = int(fn[:4])
