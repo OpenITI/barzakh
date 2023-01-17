@@ -23,6 +23,7 @@ from openiti.helper.yml import readYML, fix_broken_yml, dicToYML
 from openiti.new_books.add.add_books import initialize_new_text
 
 
+
 author_uri_regex = auth
 book_uri_regex = book
 version_uri_regex = version
@@ -904,7 +905,7 @@ def check_yml_files(fp):
 
 def main(folder, out_folder, start_date=0, end_date=10000, 
          auto_clean=True, silent=False, do_not_move_regex="[Nn]oorlib", 
-         ms_pattern=" *ms[A-Z]?\d+", ms_length=300):
+         ms_pattern=" *ms[A-Z]?\d+", ms_length=300, non_25Y_folder=None):
     """Check and clean new text files and move them into the corpus
     
     Args:
@@ -919,6 +920,9 @@ def main(folder, out_folder, start_date=0, end_date=10000,
         silent (bool): if True, no confirmation by the user will be asked before auto_cleaning
         do_not_move_regex (str): Regular expression describing all files
             that should not be moved to the out_folder (e.g., Noorlib files)
+        non_25Y_folder (str): name of the parent folder for the new files,
+            to be used instead of the 25 years folder (0025AH, 0050AH, ...).
+            Defaults to None (that is: use the auto-generated 25 years folder)
     
     Returns:
         None
@@ -1027,18 +1031,21 @@ def main(folder, out_folder, start_date=0, end_date=10000,
             print("outfolder:", lang_out_folder)
 
             # DEBUG:
-            initialize_new_text(fp, lang_out_folder, execute=True)
+            initialize_new_text(fp, lang_out_folder, execute=True, 
+                                non_25Y_folder=non_25Y_folder)
 
             # store repo to a list of all repos to which new texts were added:
             y = int(fn[:4])
-            if y % 25:
+            if non_25Y_folder:
+                repo = non_25Y_folder
+            elif y % 25:
                 repo = "{:04d}AH".format((int(y/25) + 1)*25)
             else:
                 repo = "{:04d}AH".format(y)
             # take into account the different repo name format for Arabic and other languages:
             if lang_code != "ara":
                 repo = lang_code.upper() + repo
-            changed_repos.add(os.path.join(out_folder, repo))
+            changed_repos.add(os.path.join(lang_out_folder, repo))
 
     if changed_repos:
         print("---------------")
@@ -1062,3 +1069,5 @@ def main(folder, out_folder, start_date=0, end_date=10000,
 
 if __name__ == "__main__":
     main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos")
+    #main(folder=r"D:\AKU\OpenITI\barzakh\9001AH", out_folder=r"D:\AKU\OpenITI\25Y_repos", 
+    #     non_25Y_folder="9001AH")
