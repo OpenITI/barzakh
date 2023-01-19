@@ -1,0 +1,14 @@
+00#VERS#CLENGTH##: 1146555
+00#VERS#LENGTH###: 267024
+00#VERS#URI######: Maqrizi_Schmidt_vol1.Kraken220425174951-ara1
+80#VERS#BASED####:
+80#VERS#COLLATED#:
+80#VERS#LINKS####:
+90#VERS#ANNOTATOR:
+90#VERS#COMMENT##: OCRed through Kraken:
+    * Kraken version: 3.0.0.0b21.dev6
+    * segmentation model: DEFAULT
+    * OCR model: 12-24-2021_ArabPersGeneralized.mlmodel
+    NOTE: LMN: Incomplete; shared by Schmidt from Berlin
+90#VERS#DATE#####: 2022-04-25
+90#VERS#ISSUES###: UNCORRECTED_OCR

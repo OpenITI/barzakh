@@ -11,7 +11,8 @@ from openiti.helper.yml import readYML, dicToYML
 import urllib.request
 
 meta_fp = "meta/Corpus_Metadata_Links.tsv" # Google sheet: https://docs.google.com/spreadsheets/d/1SxMcgHuPCrUca2V0IO2zlQrkRR28T6DwErMCAVoDzTQ/edit#gid=0
-ocr_folder = "D:\London\OCR\ocr_with_kraken\OUTPUT_FILES"
+meta_fp = "meta/Corpus_Metadata_Links - new to be added.tsv"
+ocr_folder = "D:\AKU\OCR\ocr_with_kraken\OUTPUT_FILES"
 dest_folder = "."
 
 def add_to_yml(yml_fp, based, link, notes, issues):
