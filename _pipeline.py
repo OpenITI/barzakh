@@ -1068,6 +1068,7 @@ def main(folder, out_folder, start_date=0, end_date=10000,
 
 
 if __name__ == "__main__":
-    main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos")
+    main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos",
+         do_not_move_regex="[Nn]oorlib")
     #main(folder=r"D:\AKU\OpenITI\barzakh\9001AH", out_folder=r"D:\AKU\OpenITI\25Y_repos", 
     #     non_25Y_folder="9001AH")
