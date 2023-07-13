@@ -27,6 +27,9 @@ escript_message = """This text was OCR'ed as part of the second phase of the\
 ¶    OpenITI AOCP project, generously funded by the Andrew W. Mellon Foundation."""
 escript_version = "0.13.8"
 
+
+
+
 def get_all_region_types_in_document(root, nsmap):
     """Get a list of all region types used in an document
 
@@ -207,7 +210,7 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[],
     #print("median_line_height", median_line_height)
     return lines, region_midpoints, median_line_height
 
-def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=5):
+def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=20):
     """Given a list of line dictionaries, sorted vertically from top to bottom,
     create a new list in which segments that are on the same line
     are in grouped in a list.
@@ -354,7 +357,7 @@ def switch_LR_pages(folder, ext="xml", rename_files=True, pad_zeros=False):
         time.sleep(1)
         os.rmdir(temp_dir)
 
-def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_overlap=5,
+def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_overlap=20,
                  line_segment_separator="   ", include_image_name=True,
                  skip_orphan_lines=True, first_page=0):
     """Convert a single eScriptorium Page XML file to OpenITI mARkdown
@@ -373,6 +376,8 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
             used to separate line segments that are on the same line
         include_image_name (bool): if True, the name of the transcribed
             image will be included at the top of the page.
+        reorder_pages (bool): If True: swap the right and left page
+            of a double page
         skip_orphan_lines (bool): if True, lines that are not embedded
             in a (named) region will be discarded
         first_page (int): if the current file is the first page of a book,
@@ -475,7 +480,7 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
     return metadata, page_text, regions, page_offset
 
 def convert_folder(folder, outfp, regions=[], exclude_regions=[],
-                   page_offset=0, min_line_overlap=5, extension="xml",
+                   page_offset=0, min_line_overlap=20, extension="xml",
                    line_segment_separator="   ", include_image_name=True,
                    skip_orphan_lines=True, first_page=0):
     """Convert a folder containing eScriptorium XML files
@@ -524,7 +529,7 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
 
 
 def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
-                page_offset=0, min_line_overlap=5,
+                page_offset=0, min_line_overlap=20,
                 line_segment_separator="   ", include_image_name=True,
                 reorder_pages=False, skip_orphan_lines=True, first_page=0):
     """Convert a zip file containing eScriptorium XML files
@@ -545,6 +550,10 @@ def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
             used to separate line segments that are on the same line
         include_image_name (bool): if True, the name of the transcribed
             image will be included at the top of the page.
+        reorder_pages (bool): If True: swap the right and left page
+            of a double page
+        skip_orphan_lines (bool): if True, lines that are not embedded
+            in a (named) region will be discarded
 
     Returns:
         tuple (metadata:str, page_text:str, regions:list)
@@ -574,7 +583,8 @@ def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
     shutil.rmtree(temp_folder)
 
 def download_transcriptions(escr, download_folder, output_type="pagexml", projects=None,  
-                            document_names=None, transcription_layers=None, overwrite=False):
+                            document_names=None, transcription_layers=None,
+                            redownload=False):
     """Download transcriptions from eScriptorium.
 
     Use the transcription_layers, projects and document_names arguments
@@ -644,7 +654,7 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                         fp  = os.path.join(outfolder, "{}_{}.zip".format(doc.name, output_type))
                     #print(fp)
 
-                    if os.path.exists(fp) and not overwrite:
+                    if os.path.exists(fp) and not redownload:
                         continue
                 
                     try:
@@ -773,12 +783,12 @@ def add_OCR_pipeline_files(meta_fp, ocr_folder, dest_folder):
                 os.remove(fp)
                 os.remove(fp+".yml")
 
-def add_eScriptorium_files(meta, download_folder, dest_folder,
+def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                            start_row=1, end_row=1000, coll_id="AOCP2",
                            regions=[], exclude_regions=["Footnotes",],
-                           min_line_overlap=5, line_segment_separator="   ",
+                           min_line_overlap=20, line_segment_separator="   ",
                            include_image_name=True, reorder_pages=False,
-                           overwrite=False, skip_orphan_lines=True):
+                           skip_orphan_lines=True, reconvert=False, redownload=False):
     """Add files from eScriptorium to barzakh
     
     Args:
@@ -790,6 +800,26 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
             "CORPUS/BARZAKH")
         download_folder (str): path to the folder to which the transcriptions should be downloaded
         dest_folder (str): path to the output folder
+        start_row (int): first row in the metadata table to be processed
+        end_row (int): last row in the metadata table to be processed
+        coll_id (str): the collection ID that will become the first part of the version ID
+        regions (list): a list of regions from which text needs to be extracted
+        exclude_regions (list): a list of regions from which text needs to be dropped
+        min_line_overlap (int): the number of pixels lines should overlap
+            before their overlap is considered meaningful
+        line_segment_separator (str): the separator that should be
+            used to separate line segments that are on the same line. Default: "   "
+        include_image_name (bool): if True, the name of the transcribed
+            image will be included at the top of the page.
+        reorder_pages (bool): If True: swap the right and left page
+            of a double page
+        skip_orphan_lines (bool): if True, lines that are not embedded
+            in a (named) region will be discarded
+        redownload (bool): if True, the transcriptions will be downloaded from eScriptorium
+            even if they already exist in the download folder.
+        reconvert (bool): if False, files that are already in barzakh or the corpus
+            (according to the metadata file) will be skipped. If True, they will be
+            convered again. 
     """
     escr = connect_to_escr()
     with open(meta_fp, mode="r", encoding="utf-8") as file:
@@ -806,7 +836,7 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
                 #print(row["eScriptorium document name"])
                 continue
             # do not download/convert already converted texts:
-            elif (row["CORPUS/BARZAKH"] and not overwrite):  
+            elif (row["CORPUS/BARZAKH"] and not reconvert):  
                 continue
             # do not download/convert texts after the end_row:
             elif i > end_row:
@@ -823,7 +853,7 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
                                              projects=[project,],
                                              document_names=[doc,],
                                              transcription_layers=[layer,],
-                                             overwrite=overwrite)
+                                             redownload=redownload)
 
             print("row", i)
             print(project, doc, layer)
@@ -890,6 +920,11 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
             
             
 def connect_to_escr():
+    """Establish a connection to eScriptorium
+
+    Returns:
+        escr (an eScriptorium connection object)
+    """
     try:
         # load your credentials from the .env file if it exists:
         from dotenv import load_dotenv
@@ -906,12 +941,14 @@ def connect_to_escr():
         print("(https://escriptorium.openiti.org/)")
         url = input("please provide the URL of your eScriptorium instance (press Enter to use the default):").strip()
 
+    if not url:
+        url = "https://escriptorium.openiti.org/"
+
     escr = EscriptoriumConnector(url, username, password)
     return escr
 
 
-    if not url:
-        url = "https://escriptorium.openiti.org/"
+
             
         
 
@@ -925,4 +962,4 @@ if __name__ == "__main__":
     download_folder = "eScriptorium_pagexml"
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
-                           start_row=29, end_row=29, overwrite=True)
+                           start_row=32, end_row=32, reconvert=True, redownload=True)
