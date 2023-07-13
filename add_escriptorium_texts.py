@@ -94,7 +94,8 @@ def choose_regions(regions, exclude_regions, root, nsmap):
                     pass
     return regions
 
-def parse_lines(root, nsmap, regions, fp, exclude_regions=[], extremes_ratio=0.1, midpoint_ratio=0.6):
+def parse_lines(root, nsmap, regions, fp, exclude_regions=[],
+                extremes_ratio=0.1, midpoint_ratio=0.6, skip_orphan_lines=True):
     """Parse the TextLine elements in the XML files as a dictionary
 
     Args:
@@ -116,8 +117,26 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[], extremes_ratio=0.1
     """
     lines = []
     region_xs = dict()
+    line_heights = []
     for text_line in root.xpath("//default:TextLine", namespaces=nsmap):
         line_d = dict()
+        
+        # get the type of the region that contains the line:
+        region = text_line.getparent()
+        region_type = get_region_type(region)
+
+        # skip orphan lines:
+        if region_type is None and skip_orphan_lines:
+            continue
+        # skip lines that are in undesired regions:
+        elif region_type in exclude_regions:
+            continue
+        # skip lines that are not in the whitelist of regions:
+        elif (regions != "all" and region_type not in regions):
+            continue
+
+        line_d["region"] = region_type
+
         # get the text content of the line:
         line_text = etree.tostring(text_line, method="text", encoding='utf-8')
         line_d["text"] = line_text.decode("utf-8")
@@ -139,21 +158,32 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[], extremes_ratio=0.1
         ys = [int(coord.split(",")[1]) for coord in points.split(" ")]
         line_d["min_y"] = min(ys)
         line_d["max_y"] = max(ys)
+
+        # calculate the line height and add it to the list:
+        line_height = line_d["max_y"] - line_d["min_y"]
+        line_heights.append(line_height)
         
-        # get the type of the region that contains the line:
-        region = text_line.getparent()
-        region_type = get_region_type(region
-                                      )
-        line_d["region"] = region_type
-        if region_type not in exclude_regions and (regions == "all" or region_type in regions):
-            #print(region_type)
-            lines.append(line_d)
-            if not region_type in region_xs:
-                region_xs[region_type] = []
-            region_xs[region_type] += xs
+        
+##        # get the type of the region that contains the line:
+##        region = text_line.getparent()
+##        region_type = get_region_type(region)
+##        print(line_d)
+##        print(region, region_type)
+##        line_d["region"] = region_type
+
+        lines.append(line_d)
+
+
+        if not region_type in region_xs:
+            region_xs[region_type] = []
+        region_xs[region_type] += xs
+        #print(line_d)
+        #print(region, region_type)
+
+
             
     # sort the regions by their horizontal position on the page:
-    lines = sorted(lines, key=lambda d:d["min_y"])
+    lines = sorted(lines, key=lambda d: (d["min_y"], d["max_x"]))
 
     # calculate the midpoint of the lines of each region
     # (to help decide whether a line segment is a second hemistych):
@@ -172,41 +202,58 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[], extremes_ratio=0.1
         except:
             midpoint = 0
         region_midpoints[region] = midpoint
-    return lines, region_midpoints
+    
+    median_line_height = statistics.median(line_heights)
+    #print("median_line_height", median_line_height)
+    return lines, region_midpoints, median_line_height
 
-def sort_segments_per_line(line_segments, min_line_overlap=5):
+def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=5):
     """Given a list of line dictionaries, sorted vertically from top to bottom,
     create a new list in which segments that are on the same line
     are in grouped in a list.
 
+    NB: the zero point for both axes is in the left upper corner of the image!
+
     Args:
         line_segments (list): a list of line segment dictionaries,
             sorted vertically from top to bottom based their min_y coordinate
+        median_line_height (int): median line height for this page
+            (line height was calculated as max_y - min_y for each line mask)
         min_line_overlap (int): the number of pixels lines should overlap
             before their overlap is considered meaningful
 
     Returns:
         list of lists
     """
+    min_line_overlap = max(median_line_height/3, min_line_overlap)
+
+    
     prev_max_y = 0
     prev_max_x = 0
     prev_min_x = 0
     line = []
     lines = []
     for segm in line_segments:
+        #print("segm", segm)
+        #print("line height:",  segm["max_y"] - segm["min_y"])
         # first check vertical overlap between current and previous line:
+        #print('segm["min_y"]', segm["min_y"])
         vertical_overlap = (prev_max_y - segm["min_y"]) > min_line_overlap
+        #print("vertical_overlap", vertical_overlap)
         
         # then check horizontal overlap between current and previous line:
+        #print('segm["max_x"]', segm["max_x"])
         if segm["max_x"] > prev_max_x:
             #horizontal_overlap = segm["min_x"] < prev_max_x
             horizontal_overlap = (prev_max_x - segm["min_x"]) > min_line_overlap
         else:
             #horizontal_overlap = segm["max_x"] > prev_min_x
             horizontal_overlap = (segm["max_x"] - prev_min_x) > min_line_overlap
+        #print("horizontal_overlap", horizontal_overlap)
+        #print("--------------")
 
-        # Line segments are on the same line only if the overlap vertically
-        # but not horizontally:
+        # Line segments are on the same line only if they overlap vertically
+        # but not horizontally:  (NB: not sure about horizontal overlap!)
         if vertical_overlap and not horizontal_overlap:
             # add the segment to the current line
             line.append(segm)
@@ -266,7 +313,9 @@ def post_process(text, line_segment_separator):
     text = re.sub("\n~~(?:{})*\n".format(line_segment_separator), "\n", text)
     # remove line numbers:
     text = re.sub(line_segment_separator+"\d+\n", "\n", text)
-    text = re.sub("(\n[# ~]+)\d+"+line_segment_separator, r"\1", text) 
+    text = re.sub("(\n[# ~]+)\d+"+line_segment_separator, r"\1", text)
+    # convert lines with a large indentation to titles:
+    text = re.sub("# +%~% ", "### | ", text)
     
     return text
 
@@ -306,7 +355,8 @@ def switch_LR_pages(folder, ext="xml", rename_files=True, pad_zeros=False):
         os.rmdir(temp_dir)
 
 def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_overlap=5,
-                 line_segment_separator="   ", include_image_name=True):
+                 line_segment_separator="   ", include_image_name=True,
+                 skip_orphan_lines=True, first_page=0):
     """Convert a single eScriptorium Page XML file to OpenITI mARkdown
 
     Args:
@@ -323,11 +373,17 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
             used to separate line segments that are on the same line
         include_image_name (bool): if True, the name of the transcribed
             image will be included at the top of the page.
+        skip_orphan_lines (bool): if True, lines that are not embedded
+            in a (named) region will be discarded
+        first_page (int): if the current file is the first page of a book,
+            first_page will be the real page number of that page;
+            else, it will be 0.
 
     Returns:
         tuple (metadata:str, page_text:str, regions:list)
 
     """
+    #print(fp)
     with open(fp, mode="rb") as file:
         parser = etree.XMLParser(remove_blank_text=True)
         tree = etree.parse(file, parser)
@@ -342,11 +398,13 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
     regions = choose_regions(regions, exclude_regions, root, nsmap)
     
     # extract relevant information about line segments and regions:
-    line_segments, region_midpoints = parse_lines(root, nsmap, regions, fp,
-                                                  exclude_regions=exclude_regions)
+    repl = parse_lines(root, nsmap, regions, fp, exclude_regions=exclude_regions,
+                       skip_orphan_lines=skip_orphan_lines)
+    line_segments, region_midpoints, median_line_height = repl
 
     # group line segments that are horizontally on the same line:
-    lines = sort_segments_per_line(line_segments)
+    lines = sort_segments_per_line(line_segments, median_line_height)
+    #input("continue?")
 
     # Format the lines: 
     page_text = ""
@@ -391,6 +449,8 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
 
     # add page number:
     page_no = re.findall("\d+", fp)[-1]
+    if first_page:
+        page_offset = first_page - int(page_no)
     page_text += "\nPageV01P{:03d}\n\n".format(int(page_no)+page_offset)
 
     # add image filename:
@@ -412,11 +472,12 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
         content = child.text.strip()
         metadata += "#META# {}: {}\n".format(tag, content)
     
-    return metadata, page_text, regions
+    return metadata, page_text, regions, page_offset
 
 def convert_folder(folder, outfp, regions=[], exclude_regions=[],
                    page_offset=0, min_line_overlap=5, extension="xml",
-                   line_segment_separator="   ", include_image_name=True):
+                   line_segment_separator="   ", include_image_name=True,
+                   skip_orphan_lines=True, first_page=0):
     """Convert a folder containing eScriptorium XML files
     to a single OpenITI mARkdown document
 
@@ -438,17 +499,21 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
         tuple (metadata:str, page_text:str, regions:list)
     """
     text = ""
-    for fn in natural_sort(os.listdir(folder)):
+    for i, fn in enumerate(natural_sort(os.listdir(folder))):
         if not fn.endswith(extension) or fn.startswith("METS"):
             continue
         fp = os.path.join(folder, fn)
-        metadata, page_text, regions = convert_file(fp,
+        if i != 0:
+            first_page = 0
+        metadata, page_text, regions, page_offset = convert_file(fp,
             regions=regions,
             exclude_regions=exclude_regions,
             page_offset=page_offset,
             min_line_overlap=min_line_overlap,
             line_segment_separator=line_segment_separator,
-            include_image_name=include_image_name)
+            include_image_name=include_image_name,
+            skip_orphan_lines=skip_orphan_lines,
+            first_page=first_page)
         text += page_text
     metadata = "######OpenITI#\n\n{}\n\n#META#Header#End#\n\n".format(metadata)
     text = metadata + text
@@ -461,7 +526,7 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
 def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
                 page_offset=0, min_line_overlap=5,
                 line_segment_separator="   ", include_image_name=True,
-                reorder_pages=False):
+                reorder_pages=False, skip_orphan_lines=True, first_page=0):
     """Convert a zip file containing eScriptorium XML files
     to a single OpenITI mARkdown document
 
@@ -502,12 +567,14 @@ def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
                    exclude_regions=exclude_regions, page_offset=page_offset,
                    min_line_overlap=min_line_overlap,
                    line_segment_separator=line_segment_separator,
-                   include_image_name=include_image_name)
+                   include_image_name=include_image_name,
+                   skip_orphan_lines=skip_orphan_lines,
+                   first_page=first_page)
     time.sleep(1)
     shutil.rmtree(temp_folder)
 
 def download_transcriptions(escr, download_folder, output_type="pagexml", projects=None,  
-                            document_names=None, transcription_layers=None):
+                            document_names=None, transcription_layers=None, overwrite=False):
     """Download transcriptions from eScriptorium.
 
     Use the transcription_layers, projects and document_names arguments
@@ -575,9 +642,9 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                         fp  = os.path.join(outfolder, "{}_{}.txt".format(doc.name, output_type))
                     else:
                         fp  = os.path.join(outfolder, "{}_{}.zip".format(doc.name, output_type))
-                    print(fp)
+                    #print(fp)
 
-                    if os.path.exists(fp):
+                    if os.path.exists(fp) and not overwrite:
                         continue
                 
                     try:
@@ -711,7 +778,7 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
                            regions=[], exclude_regions=["Footnotes",],
                            min_line_overlap=5, line_segment_separator="   ",
                            include_image_name=True, reorder_pages=False,
-                           overwrite=False):
+                           overwrite=False, skip_orphan_lines=True):
     """Add files from eScriptorium to barzakh
     
     Args:
@@ -739,7 +806,7 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
                 #print(row["eScriptorium document name"])
                 continue
             # do not download/convert already converted texts:
-            elif row["CORPUS/BARZAKH"] and not overwrite:  
+            elif (row["CORPUS/BARZAKH"] and not overwrite):  
                 continue
             # do not download/convert texts after the end_row:
             elif i > end_row:
@@ -755,7 +822,8 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
                                              output_type="pagexml",
                                              projects=[project,],
                                              document_names=[doc,],
-                                             transcription_layers=[layer,])
+                                             transcription_layers=[layer,],
+                                             overwrite=overwrite)
 
             print("row", i)
             print(project, doc, layer)
@@ -769,23 +837,25 @@ def add_eScriptorium_files(meta, download_folder, dest_folder,
             lang = row["language code"]
             timestamp = datetime.utcnow().strftime("%Y%m%d%H%M")
             fn = f"{uri}.{coll_id}00{timestamp}{i:02d}-{lang}1"
-            print(fn)
+            #print(fn)
             outfp = os.path.join(dest_folder, fn)
-            print(outfp)
+            #print(outfp)
 
             # convert the xml files into an OpenITI mARkdown file:
             
             try:
-                page_offset = int(row["PAGE NUMBER OF FIRST IMAGE"])
+                first_page = int(row["PAGE NUMBER OF FIRST IMAGE"])
             except:
-                page_offset = 0
+                first_page = 0
             convert_zip(zip_fp, outfp, regions=regions,
                         exclude_regions=exclude_regions,
-                        page_offset=page_offset,
+                        page_offset=0,
                         min_line_overlap=min_line_overlap,
                         line_segment_separator=line_segment_separator,
                         include_image_name=include_image_name,
-                        reorder_pages=reorder_pages)
+                        reorder_pages=reorder_pages,
+                        skip_orphan_lines=skip_orphan_lines,
+                        first_page=first_page)
 
             # create a version yml file and store it:
             yml_fp = outfp + ".yml"
@@ -855,4 +925,4 @@ if __name__ == "__main__":
     download_folder = "eScriptorium_pagexml"
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
-                           start_row=29, end_row=33)
+                           start_row=29, end_row=29, overwrite=True)
