@@ -1,3 +1,5 @@
 .DS_Store
+.env
 meta/
 safe/
+eScriptorium_pagexml/
