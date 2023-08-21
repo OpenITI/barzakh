@@ -55,7 +55,6 @@ except:
         'BibleCorpus',
         'DARE',
         'ER',
-        'EScr',
         'EShia',
         'Filaha',
         'GRAR',
@@ -99,7 +98,7 @@ except:
         'WG',
         'Wiki',
         'Zaydiyya',
-        'eScr',
+        'EScr',
     )
 
 print(known_collections)
@@ -196,6 +195,8 @@ repl_tup = [
     ("→", "->"),   # RIGHTWARDS ARROW
     ("ʼ", "'"),   # MODIFIER LETTER APOSTROPHE
     ("‘", "'"),   # LEFT SINGLE QUOTATION MARK
+    ("〈", "<"),  # LEFT ANGLE BRACKET
+    ("〉", ">"),  # RIGHT ANGLE BRACKET
     ("٠", "0"),   # ARABIC-INDIC DIGITs
     ("١", "1"),
     ("٢", "2"), 

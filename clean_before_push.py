@@ -383,11 +383,11 @@ def add_paragraph_marks(text, keep_line_endings=True, maxlength=72):
     """
 
     # add # after line that ends with full stop, question and exclamation marks:
-    ptrn = r"([.؟!] *[\r\n]+(?:PageV\w{2}P\d+[abAB]?[\r\n]+)?)([^\r\n#P\Z])"
+    ptrn = r"([.؟!] *[\r\n]+(?:PageV\w{2}P\d+[abAB]?[\r\n]+)?)([^\r\n#P])"
     text = re.sub(ptrn, r"\1# \2", text)
 
     # add # after section titles (but not before page numbers and sub-titles)
-    ptrn = r"(### .+[\r\n]+(?:PageV\w{2}P\d+[\r\n]+)?)([^\r\n#P\Z])"
+    ptrn = r"(### .+[\r\n]+(?:PageV\w{2}P\d+[\r\n]+)?)([^\r\n#P])"
     text = re.sub(ptrn, r"\1# \2", text)
 
     if keep_line_endings:

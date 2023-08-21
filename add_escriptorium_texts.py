@@ -1008,7 +1008,8 @@ if __name__ == "__main__":
 
     download_folder = "eScriptorium_pagexml"
     dest_folder = "."
-    add_eScriptorium_files(meta_fp, download_folder, dest_folder, #-reconvert=True,
-                           #start_row=28, end_row=28,
+    add_eScriptorium_files(meta_fp, download_folder, dest_folder,
+                           #reconvert=True,             # convert even if the file is already in the corpus or barzakh
+                           #start_row=28, end_row=28,   # from row X to row Y in the metadata file
                            #redownload=True
                            )
