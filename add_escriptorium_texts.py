@@ -3,7 +3,7 @@
 Provide a tsv file that contains metadata on the files
 (e.g., Google sheet: https://docs.google.com/spreadsheets/d/1SxMcgHuPCrUca2V0IO2zlQrkRR28T6DwErMCAVoDzTQ/edit#gid=0)
 """
-
+import json
 import os
 import re
 import csv
@@ -206,7 +206,10 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[],
             midpoint = 0
         region_midpoints[region] = midpoint
     
-    median_line_height = statistics.median(line_heights)
+    try:
+        median_line_height = statistics.median(line_heights)
+    except:
+        median_line_height = None
     #print("median_line_height", median_line_height)
     return lines, region_midpoints, median_line_height
 
@@ -228,7 +231,10 @@ def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=2
     Returns:
         list of lists
     """
-    min_line_overlap = max(median_line_height/3, min_line_overlap)
+    try:
+        min_line_overlap = max(median_line_height/3, min_line_overlap)
+    except:
+        min_line_overlap = None  # no lines found!
 
     
     prev_max_y = 0
@@ -359,7 +365,7 @@ def switch_LR_pages(folder, ext="xml", rename_files=True, pad_zeros=False):
 
 def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_overlap=20,
                  line_segment_separator="   ", include_image_name=True,
-                 skip_orphan_lines=True, first_page=0):
+                 skip_orphan_lines=True, first_page=0, transcription_meta=dict()):
     """Convert a single eScriptorium Page XML file to OpenITI mARkdown
 
     Args:
@@ -456,6 +462,8 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
     page_no = re.findall("\d+", fp)[-1]
     if first_page:
         page_offset = first_page - int(page_no)
+        if first_page < 0:
+            page_offset += 1
     page_text += "\nPageV01P{:03d}\n\n".format(int(page_no)+page_offset)
 
     # add image filename:
@@ -468,7 +476,7 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
 
     #print(page_text)
 
-    # extract metadata:
+    # extract metadata from text file:
     metadata = ""
     meta_el = root.find("default:Metadata", nsmap)
     for child in meta_el:
@@ -476,13 +484,18 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
         tag = child.tag.split("}")[-1]
         content = child.text.strip()
         metadata += "#META# {}: {}\n".format(tag, content)
+
+    # add metadata from transcription layer:
+    for tag, content in transcription_meta.items():
+        if content:
+            metadata += "#META# {}: {}\n".format(tag.replace("_", " "), content)
     
     return metadata, page_text, regions, page_offset
 
 def convert_folder(folder, outfp, regions=[], exclude_regions=[],
                    page_offset=0, min_line_overlap=20, extension="xml",
                    line_segment_separator="   ", include_image_name=True,
-                   skip_orphan_lines=True, first_page=0):
+                   skip_orphan_lines=True, first_page=0, transcription_meta=dict()):
     """Convert a folder containing eScriptorium XML files
     to a single OpenITI mARkdown document
 
@@ -518,7 +531,8 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
             line_segment_separator=line_segment_separator,
             include_image_name=include_image_name,
             skip_orphan_lines=skip_orphan_lines,
-            first_page=first_page)
+            first_page=first_page,
+            transcription_meta=transcription_meta)
         text += page_text
     metadata = "######OpenITI#\n\n{}\n\n#META#Header#End#\n\n".format(metadata)
     text = metadata + text
@@ -531,7 +545,8 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
 def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
                 page_offset=0, min_line_overlap=20,
                 line_segment_separator="   ", include_image_name=True,
-                reorder_pages=False, skip_orphan_lines=True, first_page=0):
+                reorder_pages=False, skip_orphan_lines=True, first_page=0,
+                transcription_meta=dict()):
     """Convert a zip file containing eScriptorium XML files
     to a single OpenITI mARkdown document
 
@@ -578,7 +593,7 @@ def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
                    line_segment_separator=line_segment_separator,
                    include_image_name=include_image_name,
                    skip_orphan_lines=skip_orphan_lines,
-                   first_page=first_page)
+                   first_page=first_page, transcription_meta=transcription_meta)
     time.sleep(1)
     shutil.rmtree(temp_folder)
 
@@ -628,8 +643,10 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                 transcriptions = escr.get_document_transcriptions(document_pk)
                 if transcription_layers:
                     # only download the desired transcription layers
+                    print("TRANSCRIPTION LAYERS:")
                     try:
                         transcriptions = [t for t in transcriptions if t.name in transcription_layers]
+                        print(transcriptions)
                         transcriptions[0]  # will fail if the transcription layer is not present
                     except IndexError :
                         print("None of the requested transcription layers is available")
@@ -653,6 +670,12 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                     else:
                         fp  = os.path.join(outfolder, "{}_{}.zip".format(doc.name, output_type))
                     #print(fp)
+
+                    # store the transcription's metadata as a json file:
+                    json_fp = outfolder + "_meta.json"
+                    d = {"transcription_layer_pk": t.pk, "transcription_layer_name": t.name, "archived": t.archived, "avg_transcription_confidence": t.avg_confidence}
+                    with open(json_fp, mode="w", encoding="utf-8") as file:
+                        json.dump(d, file, ensure_ascii=False, indent=2)
 
                     if os.path.exists(fp) and not redownload:
                         continue
@@ -698,6 +721,10 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                     # store the downloaded zip file at that path:
                     with open(fp,mode="wb") as file:
                         file.write(output_zipped)
+
+
+                        
+                    
     return fp
 
 
@@ -858,6 +885,19 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             print("row", i)
             print(project, doc, layer)
 
+            # get the transcription layer metadata:
+            
+            json_fp = os.path.split(zip_fp)[0] + "_meta.json"
+            try:
+                with open(json_fp, mode="r", encoding="utf-8") as json_file:
+                    transcription_meta = json.load(json_file)
+            except Exception as e:
+                print("Failed loading transcription layer metadata:", e)
+                transcription_meta = dict(transcription_layer_pk=None,
+                                          transcription_layer_name=layer,
+                                          avg_transcription_confidence=None)
+
+
             # build the output filename:
             
             if row["CHANGE URI TO"]:
@@ -865,8 +905,8 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             else:
                 uri = row["URI"]
             lang = row["language code"]
-            timestamp = datetime.utcnow().strftime("%Y%m%d%H%M")
-            fn = f"{uri}.{coll_id}00{timestamp}{i:02d}-{lang}1"
+            timestamp = datetime.utcnow().strftime("%y%m%d")
+            fn = f"{uri}.{coll_id}0{timestamp}{i:02d}-{lang}1"
             #print(fn)
             outfp = os.path.join(dest_folder, fn)
             #print(outfp)
@@ -885,7 +925,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                         include_image_name=include_image_name,
                         reorder_pages=reorder_pages,
                         skip_orphan_lines=skip_orphan_lines,
-                        first_page=first_page)
+                        first_page=first_page, transcription_meta=transcription_meta)
 
             # create a version yml file and store it:
             yml_fp = outfp + ".yml"
@@ -901,6 +941,11 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             notes += datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
             notes += " by eScriptorium version " + escript_version
             notes += "¶    Transcription model used: " + layer.strip("kraken:")
+            if "avg_transcription_confidence" in transcription_meta:
+                avg_confidence = transcription_meta["avg_transcription_confidence"]
+                if avg_confidence:
+                    notes += f"¶    Average transcription confidence: {avg_confidence}"
+                    
             if row["NOTES"]:
                 notes += "¶    " + row["NOTES"]
             add_to_yml(yml_fp, based, link, notes, issues, uri=fn)
@@ -957,9 +1002,13 @@ if __name__ == "__main__":
     meta_fp = "meta/Corpus_Metadata_Links.tsv" # Google sheet: https://docs.google.com/spreadsheets/d/1SxMcgHuPCrUca2V0IO2zlQrkRR28T6DwErMCAVoDzTQ/edit#gid=0
     meta_fp = "meta/Corpus_Metadata_Links - new to be added.tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM.tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM_Suluk.tsv"
+    
 
 
     download_folder = "eScriptorium_pagexml"
     dest_folder = "."
-    add_eScriptorium_files(meta_fp, download_folder, dest_folder,
-                           start_row=32, end_row=32, reconvert=True, redownload=True)
+    add_eScriptorium_files(meta_fp, download_folder, dest_folder, #-reconvert=True,
+                           #start_row=28, end_row=28,
+                           #redownload=True
+                           )
