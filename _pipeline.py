@@ -478,7 +478,7 @@ def add_paragraph_marks(text, keep_line_endings=True, maxlength=72):
         ptrn = r"([^ \r\n.؟!]) *[\r\n]+(PageV[^P]+P[\w]+) *[\r\n]+"
         text = re.sub(ptrn, r"\1 \2\n", text)
         # Add paragraph signs before every new line:
-        ptrn = r"(\A|[\r\n]+)([^\r\n#P\s])"
+        ptrn = r"(\A|[\r\n]+)([^\r\n#~P\s])"
         text = re.sub(ptrn, r"\1# \2", text)
         # break long lines into shorter lines:
         new_text = wrap(text, maxlength)
@@ -520,7 +520,7 @@ def check_paragraph_marks(text, fn):
         text (str): content of the text file
     """
     # add paragraph marks:
-    if not re.search("~~", text) or not re.search("^# ", text):
+    if not re.search("~~", text) and not re.search("^# ", text):
         if re.findall(keep_line_endings_ids, fn):
             text = add_paragraph_marks(text, keep_line_endings=True)
         else:
