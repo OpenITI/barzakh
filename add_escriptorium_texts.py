@@ -849,6 +849,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             convered again. 
     """
     escr = connect_to_escr()
+    multivol = dict()
     with open(meta_fp, mode="r", encoding="utf-8") as file:
         #meta = file.read().splitlines()
         #header = meta[0]
@@ -875,6 +876,16 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             project = row["eScriptorium project name"]
             doc = row["eScriptorium document name"]
             layer = row["eScriptorium transcription layer"]
+            if not layer:
+                print(doc, "NOT DOWNLOADING: no transcription layer defined")
+                continue
+            if row["which regions to include"]:
+                regions = re.split(", ", row["which regions to include"])
+                print("REGIONS:", regions)
+                if "all" in regions:
+                    regions = "all"
+                else:
+                    regions = [r for r in regions if r]
             zip_fp = download_transcriptions(escr, download_folder,
                                              output_type="pagexml",
                                              projects=[project,],
@@ -910,6 +921,13 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             #print(fn)
             outfp = os.path.join(dest_folder, fn)
             #print(outfp)
+
+            vol = row["NUMBER OF VOLUME"]
+            if vol:
+                if not uri in multivol:
+                    multivol[uri] = []
+                multivol[uri].append([outfp, int(vol)])
+
 
             # convert the xml files into an OpenITI mARkdown file:
             
@@ -962,6 +980,42 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                 yml_d["40#BOOK#RELATED##:"] = relations
                 with open(yml_fp, mode="w", encoding="utf-8") as file:
                     file.write(dicToYML(yml_d))
+
+        # merge multivolume books:
+        print("MULTIVOLUME BOOKS:")
+        for book_uri in multivol:
+            print(book_uri)
+            print(multivol[book_uri])
+            headers = []
+            bodies = []
+            if len(multivol[book_uri]) < 2:
+                continue
+            i = 0
+            for fp, vol in sorted(multivol[book_uri]):
+                with open(fp, mode="r", encoding="utf-8") as file:
+                    text = file.read()
+                header, body = text.split("#META#Header#End#")
+                if i == 0:
+                    outfp = fp.split("-")[0] + "Vols-" + fp.split("-")[1]
+                    os.replace(fp+".yml", outfp+".yml")
+                    with open(outfp+".yml", mode="r", encoding="utf-8") as file:
+                        yml_s = file.read()
+                    yml_s = re.sub(os.path.split(fp)[-1], os.path.split(outfp)[-1], yml_s)
+                    with open(outfp+".yml", mode="w", encoding="utf-8") as file:
+                        file.write(yml_s)
+                else:
+                    header = "\n".join(header.split("\n")[1:])
+                    os.remove(fp+".yml")
+                headers.append(header)
+                bodies.append(re.sub("PageV\d+", f"PageV{vol:02d}", body))
+                os.remove(fp)
+                i += 1
+            with open(outfp, mode="w", encoding="utf-8") as file:
+                file.write("\n\n".join(headers) + "#META#Header#End#" + "\n\n".join(bodies))
+                    
+                
+                
+            
             
             
 def connect_to_escr():
@@ -1003,6 +1057,7 @@ if __name__ == "__main__":
     meta_fp = "meta/Corpus_Metadata_Links - new to be added.tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM.tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM_Suluk.tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (4).tsv"
     
 
 
@@ -1010,6 +1065,6 @@ if __name__ == "__main__":
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                            #reconvert=True,             # convert even if the file is already in the corpus or barzakh
-                           #start_row=28, end_row=28,   # from row X to row Y in the metadata file
+                           #start_row=47, #end_row=28,   # from row X to row Y in the metadata file
                            #redownload=True
                            )

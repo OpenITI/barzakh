@@ -47,7 +47,9 @@ def get_known_collections():
 
 try:
     known_collections = get_known_collections()
-except: 
+except Exception as e:
+    print("Error getting known collections:", e)
+    print("Falling back to default")
     known_collections = (
         'ALCorpus',
         'AQ',
@@ -906,7 +908,8 @@ def check_yml_files(fp):
 
 def main(folder, out_folder, start_date=0, end_date=10000, 
          auto_clean=True, silent=False, do_not_move_regex="[Nn]oorlib", 
-         ms_pattern=" *ms[A-Z]?\d+", ms_length=300, non_25Y_folder=None):
+         ms_pattern=" *ms[A-Z]?\d+", ms_length=300, non_25Y_folder=None,
+         match_uri=None):
     """Check and clean new text files and move them into the corpus
     
     Args:
@@ -924,6 +927,8 @@ def main(folder, out_folder, start_date=0, end_date=10000,
         non_25Y_folder (str): name of the parent folder for the new files,
             to be used instead of the 25 years folder (0025AH, 0050AH, ...).
             Defaults to None (that is: use the auto-generated 25 years folder)
+        match_uri (str): only process files that match this regular expression.
+            Defaults to None (that is: process all text and yml files)
     
     Returns:
         None
@@ -952,7 +957,10 @@ def main(folder, out_folder, start_date=0, end_date=10000,
         elif not os.path.isfile(os.path.join(folder, fn)):
             print("--> aborted: not a file")
             continue
-        print(fn)
+        # Check if the URI matches certain criteria
+        if match_uri and not re.findall(match_uri, fn):
+            print("--> aborted: does not match regex", match_uri)
+            continue
 
         # get the language code:
         lang_code = re.findall(".+-([a-z]{3})", fn)[0]
@@ -1070,6 +1078,6 @@ def main(folder, out_folder, start_date=0, end_date=10000,
 
 if __name__ == "__main__":
     main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos",
-         do_not_move_regex="[Nn]oorlib")
+         do_not_move_regex="[Nn]oorlib", match_uri="Hindawi")
     #main(folder=r"D:\AKU\OpenITI\barzakh\9001AH", out_folder=r"D:\AKU\OpenITI\25Y_repos", 
     #     non_25Y_folder="9001AH")
