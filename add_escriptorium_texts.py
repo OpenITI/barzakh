@@ -623,6 +623,8 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
     Returns:
         None
     """
+    print("PROJECTS:", projects)
+    print("DOCUMENT_NAMES:", document_names)
     if projects:
         projects = [re.sub("\W", "-", p.lower()) for p in projects]
     
@@ -958,7 +960,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             notes = escript_message + "¶    This file was created on "
             notes += datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
             notes += " by eScriptorium version " + escript_version
-            notes += "¶    Transcription model used: " + layer.strip("kraken:")
+            notes += "¶    Transcription model used: " + re.sub("^kraken:", "", layer)
             if "avg_transcription_confidence" in transcription_meta:
                 avg_confidence = transcription_meta["avg_transcription_confidence"]
                 if avg_confidence:
@@ -1065,6 +1067,6 @@ if __name__ == "__main__":
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                            #reconvert=True,             # convert even if the file is already in the corpus or barzakh
-                           #start_row=47, #end_row=28,   # from row X to row Y in the metadata file
-                           #redownload=True
+                           start_row=14, end_row=15,   # from row X to row Y in the metadata file
+                           redownload=True
                            )
