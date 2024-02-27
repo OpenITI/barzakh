@@ -2,6 +2,8 @@
 
 Provide a tsv file that contains metadata on the files
 (e.g., Google sheet: https://docs.google.com/spreadsheets/d/1SxMcgHuPCrUca2V0IO2zlQrkRR28T6DwErMCAVoDzTQ/edit#gid=0)
+
+
 """
 import json
 import os
@@ -60,11 +62,11 @@ def get_region_type(region_element):
         region_type = re.findall("type:(\w+)", region_type)[0]
     return region_type
 
-def choose_regions(regions, exclude_regions, root, nsmap):
+def select_desired_regions(include_regions, exclude_regions, root, nsmap):
     """Select which regions should be extracted from the XML document.
 
     Args:
-        regions (list): a list of regions to be extracted
+        include_regions (list): a list of regions to be extracted
         exclude_regions (list): a list of regions to be excluded
         root (Element): the root element of the XML document
         nsmap (dict): a dictionary containing the namespaces used in the document
@@ -73,10 +75,10 @@ def choose_regions(regions, exclude_regions, root, nsmap):
         list
     """
     all_region_types = get_all_region_types_in_document(root, nsmap)
-    if regions == "all":
-        #regions = all_region_types
+    if include_regions == "all":
+        #include_regions = all_region_types
         return "all"
-    elif not regions:
+    elif not include_regions:
         if exclude_regions:
             return [r for r in all_region_types if r not in exclude_regions]
         print("Do you want to extract all regions? Press Enter.")
@@ -86,25 +88,99 @@ def choose_regions(regions, exclude_regions, root, nsmap):
             print("  {}. {}".format(i, r))
         resp = input()
         if not resp:
-            regions = all_region_types
+            include_regions = all_region_types
         else:
-            regions = []
+            include_regions = []
             for el in resp.split(","):
                 #print(el, int(el.strip()))
                 try:
-                    regions.append(all_region_types[int(el.strip())])
+                    include_regions.append(all_region_types[int(el.strip())])
                 except:
                     pass
-    return regions
+    return include_regions
 
-def parse_lines(root, nsmap, regions, fp, exclude_regions=[],
-                extremes_ratio=0.1, midpoint_ratio=0.6, skip_orphan_lines=True):
+def get_regions_on_page(root, nsmap):
+    """Get a dictionary of all regions on a single xml page
+
+    Args:
+        root (Element): the root element of the XML document
+        nsmap (dict): a dictionary containing the namespaces used in the document
+    """
+    all_regions = dict()
+    for region in root.xpath("//default:TextRegion", namespaces=nsmap):
+        # exclude regions that do not have any line of text in them: 
+        #text_lines = sum([1 for text_line in region.xpath("//default:TextLine", namespaces=nsmap)])
+        #text_lines = sum([1 for text_line in region.find("default:TextLine", namespaces=nsmap)])
+        #print(text_lines, "lines in region")
+        #if not text_lines:
+        if len(region.findall("default:TextLine", namespaces=nsmap)) == 0:
+            #print("no lines found in region", region.get("id"))
+            continue
+        #print([text_line for text_line in region.findall("default:TextLine", namespaces=nsmap)])
+        #input()
+        text_lines = sum([1 for text_line in region.findall("default:TextLine", namespaces=nsmap)])
+        #print(text_lines, "lines in region")
+        
+        # gather some relevant metadata about the region:
+        region_d = dict()
+        region_d["id"] = region.get("id")
+        region_type = get_region_type(region)
+        region_d["type"] = region_type
+        bbox, xs, ys = get_bounding_box(region, nsmap, element_type="region")
+        if not bbox:
+            
+            continue
+        region_d["bounding_box"] = bbox  # min_x, max_x, min_y, max_y
+        
+        # store the region in the list of regions of its type: 
+        if region_type not in all_regions:
+            all_regions[region_type] = []
+        all_regions[region_type].append(region_d)
+    return all_regions
+        
+def get_bounding_box(el, nsmap, element_type="line"):
+    """Get the bounding box of a region or line element.
+    Returns the bounding box as a tuple (min_x, max_x, min_y, max_y)
+    as well as a list of all x coordinates of the points
+    that define the outline of the element, and a list of their y coordinates.
+
+    Args:
+        el (Element): the region/line XML element
+        nsmap (dict): a dictionary containing the namespaces used in the document
+        element_type (str): the type of element you want to get
+            the bounding box for (for use in exception message only)
+
+    Returns:
+        tuple (bbox:tup, xs:list, ys: list) 
+    """
+    # get the coordinates of the line/region:
+    coords = el.find("default:Coords", nsmap)
+    try:
+        points = coords.get("points") # string of space-separated x,y pairs
+    except:
+        #print("No coordinates found in", element_type, el.get("id"))
+        #print(etree.tostring(el))
+        return None, None, None
+    
+    # store the bounding box values of the line mask:
+    xs = [int(coord.split(",")[0]) for coord in points.split(" ")]
+    min_x = min(xs)
+    max_x = max(xs)
+    ys = [int(coord.split(",")[1]) for coord in points.split(" ")]
+    min_y = min(ys)
+    max_y = max(ys)
+    bbox = (min_x, max_x, min_y, max_y)
+    return [bbox, xs, ys]
+
+def parse_lines(root, nsmap, include_regions, fp, exclude_regions=[],
+                extremes_ratio=0.1, midpoint_ratio=0.6,
+                skip_orphan_lines=True, col_min_x=0, col_max_x=10000000000000):
     """Parse the TextLine elements in the XML files as a dictionary
 
     Args:
         root (Element): the root element of the XML document
         nsmap (dict): a dictionary containing the namespaces used in the document
-        regions (list): a list of regions to be extracted
+        include_regions (list): a list of regions to be extracted
         fp (str): path to the file containting the transcription
             (only for debugging printing)
         exclude_regions (list): a list of region names from which text should
@@ -114,10 +190,17 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[],
         midpoint_ratio (float): The ratio of the horizontal midpoint of the line
             compared to the extremes of the line. To be used to determine
             whether a line segment contains the second hemistych of a poetry line
+        skip_orphan_lines (bool): if True, lines that are not embedded
+            in a (named) region will be discarded
+        col_min_x (int): if defined, only lines whose midpoint X coordinate
+            is more than col_min_x will be included
+        col_max_x (int): if defined, only lines whose midpoint X coordinate
+            is less than col_max_x will be included
 
     Returns:
         list
     """
+    
     lines = []
     region_xs = dict()
     line_heights = []
@@ -128,61 +211,50 @@ def parse_lines(root, nsmap, regions, fp, exclude_regions=[],
         region = text_line.getparent()
         region_type = get_region_type(region)
 
-        # skip orphan lines:
+        # skip lines that are not within a (named) region:
         if region_type is None and skip_orphan_lines:
             continue
         # skip lines that are in undesired regions:
         elif region_type in exclude_regions:
             continue
         # skip lines that are not in the whitelist of regions:
-        elif (regions != "all" and region_type not in regions):
+        elif (include_regions != "all" and region_type not in include_regions):
+            continue
+        # calculate the bounding box of the line mask (min_x, max_x, min_y, max_y)
+        bbox, xs, ys = get_bounding_box(text_line, nsmap, element_type="line")
+        if not bbox:
+            continue
+        # skip lines that are not in the desired column (in a multi-column layout):
+        mid_x = (bbox[1] + bbox[0]) / 2    # max_x + min_x
+        #print("midpoint (x) of line:", mid_x)
+        if not col_min_x < mid_x < col_max_x:
+            #print("> midpoint not in desired column")
             continue
 
+        # store the bounding box values of the line mask:
+        line_d["min_x"] = bbox[0]
+        line_d["max_x"] = bbox[1]
+        line_d["min_y"] = bbox[2]
+        line_d["max_y"] = bbox[3]
         line_d["region"] = region_type
 
         # get the text content of the line:
         line_text = etree.tostring(text_line, method="text", encoding='utf-8')
         line_d["text"] = line_text.decode("utf-8")
         
-        # get the coordinates of the line:
-        coords = text_line.find("default:Coords", nsmap)
-        try:
-            points = coords.get("points") # string of space-separated x,y pairs
-        except:
-            print(fp)
-            print("No coordinates found in line", text_line.get("id"))
-            print(etree.tostring(text_line))
-            continue
-        
-        # store the bounding box values of the line mask:
-        xs = [int(coord.split(",")[0]) for coord in points.split(" ")]
-        line_d["min_x"] = min(xs)
-        line_d["max_x"] = max(xs)
-        ys = [int(coord.split(",")[1]) for coord in points.split(" ")]
-        line_d["min_y"] = min(ys)
-        line_d["max_y"] = max(ys)
-
-        # calculate the line height and add it to the list:
-        line_height = line_d["max_y"] - line_d["min_y"]
-        line_heights.append(line_height)
-        
-        
-##        # get the type of the region that contains the line:
-##        region = text_line.getparent()
-##        region_type = get_region_type(region)
-##        print(line_d)
-##        print(region, region_type)
-##        line_d["region"] = region_type
-
+        # add this line's metadata to the list of lines:
         lines.append(line_d)
 
+        # calculate the line height and add it to the list of line heights:
+        line_height = line_d["max_y"] - line_d["min_y"]
+        line_heights.append(line_height)
 
+        # add the line's x coordinates to the region_xs dictionary:
         if not region_type in region_xs:
             region_xs[region_type] = []
         region_xs[region_type] += xs
         #print(line_d)
         #print(region, region_type)
-
 
             
     # sort the regions by their horizontal position on the page:
@@ -219,6 +291,10 @@ def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=2
     are in grouped in a list.
 
     NB: the zero point for both axes is in the left upper corner of the image!
+    0------X
+    |
+    |
+    Y
 
     Args:
         line_segments (list): a list of line segment dictionaries,
@@ -231,6 +307,9 @@ def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=2
     Returns:
         list of lists
     """
+    # set the minimum number of pixels two line segments
+    # should overlap vertically to be considered on the same line:
+    # (we use a third of the median line height within a region as default)
     try:
         min_line_overlap = max(median_line_height/3, min_line_overlap)
     except:
@@ -245,8 +324,8 @@ def sort_segments_per_line(line_segments, median_line_height, min_line_overlap=2
     for segm in line_segments:
         #print("segm", segm)
         #print("line height:",  segm["max_y"] - segm["min_y"])
-        # first check vertical overlap between current and previous line:
         #print('segm["min_y"]', segm["min_y"])
+        # first check vertical overlap between current and previous line:
         vertical_overlap = (prev_max_y - segm["min_y"]) > min_line_overlap
         #print("vertical_overlap", vertical_overlap)
         
@@ -363,14 +442,15 @@ def switch_LR_pages(folder, ext="xml", rename_files=True, pad_zeros=False):
         time.sleep(1)
         os.rmdir(temp_dir)
 
-def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_overlap=20,
+def convert_file(fp, include_regions=[], exclude_regions=[], page_offset=0, min_line_overlap=20,
                  line_segment_separator="   ", include_image_name=True,
-                 skip_orphan_lines=True, first_page=0, transcription_meta=dict()):
+                 skip_orphan_lines=True, first_page=0, transcription_meta=dict(),
+                 main_text_region="Main"):
     """Convert a single eScriptorium Page XML file to OpenITI mARkdown
 
     Args:
         fp (str): path to the xml file
-        regions (list): list of names of region types from which the
+        include_regions (list): list of names of region types from which the
             text should be extracted
         exclude_regions (list): list of names of region types from which the
             text should NOT be extracted
@@ -389,12 +469,17 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
         first_page (int): if the current file is the first page of a book,
             first_page will be the real page number of that page;
             else, it will be 0.
+        transcription_meta (dict): contains metadata about the transcription layer 
+        main_text_region (str): the name of the region that contains the
+            main text of the page; defaults to "Main"
 
     Returns:
         tuple (metadata:str, page_text:str, regions:list)
 
     """
-    #print(fp)
+    #print("-"*60)
+
+    # create an etree representation of the XML file:
     with open(fp, mode="rb") as file:
         parser = etree.XMLParser(remove_blank_text=True)
         tree = etree.parse(file, parser)
@@ -406,65 +491,126 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
     nsmap = {k if k is not None else 'default':v for k,v in root.nsmap.items()}
 
     # Define the regions that should be included, if not defined yet:
-    regions = choose_regions(regions, exclude_regions, root, nsmap)
-    
-    # extract relevant information about line segments and regions:
-    repl = parse_lines(root, nsmap, regions, fp, exclude_regions=exclude_regions,
-                       skip_orphan_lines=skip_orphan_lines)
-    line_segments, region_midpoints, median_line_height = repl
+    include_regions = select_desired_regions(include_regions, exclude_regions, root, nsmap)
 
-    # group line segments that are horizontally on the same line:
-    lines = sort_segments_per_line(line_segments, median_line_height)
-    #input("continue?")
+    # check whether the page is a double page spread
+    # by checking how many main text regions containing text are on the page:
+    regions_on_page = get_regions_on_page(root, nsmap)
+    if main_text_region in regions_on_page:
+        n_columns = len(regions_on_page[main_text_region])
+        if n_columns > 1:
+            print(f"!! {n_columns} columns in {fp}") 
+    else:
+        n_columns = 1
+    #print("number of columns:", n_columns)
 
-    # Format the lines: 
-    page_text = ""
-    try:
-        median_start_x = statistics.median([line[0]["max_x"] for line in lines])
-    except Exception as e:
-        print(e)
-        median_start_x = 0
-    line_lengths = [line[0]["max_x"]-line[-1]["min_x"] for line in lines]
-    try:
-        median_line_length = statistics.median(line_lengths)
-    except Exception as e:
-        print(e)
-        median_line_length = 0
-    indent_offset = median_start_x - (0.03*median_line_length)
-    #print("median_start_x:", median_start_x, "indent_offset:", indent_offset)
-    for line in lines:
-        line_text = ""
-        #print("----------")
-        for segm in line:
-            #print('segm["min_x"]:', segm["min_x"], 'segm["max_x"]:', segm["max_x"])
-            #print(segm["text"])
-            if segm["region"] == "Title":
-                line_text += "\n### | " + segm["text"].strip()
-            elif     segm["region"] == "Main" \
-                 and segm["max_x"] < region_midpoints["Main"]:
-                line_text = "\n# " + line_text + " %~% " + segm["text"].strip()
-                #print('segm["min_x"]:', segm["min_x"],
-                #      'segm["max_x"]:', segm["max_x"],
-                #      "midpoint:", region_midpoints["Main"])
-            else:
-                line_text += line_segment_separator + segm["text"].strip()
-            
-        if not line[0]["region"] == "Title":
-            if check_indentation(line[0], indent_offset):
-                line_text = "# " + line_text[len(line_segment_separator):]
-            else:
-                line_text = "~~" + line_text[len(line_segment_separator):]
-
-        page_text += line_text + "\n"
+    # create (virtual) vertical dividing lines
+    # between the columns on the page:
+    if n_columns > 1:
+        main_regions = sorted(regions_on_page[main_text_region],
+                              key=lambda d: d["bounding_box"][1],
+                              reverse=True) # sort by max_x (from high to low)
+        #print(json.dumps(main_regions, indent=2))
+        col_min_xs = [d["bounding_box"][0] for d in main_regions]
+        col_max_xs = [d["bounding_box"][1] for d in main_regions]
         
+        # check for overlapping main regions (if they do, it's likely a mistake):
+        for i in range(len(col_min_xs)):
+            leftmost_point = col_min_xs[i]
+            try:
+                next_rightmost_point = col_max_xs[i+1]
+            except:
+                break
+            if leftmost_point < next_rightmost_point:
+                print("Overlapping columns! Converting as if there was only one column.")
+                n_columns = 1
+                col_min_xs = [0,]
+                col_max_xs = [1000000000000000,]
+                break
+    else:
+        col_min_xs = [0,]
+        col_max_xs = [1000000000000000,]
 
-    # add page number:
-    page_no = re.findall("\d+", fp)[-1]
-    if first_page:
-        page_offset = first_page - int(page_no)
-        if first_page < 0:
-            page_offset += 1
-    page_text += "\nPageV01P{:03d}\n\n".format(int(page_no)+page_offset)
+
+    # collect the text from all lines in desired regions,
+    # for each column on the page separately:
+    page_text = ""
+    for col_no, col_min_x in enumerate(col_min_xs):
+        col_max_x = col_max_xs[col_no]
+        #print(f"COLUMN NUMBER {col_no}: X: {col_min_x} - {col_max_x}")
+        
+        # extract relevant information about line segments and regions:
+        resp = parse_lines(root, nsmap, include_regions, fp, exclude_regions=exclude_regions,
+                           skip_orphan_lines=skip_orphan_lines,
+                           col_min_x=col_min_x, col_max_x=col_max_x)
+        line_segments, region_midpoints, median_line_height = resp
+
+        # group line segments that are horizontally on the same line:
+        lines = sort_segments_per_line(line_segments, median_line_height)
+
+        # Define the treshold for a new paragraph indentation
+        # based on the average starting position of lines in the region
+        # and the average length of a line:
+        try:
+            median_start_x = statistics.median([line[0]["max_x"] for line in lines])
+        except Exception as e:
+            #print(e)
+            median_start_x = 0
+        line_lengths = [line[0]["max_x"]-line[-1]["min_x"] for line in lines]
+        try:
+            median_line_length = statistics.median(line_lengths)
+        except Exception as e:
+            #print(e)
+            median_line_length = 0
+        indent_offset = median_start_x - (0.03*median_line_length)
+        #print("median_start_x:", median_start_x, "indent_offset:", indent_offset)
+
+        # Format the lines and add them to the page text:
+        for line in lines:
+            line_text = ""
+            for segm in line:
+                #print('segm["min_x"]:', segm["min_x"], 'segm["max_x"]:', segm["max_x"])
+                #print(segm["text"])
+                if segm["region"] == "Title":
+                    line_text += "\n### | " + segm["text"].strip()
+                elif segm["region"] == "Main" \
+                     and segm["max_x"] < region_midpoints["Main"]:
+                    # segment starts to the left of the region's mid point: add poetry marker
+                    #line_text = "\n# " + line_text + " %~% " + segm["text"].strip()
+                    line_text += " %~% " + segm["text"].strip()
+                    #print('segm["min_x"]:', segm["min_x"],
+                    #      'segm["max_x"]:', segm["max_x"],
+                    #      "midpoint:", region_midpoints["Main"])
+                else:
+                    if line_text:
+                        line_text += line_segment_separator
+                    line_text += segm["text"].strip()
+                
+            # Check whether the line is the beginning of a paragraph (indentation):
+            if not line[0]["region"] == "Title":
+                if check_indentation(line[0], indent_offset):
+                    #line_text = "# " + line_text[len(line_segment_separator):]
+                    line_text = "# " + line_text
+                else:
+                    #line_text = "~~" + line_text[len(line_segment_separator):]
+                    line_text = "~~" + line_text
+
+            # Add the formatted line text to the page text
+            page_text += line_text + "\n"
+            
+
+        # add page number:
+        page_no = re.findall("\d+", fp)[-1]
+        if first_page:
+            page_offset = first_page - int(page_no)
+            if first_page < 0:
+                page_offset += 1
+        if n_columns > 1: 
+            page_suffix = "ABCDEFG"[col_no]
+        else:
+            page_suffix = ""
+        page_text += "\nPageV01P{:03d}{}\n\n".format(int(page_no)+page_offset, page_suffix)
+
 
     # add image filename:
     if include_image_name:
@@ -476,7 +622,7 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
 
     #print(page_text)
 
-    # extract metadata from text file:
+    # extract metadata from page xml file:
     metadata = ""
     meta_el = root.find("default:Metadata", nsmap)
     for child in meta_el:
@@ -490,20 +636,23 @@ def convert_file(fp, regions=[], exclude_regions=[], page_offset=0, min_line_ove
         if content:
             metadata += "#META# {}: {}\n".format(tag.replace("_", " "), content)
     
-    return metadata, page_text, regions, page_offset
+    return metadata, page_text, include_regions, page_offset
 
-def convert_folder(folder, outfp, regions=[], exclude_regions=[],
+def convert_folder(folder, outfp, include_regions=[], exclude_regions=[],
                    page_offset=0, min_line_overlap=20, extension="xml",
                    line_segment_separator="   ", include_image_name=True,
-                   skip_orphan_lines=True, first_page=0, transcription_meta=dict()):
+                   skip_orphan_lines=True, first_page=0,
+                   transcription_meta=dict(), main_text_region="Main"):
     """Convert a folder containing eScriptorium XML files
     to a single OpenITI mARkdown document
 
     Args:
         folder (str): path to the folder containing the xml files
         outfp (str): path to the output mARkdown file
-        regions (list): list of names of region types from which the
+        include_regions (list): list of names of region types from which the
             text should be extracted
+        exclude_regions (list): list of names of region types from which the
+            text should NOT be extracted
         page_offset (int): the number that should be added to the
             page number mentioned in the file name
         min_line_overlap (int): the number of pixels two line segments
@@ -512,9 +661,17 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
             used to separate line segments that are on the same line
         include_image_name (bool): if True, the name of the transcribed
             image will be included at the top of the page.
+        skip_orphan_lines (bool): if True, lines that are not embedded
+            in a (named) region will be discarded
+        first_page (int): if the current file is the first page of a book,
+            first_page will be the real page number of that page;
+            else, it will be 0.
+        transcription_meta (dict): contains metadata about the transcription layer
+        main_text_region (str): the name of the region that contains the
+            main text of the page; defaults to "Main"
 
     Returns:
-        tuple (metadata:str, page_text:str, regions:list)
+        tuple (metadata:str, page_text:str, include_regions:list)
     """
     text = ""
     for i, fn in enumerate(natural_sort(os.listdir(folder))):
@@ -523,8 +680,8 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
         fp = os.path.join(folder, fn)
         if i != 0:
             first_page = 0
-        metadata, page_text, regions, page_offset = convert_file(fp,
-            regions=regions,
+        metadata, page_text, include_regions, page_offset = convert_file(fp,
+            include_regions=include_regions,
             exclude_regions=exclude_regions,
             page_offset=page_offset,
             min_line_overlap=min_line_overlap,
@@ -532,7 +689,8 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
             include_image_name=include_image_name,
             skip_orphan_lines=skip_orphan_lines,
             first_page=first_page,
-            transcription_meta=transcription_meta)
+            transcription_meta=transcription_meta,
+            main_text_region=main_text_region)
         text += page_text
     metadata = "######OpenITI#\n\n{}\n\n#META#Header#End#\n\n".format(metadata)
     text = metadata + text
@@ -542,21 +700,23 @@ def convert_folder(folder, outfp, regions=[], exclude_regions=[],
 
 
 
-def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
+def convert_zip(zip_fp, outfp, include_regions=[], exclude_regions=[],
                 page_offset=0, min_line_overlap=20,
                 line_segment_separator="   ", include_image_name=True,
                 reorder_pages=False, skip_orphan_lines=True, first_page=0,
-                transcription_meta=dict()):
+                transcription_meta=dict(), main_text_region="Main"):
     """Convert a zip file containing eScriptorium XML files
     to a single OpenITI mARkdown document
 
     Args:
         zip_fp (str): path to the xml file
         outfp (str): path to the output mARkdown file
-        regions (list): list of names of region types from which the
+        include_regions (list): list of names of region types from which the
             text should be extracted. Alternatively, the string "all"
             can be provided: in this case, text from all regions will
             be extracted (also from orphan lines).
+        exclude_regions (list): list of names of region types from which
+            the text should NOT be extracted.
         page_offset (int): the number that should be added to the
             page number mentioned in the file name
         min_line_overlap (int): the number of pixels two line segments
@@ -569,9 +729,15 @@ def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
             of a double page
         skip_orphan_lines (bool): if True, lines that are not embedded
             in a (named) region will be discarded
+        first_page (int): if the current file is the first page of a book,
+            first_page will be the real page number of that page;
+            else, it will be 0.
+        transcription_meta (dict): contains metadata about the transcription layer
+        main_text_region (str): the name of the region that contains the
+            main text of the page; defaults to "Main"
 
     Returns:
-        tuple (metadata:str, page_text:str, regions:list)
+        tuple (metadata:str, page_text:str, include_regions:list)
     """
     # create a temporary directory to store the xml files extracted
     # from the zip archive:
@@ -587,13 +753,14 @@ def convert_zip(zip_fp, outfp, regions=[], exclude_regions=[],
     if reorder_pages:
         switch_LR_pages(temp_folder, ext="xml", rename_files=True, pad_zeros=3)
 
-    convert_folder(temp_folder, outfp, regions=regions,
+    convert_folder(temp_folder, outfp, include_regions=include_regions,
                    exclude_regions=exclude_regions, page_offset=page_offset,
                    min_line_overlap=min_line_overlap,
                    line_segment_separator=line_segment_separator,
                    include_image_name=include_image_name,
                    skip_orphan_lines=skip_orphan_lines,
-                   first_page=first_page, transcription_meta=transcription_meta)
+                   first_page=first_page, transcription_meta=transcription_meta,
+                   main_text_region=main_text_region)
     time.sleep(1)
     shutil.rmtree(temp_folder)
 
@@ -680,9 +847,11 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                         json.dump(d, file, ensure_ascii=False, indent=2)
 
                     if os.path.exists(fp) and not redownload:
+                        print("    > already downloaded")
                         continue
                 
                     try:
+                        print("    > downloading...")
                         # (this is currently only possible after removing the dunder ("__")
                         # before the `download_part_output_transcription` in the escriptorium.py source code):
                         output_zipped = escr.download_part_output_transcription(document_pk,
@@ -813,11 +982,12 @@ def add_OCR_pipeline_files(meta_fp, ocr_folder, dest_folder):
                 os.remove(fp+".yml")
 
 def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
-                           start_row=1, end_row=1000, coll_id="AOCP2",
-                           regions=[], exclude_regions=["Footnotes",],
+                           first_row=1, last_row=1000, coll_id="AOCP2",
+                           include_regions=[], exclude_regions=["Footnotes",],
                            min_line_overlap=20, line_segment_separator="   ",
                            include_image_name=True, reorder_pages=False,
-                           skip_orphan_lines=True, reconvert=False, redownload=False):
+                           skip_orphan_lines=True, reconvert=False, redownload=False,
+                           main_text_region="Main"):
     """Add files from eScriptorium to barzakh
     
     Args:
@@ -829,10 +999,10 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             "CORPUS/BARZAKH")
         download_folder (str): path to the folder to which the transcriptions should be downloaded
         dest_folder (str): path to the output folder
-        start_row (int): first row in the metadata table to be processed
-        end_row (int): last row in the metadata table to be processed
+        first_row (int): first row in the metadata table to be processed
+        last_row (int): last row in the metadata table to be processed
         coll_id (str): the collection ID that will become the first part of the version ID
-        regions (list): a list of regions from which text needs to be extracted
+        include_regions (list): a list of regions from which text needs to be extracted
         exclude_regions (list): a list of regions from which text needs to be dropped
         min_line_overlap (int): the number of pixels lines should overlap
             before their overlap is considered meaningful
@@ -848,9 +1018,14 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             even if they already exist in the download folder.
         reconvert (bool): if False, files that are already in barzakh or the corpus
             (according to the metadata file) will be skipped. If True, they will be
-            convered again. 
+            convered again.
+        main_text_region (str): the name of the region that contains the
+            main text of the page; defaults to "Main"
     """
-    escr = connect_to_escr()
+    print("Connecting to main eScriptorium instance...")
+    main_instance = connect_to_escr()
+    print("Connecting to preprod eScriptorium instance...")
+    preprod = connect_to_escr(url="https://preprod-escriptorium.openiti.org/", username="peter")
     multivol = dict()
     with open(meta_fp, mode="r", encoding="utf-8") as file:
         #meta = file.read().splitlines()
@@ -861,17 +1036,24 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             i += 1
             #print("row", i)
             
-            # do not download/convert rows before start_row:
-            if i < start_row:  
+            # do not download/convert rows before first_row:
+            if i < first_row:  
                 #print(row["eScriptorium document name"])
                 continue
             # do not download/convert already converted texts:
             elif (row["CORPUS/BARZAKH"] and not reconvert):  
                 continue
-            # do not download/convert texts after the end_row:
-            elif i > end_row:
+            # do not download/convert texts after the last_row:
+            elif i > last_row:
                 break
-            
+            print("---------------------")
+            print("row", i, "in spreadsheet:")
+
+            # check whether the transcription is on the main or preprod instance:
+            if "preprod" in row["KITAB PIPELINE / eSCRIPTORIUM"]:
+                escr = preprod
+            else:
+                escr = main_instance
 
             # download the transcription from eScriptorium:
 
@@ -882,12 +1064,12 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                 print(doc, "NOT DOWNLOADING: no transcription layer defined")
                 continue
             if row["which regions to include"]:
-                regions = re.split(", ", row["which regions to include"])
-                print("REGIONS:", regions)
-                if "all" in regions:
-                    regions = "all"
+                include_regions = re.split(", ", row["which regions to include"])
+                print("REGIONS:", include_regions)
+                if "all" in include_regions:
+                    include_regions = "all"
                 else:
-                    regions = [r for r in regions if r]
+                    include_regions = [r for r in include_regions if r]
             zip_fp = download_transcriptions(escr, download_folder,
                                              output_type="pagexml",
                                              projects=[project,],
@@ -895,8 +1077,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                                              transcription_layers=[layer,],
                                              redownload=redownload)
 
-            print("row", i)
-            print(project, doc, layer)
+            #print(project, doc, layer)
 
             # get the transcription layer metadata:
             
@@ -937,7 +1118,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                 first_page = int(row["PAGE NUMBER OF FIRST IMAGE"])
             except:
                 first_page = 0
-            convert_zip(zip_fp, outfp, regions=regions,
+            convert_zip(zip_fp, outfp, include_regions=include_regions,
                         exclude_regions=exclude_regions,
                         page_offset=0,
                         min_line_overlap=min_line_overlap,
@@ -945,7 +1126,9 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                         include_image_name=include_image_name,
                         reorder_pages=reorder_pages,
                         skip_orphan_lines=skip_orphan_lines,
-                        first_page=first_page, transcription_meta=transcription_meta)
+                        first_page=first_page,
+                        transcription_meta=transcription_meta,
+                        main_text_region=main_text_region)
 
             # create a version yml file and store it:
             yml_fp = outfp + ".yml"
@@ -984,7 +1167,8 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                     file.write(dicToYML(yml_d))
 
         # merge multivolume books:
-        print("MULTIVOLUME BOOKS:")
+        if multivol:
+            print("MULTIVOLUME BOOKS:")
         for book_uri in multivol:
             print(book_uri)
             print(multivol[book_uri])
@@ -1015,12 +1199,8 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             with open(outfp, mode="w", encoding="utf-8") as file:
                 file.write("\n\n".join(headers) + "#META#Header#End#" + "\n\n".join(bodies))
                     
-                
-                
             
-            
-            
-def connect_to_escr():
+def connect_to_escr(username=None, password=None, url=None):
     """Establish a connection to eScriptorium
 
     Returns:
@@ -1031,16 +1211,22 @@ def connect_to_escr():
         from dotenv import load_dotenv
         load_dotenv()
 
-        username = str(os.getenv("ESCRIPTORIUM_USERNAME"))
-        password = str(os.getenv("ESCRIPTORIUM_PASSWORD"))
-        url = str(os.getenv("ESCRIPTORIUM_URL"))
+        if not username:
+            username = str(os.getenv("ESCRIPTORIUM_USERNAME"))
+        if not password:
+            password = str(os.getenv("ESCRIPTORIUM_PASSWORD"))
+        if not url:
+            url = str(os.getenv("ESCRIPTORIUM_URL"))
     except:
         # ask user to provide username and password manually:
-        username = input("Please provide your eScriptorium username: ")
-        password = input("Please provide your eScriptorium password: ")
-        print("If you don't want to use the default eScriptorium page")
-        print("(https://escriptorium.openiti.org/)")
-        url = input("please provide the URL of your eScriptorium instance (press Enter to use the default):").strip()
+        if not username:
+            username = input("Please provide your eScriptorium username: ")
+        if not password:
+            password = input("Please provide your eScriptorium password: ")
+        if not url:
+            print("If you don't want to use the default eScriptorium page")
+            print("(https://escriptorium.openiti.org/)")
+            url = input("please provide the URL of your eScriptorium instance (press Enter to use the default):").strip()
 
     if not url:
         url = "https://escriptorium.openiti.org/"
@@ -1060,13 +1246,16 @@ if __name__ == "__main__":
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM.tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM_Suluk.tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (4).tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (5).tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (6).tsv"
+
     
 
 
     download_folder = "eScriptorium_pagexml"
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
-                           #reconvert=True,             # convert even if the file is already in the corpus or barzakh
-                           start_row=14, end_row=15,   # from row X to row Y in the metadata file
-                           redownload=True
+                           reconvert=True,              # convert even if the file is already in the corpus or barzakh
+                           first_row=79, last_row=79,   # from row X to row Y in the metadata spreadsheet
+                           redownload=True             # even if the transcription was already downloaded
                            )

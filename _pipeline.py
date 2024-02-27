@@ -9,6 +9,9 @@
 * checks present yml files are well-formed
 * moves text (and if present, yml) files to the corpus folders
 
+!!!! MAKE SURE TO ACCEPT ALL PULL REQUESTS AND PULL ALL CHANGES
+!!!! BEFORE RUNNING THIS SCRIPT!
+
 """
 import math
 import os
@@ -1078,6 +1081,7 @@ def main(folder, out_folder, start_date=0, end_date=10000,
 
 if __name__ == "__main__":
     main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos",
-         do_not_move_regex="[Nn]oorlib", match_uri="Hindawi")
+         do_not_move_regex="[Nn]oorlib")
+         #, match_uri="Dhahabi.Tarjamat")
     #main(folder=r"D:\AKU\OpenITI\barzakh\9001AH", out_folder=r"D:\AKU\OpenITI\25Y_repos", 
     #     non_25Y_folder="9001AH")
