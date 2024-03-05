@@ -1248,7 +1248,7 @@ if __name__ == "__main__":
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (4).tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (5).tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (6).tsv"
-
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (7).tsv"
     
 
 
@@ -1256,6 +1256,6 @@ if __name__ == "__main__":
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                            reconvert=True,              # convert even if the file is already in the corpus or barzakh
-                           first_row=79, last_row=79,   # from row X to row Y in the metadata spreadsheet
+                           first_row=136, last_row=136,   # from row X to row Y in the metadata spreadsheet
                            redownload=True             # even if the transcription was already downloaded
                            )
