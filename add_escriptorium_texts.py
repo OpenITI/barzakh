@@ -11,7 +11,7 @@ import re
 import csv
 from shutil import copyfile
 from openiti.helper.yml import readYML, dicToYML
-from  openiti.helper.templates import version_yml_template, book_yml_template
+from  openiti.helper.templates import version_yml_template, book_yml_template, author_yml_template
 import urllib.request
 
 from escriptorium_connector import EscriptoriumConnector
@@ -892,10 +892,6 @@ def download_transcriptions(escr, download_folder, output_type="pagexml", projec
                     # store the downloaded zip file at that path:
                     with open(fp,mode="wb") as file:
                         file.write(output_zipped)
-
-
-                        
-                    
     return fp
 
 
@@ -987,7 +983,8 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                            min_line_overlap=20, line_segment_separator="   ",
                            include_image_name=True, reorder_pages=False,
                            skip_orphan_lines=True, reconvert=False, redownload=False,
-                           main_text_region="Main"):
+                           main_text_region="Main",
+                           default_transcription_layer=None, add_languages=["ara"]):
     """Add files from eScriptorium to barzakh
     
     Args:
@@ -1021,6 +1018,8 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             convered again.
         main_text_region (str): the name of the region that contains the
             main text of the page; defaults to "Main"
+        add_languages (list): if the value in the language code column is
+            not in this list, the row will be skipped.
     """
     print("Connecting to main eScriptorium instance...")
     main_instance = connect_to_escr()
@@ -1046,6 +1045,9 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             # do not download/convert texts after the last_row:
             elif i > last_row:
                 break
+            # do not convert texts that are not in the specified languages:
+            if row["language code"] not in add_languages:
+                continue
             print("---------------------")
             print("row", i, "in spreadsheet:")
 
@@ -1061,10 +1063,13 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             doc = row["eScriptorium document name"]
             layer = row["eScriptorium transcription layer"]
             if not layer:
-                print(doc, "NOT DOWNLOADING: no transcription layer defined")
-                continue
+                if default_transcription_layer:
+                    layer = default_transcription_layer
+                else:
+                    print(doc, "NOT DOWNLOADING: no transcription layer defined")
+                    continue
             if row["which regions to include"]:
-                include_regions = re.split(", ", row["which regions to include"])
+                include_regions = re.split("[,;] *", row["which regions to include"])
                 print("REGIONS:", include_regions)
                 if "all" in include_regions:
                     include_regions = "all"
@@ -1153,16 +1158,31 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                 notes += "¶    " + row["NOTES"]
             add_to_yml(yml_fp, based, link, notes, issues, uri=fn)
 
-            # create a book YML file if the metadata contains book relations:
+            # create a book YML file if the metadata contains book relations / title transcription:
             relations = row["BOOK RELATIONS"]
+            title_transcr = row["TITLE_TRANSCRIPTION"]
             book_uri = ".".join(uri.split(".")[:2])
-            if relations:
+            if relations or title_transcr:
                 yml_fp = os.path.join(dest_folder, book_uri + ".yml")
                 with open(yml_fp, mode="w", encoding="utf-8") as file:
                     file.write(book_yml_template)
                 yml_d = readYML(yml_fp)
                 yml_d["00#BOOK#URI######:"] = book_uri
                 yml_d["40#BOOK#RELATED##:"] = relations
+                yml_d["10#BOOK#TITLEA#AR:"] = title_transcr
+                with open(yml_fp, mode="w", encoding="utf-8") as file:
+                    file.write(dicToYML(yml_d))
+
+            # create an author YML file if the metadata author transcription:
+            author_transcr = row["AUTHOR_TRANSCRIPTION"]
+            author_uri = book_uri.split(".")[0]
+            if author_transcr:
+                yml_fp = os.path.join(dest_folder, author_uri + ".yml")
+                with open(yml_fp, mode="w", encoding="utf-8") as file:
+                    file.write(author_yml_template)
+                yml_d = readYML(yml_fp)
+                yml_d["00#AUTH#URI######:"] = author_uri
+                yml_d["10#AUTH#SHUHRA#AR:"] = author_transcr
                 with open(yml_fp, mode="w", encoding="utf-8") as file:
                     file.write(dicToYML(yml_d))
 
@@ -1251,13 +1271,40 @@ if __name__ == "__main__":
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (7).tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (8).tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (9).tsv"
-    
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (10).tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (11).tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (12).tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (13).tsv"
+    meta_fp = "meta/OCR_URIs_DH2024 - ESCRIPTORIUM.tsv"
+    meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (14).tsv"
 
+    zip_fp = r"temp\export_doc8190_jumbledquran_pagexml_202508211434.zip"
+    outfp = r"temp\JumbledQuran"
+    
+    convert_zip(zip_fp, outfp, include_regions="all", exclude_regions=[],
+                page_offset=0, min_line_overlap=20,
+                line_segment_separator="   ", include_image_name=True,
+                reorder_pages=False, skip_orphan_lines=False, first_page=-1,
+                transcription_meta=dict(), main_text_region="Main")
+    input("CONTINUE?")
+
+
+##    zip_fp = r"C:\Users\peter\Downloads\export_doc4968_mawardi_portfolio_pagexml_202411020135.zip"
+##    outfp = "Mawardi"
+##    
+##    convert_zip(zip_fp, outfp, include_regions=["Main", "Title", "Subheading"], exclude_regions=[],
+##                page_offset=0, min_line_overlap=20,
+##                line_segment_separator="   ", include_image_name=True,
+##                reorder_pages=False, skip_orphan_lines=False, first_page=-1,
+##                transcription_meta=dict(), main_text_region="Main")
+##    input("CONTINUE?")
 
     download_folder = "eScriptorium_pagexml"
     dest_folder = "."
     add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                            reconvert=True,              # convert even if the file is already in the corpus or barzakh
-                           first_row=183, last_row=183,   # from row X to row Y in the metadata spreadsheet
-                           redownload=True             # even if the transcription was already downloaded
+                           first_row=45, last_row=46,   # from row X to row Y in the metadata spreadsheet
+                           redownload=True,             # even if the transcription was already downloaded
+                           add_languages=["ara"],
+                           default_transcription_layer="kraken:all_arabic_scripts"
                            )
