@@ -1160,7 +1160,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
                 uri = row["URI"]
             lang = row["language code"]
             #timestamp = datetime.utcnow().strftime("%y%m%d")
-            timestamp = datetime.datetime.now(datetime.UTC).strftime("%y%m%d")
+            timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%y%m%d")
             fn = f"{uri}.{coll_id}0{timestamp}{i:02d}-{lang}1"
             #print(fn)
             outfp = os.path.join(dest_folder, fn)
@@ -1203,7 +1203,7 @@ def add_eScriptorium_files(meta_fp, download_folder, dest_folder,
             submitter = row["SUBMITTED BY"]
             notes = escript_message + "¶    This file was created on "
             #notes += datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
-            notes += datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M:%S UTC")
+            notes += datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
             notes += " by eScriptorium version " + escript_version
             notes += "¶    Transcription model used: " + re.sub(r"^kraken:", "", layer)
             if "avg_transcription_confidence" in transcription_meta:
@@ -1343,7 +1343,7 @@ def add_alto_files(meta_fp, download_folder, dest_folder, coll_id="AOCP2",
 
         # create the path to the output file:
         #timestamp = datetime.utcnow().strftime("%y%m%d")
-        timestamp = datetime.datetime.now(datetime.UTC).strftime("%y%m%d")
+        timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%y%m%d")
         # check if the URI was corrected later:
         try:
             row = meta_d[uri]
@@ -1418,7 +1418,7 @@ def add_alto_files(meta_fp, download_folder, dest_folder, coll_id="AOCP2",
             issues = row["ISSUES"]
         notes = escript_message + "¶    This file was created on "
         #notes += datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
-        notes += datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M:%S UTC")
+        notes += datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
         add_to_yml(yml_fp, based, link, notes, issues, uri=fn)
 
         # create a book YML file if the metadata contains book relations / title transcription:
@@ -1615,10 +1615,10 @@ if __name__ == "__main__":
     common_meta={
         "segmentation model": "detectron2",
         "transcription model": "all_arabic_scripts",
-        "batch no.": "batch 2"
+        "batch no.": "batch 3b"
     }
-    language_code = "ara"
-    meta_fp = "meta/workstream_corpus_harvard_hollis.xlsx - Sheet1.tsv"
+    language_code = "per"
+    meta_fp = "meta/pers_metadata.tsv"
     dest_folder = "temp"
     coll_id="AOCP2"
                    
@@ -1627,6 +1627,6 @@ if __name__ == "__main__":
                    min_line_overlap=20, line_segment_separator="   ",
                    include_image_name=True, reorder_pages=False,
                    skip_orphan_lines=True, reconvert=False, 
-                   main_text_region="main_text_block", language_code="ara",
+                   main_text_region="main_text_block", language_code="per",
                    default_transcription_layer=None, common_meta=common_meta)
     
