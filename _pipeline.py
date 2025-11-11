@@ -912,7 +912,7 @@ def check_yml_files(fp):
 def main(folder, out_folder, start_date=0, end_date=10000, 
          auto_clean=True, silent=False, do_not_move_regex="[Nn]oorlib", 
          ms_pattern=" *ms[A-Z]?\d+", ms_length=300, non_25Y_folder=None,
-         match_uri=None):
+         match_uri=None, execute=True):
     """Check and clean new text files and move them into the corpus
     
     Args:
@@ -1032,32 +1032,43 @@ def main(folder, out_folder, start_date=0, end_date=10000,
         # (except files that match a specified regex: do_not_move_regex)
         # If a text file has an accompanying yml file, it will be moved as well;
         # if not, a blank yml file will be created in the destination repo.
+        corpus_type = "normal"
         if re.findall(do_not_move_regex, fn):
             print(fn, "cleaned but not moved to folder: on ignore list")
         elif os.path.isfile(fp):
             # make sure the Arabic files are in a different folder from the Persian, Urdu, etc. files:
-            if lang_code == "ara":
+            if fn.startswith("MS"):
+                lang_out_folder = os.path.join(os.path.split(out_folder)[0], "MSS")
+                corpus_type = "manuscripts"
+            elif lang_code == "ara":
                 lang_out_folder = out_folder
             else:
                 lang_out_folder = out_folder + "_" + lang_code.upper()
             print("outfolder:", lang_out_folder)
 
             # DEBUG:
-            initialize_new_text(fp, lang_out_folder, execute=True, 
-                                non_25Y_folder=non_25Y_folder)
+            if corpus_type == "normal":
+                initialize_new_text(fp, lang_out_folder, execute=execute, 
+                                    non_25Y_folder=non_25Y_folder)
+            else:
+                initialize_new_text(fp, lang_out_folder, execute=execute, 
+                                    non_25Y_folder=None)
 
             # store repo to a list of all repos to which new texts were added:
-            y = int(fn[:4])
-            if non_25Y_folder:
-                repo = non_25Y_folder
-            elif y % 25:
-                repo = "{:04d}AH".format((int(y/25) + 1)*25)
+            if fn.startswith("MS"):
+                changed_repos.add(lang_out_folder)
             else:
-                repo = "{:04d}AH".format(y)
-            # take into account the different repo name format for Arabic and other languages:
-            if lang_code != "ara":
-                repo = lang_code.upper() + repo
-            changed_repos.add(os.path.join(lang_out_folder, repo))
+                y = int(fn[:4])
+                if non_25Y_folder:
+                    repo = non_25Y_folder
+                elif y % 25:
+                    repo = "{:04d}AH".format((int(y/25) + 1)*25)
+                else:
+                    repo = "{:04d}AH".format(y)
+                # take into account the different repo name format for Arabic and other languages:
+                if lang_code != "ara":
+                    repo = lang_code.upper() + repo
+                changed_repos.add(os.path.join(lang_out_folder, repo))
 
     if changed_repos:
         print("---------------")
@@ -1080,8 +1091,11 @@ def main(folder, out_folder, start_date=0, end_date=10000,
 
 
 if __name__ == "__main__":
-    main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos",
-         do_not_move_regex="[Nn]oorlib")
+    #main(folder=r"D:\AKU\OpenITI\barzakh", out_folder=r"D:\AKU\OpenITI\25Y_repos",
+    main(folder=r"C:\Users\peter.verkinderen\Documents\OpenITI\barzakh",
+         out_folder=r"C:\Users\peter.verkinderen\Documents\OpenITI\all_repos_test\25Y_repos",
+         do_not_move_regex="[Nn]oorlib",
+         execute=False)
          #, match_uri="Dhahabi.Tarjamat")
     #main(folder=r"D:\AKU\OpenITI\barzakh\9001AH", out_folder=r"D:\AKU\OpenITI\25Y_repos", 
     #     non_25Y_folder="9001AH")
