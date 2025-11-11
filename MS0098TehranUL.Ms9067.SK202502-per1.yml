@@ -1,0 +1,15 @@
+00#TRNS#CLENGTH##: number of characters
+00#TRNS#LENGTH###: number of tokens
+00#TRNS#URI######: MS0098TehranUL.Ms9067.SK202502-per1
+40#TRNS#PAGES####: 295B-306B
+80#TRNS#LINEMODEL: Manual
+80#TRNS#REGMODEL#: Manual
+80#TRNS#RECMODEL#: Manual
+80#TRNS#LINKS####: SOURCE@permalink, IIIF@permalink, PDF@permalink, 
+    BIBTEX@permalink
+90#TRNS#CONTRIB##: TRANSCRIPTION@SM, CORRECTION@SK
+   (latin characters; please use consistently)
+90#TRNS#COMMENT##: Transcription of only the chapter on the Salghurids,
+    by Sara Mirahmadi and Stefan Kamola.
+90#TRNS#DATE#####: YYYY-MM-DD
+90#TRNS#ISSUES###: EXTRACTED_PART
