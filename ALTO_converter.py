@@ -1444,7 +1444,7 @@ def add_alto_files(meta_fp, download_folder, dest_folder, coll_id="AOCP2",
                 file.write(dicToYML(yml_d))
 
         # create an author YML file if the metadata author transcription:
-        if "title_transcr" in row:
+        if "author_transcr" in row:
             author_transcr = row["author_transcr"]
         elif "AUTHOR_TRANSCRIPTION" in row:
             author_transcr = row["AUTHOR_TRANSCRIPTION"]
