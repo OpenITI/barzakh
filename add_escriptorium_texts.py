@@ -1278,15 +1278,29 @@ if __name__ == "__main__":
     meta_fp = "meta/OCR_URIs_DH2024 - ESCRIPTORIUM.tsv"
     meta_fp = "meta/OCR_URIs_2022_2023 - ESCRIPTORIUM (14).tsv"
 
-    zip_fp = r"temp\export_doc8190_jumbledquran_pagexml_202508211434.zip"
-    outfp = r"temp\JumbledQuran"
+    # zip_fp = r"temp\export_doc8190_jumbledquran_pagexml_202508211434.zip"
+    # outfp = r"temp\JumbledQuran"
     
-    convert_zip(zip_fp, outfp, include_regions="all", exclude_regions=[],
+    # convert_zip(zip_fp, outfp, include_regions="all", exclude_regions=[],
+    #             page_offset=0, min_line_overlap=20,
+    #             line_segment_separator="   ", include_image_name=True,
+    #             reorder_pages=False, skip_orphan_lines=False, first_page=-1,
+    #             transcription_meta=dict(), main_text_region="Main")
+    # input("CONTINUE?")
+
+    zip_fp = r"eScriptorium_pagexml/0542IbnMunjibTajRiyasaIbnSayrafi.Qanun.zip"
+    outfp = r"temp/0542IbnMunjibTajRiyasaIbnSayrafi.Qanun.MAB090320261"
+    
+    convert_zip(zip_fp, outfp, include_regions=["MainZone"], exclude_regions=[],
                 page_offset=0, min_line_overlap=20,
                 line_segment_separator="   ", include_image_name=True,
-                reorder_pages=False, skip_orphan_lines=False, first_page=-1,
-                transcription_meta=dict(), main_text_region="Main")
+                reorder_pages=False, skip_orphan_lines=False, first_page=4,
+                transcription_meta=dict(), main_text_region="MainZone")
     input("CONTINUE?")
+
+    
+
+
 
 
 ##    zip_fp = r"C:\Users\peter\Downloads\export_doc4968_mawardi_portfolio_pagexml_202411020135.zip"
