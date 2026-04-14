@@ -1288,14 +1288,14 @@ if __name__ == "__main__":
     #             transcription_meta=dict(), main_text_region="Main")
     # input("CONTINUE?")
 
-    zip_fp = r"eScriptorium_pagexml/0542IbnMunjibTajRiyasaIbnSayrafi.Qanun.zip"
-    outfp = r"temp/0542IbnMunjibTajRiyasaIbnSayrafi.Qanun.MAB090320261"
+    zip_fp = r"eScriptorium_pagexml/ibn_khatib.zip"
+    outfp = r"temp/0843IbnKhatibNasiriyya.MuntaqaTarikhMisr.MAB10042026"
     
-    convert_zip(zip_fp, outfp, include_regions=["MainZone"], exclude_regions=[],
+    convert_zip(zip_fp, outfp, include_regions=["Main"], exclude_regions=[],
                 page_offset=0, min_line_overlap=20,
                 line_segment_separator="   ", include_image_name=True,
-                reorder_pages=False, skip_orphan_lines=False, first_page=4,
-                transcription_meta=dict(), main_text_region="MainZone")
+                reorder_pages=False, skip_orphan_lines=False, first_page=27,
+                transcription_meta=dict(), main_text_region="Main")
     input("CONTINUE?")
 
     

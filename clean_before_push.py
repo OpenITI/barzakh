@@ -603,7 +603,7 @@ def rewrap(text, maxlength=72):
 
 
 AUTO_CLEAN = True
-folder = "."
+folder = input("Give path to folder containing texts to clean")
 
 if AUTO_CLEAN:
     print("LISTING ALL CHARACTERS THAT ARE NOT ALLOWED IN OPENITI TEXTS")
@@ -649,15 +649,16 @@ for fn in os.listdir(folder):
             yml_fn = fn + ".yml"
         print("**YML: "+yml_fn)
         yml_fp = os.path.join(folder, yml_fn)
-        with open(yml_fp, mode="r", encoding="utf-8") as file:
-            yml_str = file.read()
-        if not yml_fn[:-4] in yml_str:
-            if "00#VERS#URI######:" in yml_str:
-                yml_str = re.sub("00#VERS#URI######:.*", "00#VERS#URI######: "+yml_fn[:-4], yml_str)
-                with open(yml_fp, mode="w", encoding="utf-8") as file:
-                    file.write(yml_str)
-            else:
-                print(yml_str)
+        if os.path.exists(yml_fp):
+            with open(yml_fp, mode="r", encoding="utf-8") as file:
+                yml_str = file.read()
+            if not yml_fn[:-4] in yml_str:
+                if "00#VERS#URI######:" in yml_str:
+                    yml_str = re.sub("00#VERS#URI######:.*", "00#VERS#URI######: "+yml_fn[:-4], yml_str)
+                    with open(yml_fp, mode="w", encoding="utf-8") as file:
+                        file.write(yml_str)
+                else:
+                    print(yml_str)
 
 
 """
