@@ -1,0 +1,14 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0375AnonymousTranslator.TarikhCalamUrusiyus.MAB020620626
+80#VERS#BASED####: https://search.worldcat.org/title/1523083655
+80#VERS#COLLATED#: 
+80#VERS#LINKS####:
+    https://www.pisauniversitypress.it/scheda-ebook/marco-di-branco/orosius-9788833398167-577092.html
+90#VERS#ANNOTATOR: 
+90#VERS#COMMENT##: Extracted from the pdf using PyMuPDF (fitz). Output cleaned using a script developed iteratively with Claude Code.
+    Encountered issues with text direction, which seem through various checks to have been resolved, but some artifacts and issues may remain.
+    This edition of the Kitab Hurushiyush was created in consultation with the Badawi edition (Kraken220810162528-ara1) and the Penelas edition with reference to the manuscript
+    The original text contains introduction, footnotes, commentary and facing English translation - these have all been removed.
+90#VERS#DATE#####: 2022-08-10
+90#VERS#ISSUES###: UNCORRECTED_OCR, PRIMARY_VERSION, CLEANED_VERSION
