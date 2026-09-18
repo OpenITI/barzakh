@@ -1,0 +1,15 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.JawamicJalinusFiTadbirMulattif.GRAR000145-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hunayn.gal.devictuatt-summ.jawami-ar1,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hunayn_gal_devictuatt-summ_jawami-ar1.xml
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Unedited text, transcribed from two manuscripts:
+    witness A: Istanbul, Süleymaniye, Ayasofya 3631 (FolioVaP...)
+    witness M: Oxford, Bodleian, Marsh 663 (PageVmP...)
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

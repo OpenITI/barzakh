@@ -1,0 +1,17 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.JalinusFiAyyamBuhran.GRAR000132-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/gal.dediebusdecr-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: ed. Cooper, Glen M. Galen, Die diebus decretoriis,
+    from Greek into Arabic. Medicine in the Medieval Mediterranean.
+    London, New York (Routledge) 2016, 97–385.
+    The text contains two sets of page numbers:
+    * PageV00P...: page numbers of the Greek text (ed. Kühn 1825)
+    * PageV01P...: page numbers of the Arabic text (ed. Cooper 2016)
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: formalized issues, separated with commas

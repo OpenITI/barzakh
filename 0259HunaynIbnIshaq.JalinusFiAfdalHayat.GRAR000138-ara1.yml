@@ -1,0 +1,16 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.JalinusFiAfdalHayat.GRAR000138-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/gal.deoptcorpnostriconstit-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Text transcribed and collated by Uwe Vagelpohl from 3 manuscripts:
+    * I = Istanbul, Süleymaniye, Ayasofya 3725 (8), 94v–99r (FolioViP...);
+    * N = Madrid, Biblioteca Nacional, 5011 (4), 138v–143v (FolioVnP...);
+    * P = Paris, Bibliothèque Nationale, arabe 2847 (4), 114v–118v (FolioVpP...).
+    Page numbers (PageV01P...) refer to the Greek text (ed. Kuhn 1822).
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

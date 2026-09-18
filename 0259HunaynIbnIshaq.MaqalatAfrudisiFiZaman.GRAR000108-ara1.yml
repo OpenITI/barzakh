@@ -1,0 +1,17 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.MaqalatAfrudisiFiZaman.GRAR000108-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/alexaphrod.zaman-transl-ar1,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/alexaphrod_zaman-transl-ar1.xml
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Ed. ʿAbd al-Raḥmān Badawī (1971), Šurūḥ ʿalā Arisṭū mafqūdah
+    fī l-yūnānīyah wa-rasāʾil uḫrā, Beirut: Dār al-mašriq.
+    In addition to the page numbers (PageV01P...) of the Badawī ed.,
+    the text also contains folio numbers (FolioVtP...) of manuscript witness T
+    (Tashkent, al-Beruni Institute of Oriental Studies, 2385).
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

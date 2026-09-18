@@ -1,0 +1,18 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.AbuqratFiHabalCalaHabal.GRAR000157-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hipp.desuperf-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: ed. Mattock, John N. and Malcolm C. Lyons.
+    Kitāb Buqrāṭ fī ḥabl ʿalā ḥabl [sic] (Hippocrates: On superfoetation).
+    Kitāb Buqrāṭ al-maʿrūf bi-Qāṭīṭrīūn ay Ḥānūt al-ṭabīb (Hippocrates: In the Surgery).
+    Arabic Technical and Scientific Texts 3. Cambridge (W. Heffer and Sons) 1968, 1–25.
+    The text file contains two sets of page numbers:
+    * PageV00P...: page numbers of the Greek text (ed. Littré 1853)
+    * PageV01P...: page numbers of the Mattock & Lyons edition of the Arabic text.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

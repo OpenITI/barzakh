@@ -1,0 +1,19 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.AhwiyaWaBuldanLiAbuqrat.GRAR000153-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hipp.deaere-transl-ar2
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Ed. Mattock, John N. and Malcolm C. Lyons.
+    Kitāb Buqrāṭ fī l-amrāḍ al-bilādiyya. Hippocrates:
+    On Endemic Diseases (Airs, Waters and Places).
+    W. Heffer and Sons 5.
+    Cambridge (W. Heffer and Sons) 1969, 1–163.
+    This text file contains two sets of pagination:
+    * PageV00P...: pages of the Heiberg edition
+    * PageV01P...: pages of the Mattock & Lyons edition
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

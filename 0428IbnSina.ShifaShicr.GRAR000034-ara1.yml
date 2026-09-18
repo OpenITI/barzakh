@@ -1,0 +1,28 @@
+00#VERS#CLENGTH##: 39787
+00#VERS#LENGTH###: 8886
+00#VERS#URI######: 0428IbnSina.ShifaShicr.GRAR000034-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/ibnsina.arist.poetica-comm.alshifa-ar1,
+    http://www.worldcat.org/oclc/1039069199,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/ibnsina_arist_poetica-comm_alshifa-ar1.xml,
+    https://www.graeco-arabic-studies.org/single-text/text/margoliouth-41.html
+80#VERS#COLLATED#: https://www.graeco-arabic-studies.org/single-
+    text/text/margoliouth-41.html,  http://www.worldcat.org/oclc/1039069199
+80#VERS#LINKS####:
+    https://archive.org/details/analectaorienta00arisgoog/page/n172
+90#VERS#ANNOTATOR: PV
+90#VERS#COMMENT##: Only fann al-shiʿr = fann 9 of jumla 1 of the Shifāʾ.
+    Ed. David S. Margoliouth (1887), Analecta Orientalia ad
+    Poeticam Aristoteleam.  London: D. Nutt, pp. 80-113. NOTE OF THE REVIEWER
+    (HRH): PARATEXT added. Deleted the last page which was a part of a text
+    written by Faḫr al-dīn al-Rāzī.
+    The text file contains two sets of page numbers:
+    * PageV01P...: references to Margoliouth's edition
+    * PageV00P...: references to Badawī's edition (GRAR000035)
+    All paratextual elements (introductions,
+    footnotes, indices, ...) removed by HRH and MGR (OpenITI Clean operation,
+    2023) Link to the text file as it was before it was cleaned:
+    https://raw.githubusercontent.com/OpenITI/0450AH/pre-
+    clean/data/0428IbnSina/0428IbnSina.FannShicr/0428IbnSina.FannShicr.GRAR000034-ara1.mARkdown
+90#VERS#DATE#####: 2020-04-07
+90#VERS#ISSUES###: INCOMPLETE_VERSION, PRIMARY_VERSION, CLEANED_VERSION

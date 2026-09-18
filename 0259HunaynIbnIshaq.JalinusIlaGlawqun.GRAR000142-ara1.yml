@@ -1,0 +1,16 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.JalinusIlaGlawqun.GRAR000142-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/gal_adglauc-transl-ar1.xml,
+    https://www.graeco-arabic-studies.org/view/gal.adglauc-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Unedited text, transcribed from two manuscripts:
+    * witness G: Princeton, University Library, Garrett 1G (FolioVgP...)
+    * witness A: Istanbul, Süleymaniye, Ayasofya 3701 (FolioVaP...)
+    The text also contains page numbers (PageV01P...) of the Greek text (ed. Kühn 1826)
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

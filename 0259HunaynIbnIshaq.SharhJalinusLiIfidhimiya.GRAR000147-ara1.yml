@@ -1,0 +1,18 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.SharhJalinusLiIfidhimiya.GRAR000147-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/gal.inhippepid6-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: ed. Vagelpohl, Uwe. Galeni In Hippocratis Epidemiarum
+    librum VI commentariorum I-VIII versio Arabica.
+    Corpus Medicorum Graecorum. Supplementum Orientale V 3.
+    Berlin (Walter de Gruyter) 2022, 92–1458.
+    The text contains two sets of page numbers:
+    * PageV01P003-507: pages of the Greek text (ed. Wenkebach)
+    * PageV01P092-1458: pages of the Arabic text (ed. Vagelpohl 2022)
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGINATION

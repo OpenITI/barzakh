@@ -1,0 +1,17 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.MukhtasarWajizFiUstuqussat.GRAR000130-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hunayn.gal.deelem-summ.mukhtasar-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: ed. Langermann, Y. Tzvi and Gerrit Bos: "An Epitome of Galen's
+    On the Elements Ascribed to Ḥunayn ibn Isḥāq".
+    Arabic Sciences and Philosophy 25/1 (2015), 62–78.
+    In addition to the page numbers of the Langermann-Bos ed. (PageV01P...),
+    the text contains page numbers of a manuscript witness M (PageVmP...).
+    PV marked the list of chapter titles at the beginning as PARATEXT.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

@@ -1,0 +1,18 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.AbuqratFiAmradBiladiyya.GRAR000152-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hipp.deaere-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: ed. Mattock, John N. and Malcolm C. Lyons.
+    Kitāb Buqrāṭ fī l-amrāḍ al-bilādiyya. Hippocrates: On Endemic Diseases
+    (Airs, Waters and Places). Arabic Technical and Scientific Texts 5.
+    Cambridge (W. Heffer and Sons) 1969, 1–163.
+    This text file contains two sets of page numbers:
+    * PageV00P...: page numbers of the Heiberg edition
+    * PageV01P...: page numbers of the Mattock/Lyons edition (1969, version A)
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

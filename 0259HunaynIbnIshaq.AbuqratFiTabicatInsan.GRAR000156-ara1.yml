@@ -1,0 +1,15 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.AbuqratFiTabicatInsan.GRAR000156-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hipp.denathom-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Ed. Mattock, John N. and Malcolm C. Lyons.
+    Kitāb Buqrāṭ fī ṭabīʿat al-insān (Hippocrates: On the nature of man).
+    Arabic Technical and Scientific Texts 4.
+    Cambridge (W. Heffer and Sons) 1968, 1–26.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

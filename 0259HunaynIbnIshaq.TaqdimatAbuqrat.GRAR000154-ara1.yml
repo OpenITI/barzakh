@@ -1,0 +1,14 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0259HunaynIbnIshaq.TaqdimatAbuqrat.GRAR000154-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/hipp_progn-transl-ar1.xml,
+    https://www.graeco-arabic-studies.org/view/hipp.progn-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Ed. Émile Littré (1886), Über die Auszüge aus griechischen
+    Schriftstellern bei al-Jaʿqūbī. I. Hippokrates, Paris: Baillière.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
