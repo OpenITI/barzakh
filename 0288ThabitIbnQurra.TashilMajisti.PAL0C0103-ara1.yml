@@ -8,6 +8,13 @@
     consistently)
 90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The text contains four sets of page numbers:
+    * PageV01P...: page numbers of the critical edition of the Arabic text
+      (ed. Régis Morelon in Thābit ibn Qurra. Œuvres d’astronomie,
+      Paris: Les Belles Lettres, 1987, pp. 1–17)
+    * FolioVaP...: Istanbul, Süleymaniye, Ayosofya 4832 , ff. 52r–53v
+    * FolioVlP...: London, British Library, Or. 4104, ff. 171v–176r (Judaeo-Arabic)
+    * FolioVtP...: Tehran, Kitābkhāna-yi Majlis-i shurā-yi Islāmī, 4642, ff. 1v–4r (now pp. 154–160)
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

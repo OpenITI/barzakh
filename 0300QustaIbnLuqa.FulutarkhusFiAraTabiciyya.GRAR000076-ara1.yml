@@ -14,5 +14,10 @@
     in arabischer Überlieferung (Akademie der Wissenschaften und der Literatur.
     Veröffentlichungen der orientalischen Kommission 33), Wiesbaden: Franz
     Steiner Verlag, 92-248.
+    The text contains four sets of page numbers:
+    * PageV01P092...P248: page numbers of the Daiber 1980 ed.
+    * PageVbP091...P188: page numbers of the Badawi 1954 ed.
+    * FolioVpP...: witness P: Princeton, Princeton University, Garrett 308Y
+    * FolioVzP...: witness Z: Damascus, Ẓāhirīyah, 4871
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: CLEANED_VERSION

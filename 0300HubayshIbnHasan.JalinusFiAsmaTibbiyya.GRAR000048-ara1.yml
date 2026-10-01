@@ -12,10 +12,9 @@
     consistently)
 90#VERS#COMMENT##: Ed. Max Meyerhof and Josef Schacht (1931), Galen über
     die medizinischen Namen. Abhandlungen der preussischen Akademie der
-    Wissenschaften. Philosophisch-historische Klasse 3, 1-21 (Ar.). All
-    paratextual elements (introductions, footnotes, indices, ...) removed by
-    HRH and MGR (OpenITI Clean operation, 2023) Link to the text file as it was
-    before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300HubayshIbnHasan/0300HubayshIbnHasan.JalinusFiAsmaTibbiyya/0300HubayshIbnHasan.JalinusFiAsmaTibbiyya.GRAR000048-ara1
+    Wissenschaften. Philosophisch-historische Klasse 3, 1-21 (Ar.).
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the Meyerhof-Schacht ed.
+    * FolioVlP...: manuscript witness L: Leiden, Leiden University, Or. 585
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

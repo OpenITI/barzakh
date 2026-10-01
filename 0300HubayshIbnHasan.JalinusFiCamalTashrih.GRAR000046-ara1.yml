@@ -13,9 +13,10 @@
     [theta]-[iota][epsilon]:  einleitung zur Anatomie des Galen, Sach- und
     Namenregister :  zum ersten Male veröffentlicht nach den Handschriften
     einer arabischen Übersetzung des 9. Jahrh. n. Chr. Leipzig: J. Hinrich,
-    1-322. All paratextual elements (introductions, footnotes, indices, ...)
-    removed by HRH and MGR (OpenITI Clean operation, 2023) Link to the text
-    file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300HubayshIbnHasan/0300HubayshIbnHasan.JalinusFiCamalTashrih/0300HubayshIbnHasan.JalinusFiCamalTashrih.GRAR000046-ara1
+    li–lxxxi, 1–332.
+    NB: the page numbers in the text are somewhat different from the original
+    edition:
+    * pages li-lxxxi in the edition are PageV01P001-PageV01P016;
+    * pages 1-332 in the edition are PageV01P017-PageV01P348
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

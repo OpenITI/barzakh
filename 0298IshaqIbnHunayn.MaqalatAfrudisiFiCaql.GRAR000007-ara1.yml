@@ -13,5 +13,10 @@
 90#VERS#COMMENT##: Ed. James Finnegan (1956),  "Texte arabe du ΠΕΡΙ ΝΟΥ
     d'Alexandre d'Aphrodise", Mélanges de l'Université Saint-Joseph vol. 33 pp.
     181-199.
+    The text contains four sets of page numbers:
+    * PageV01P181-199: pages of the Arabic edition (Finnegan 1956)
+    * PageVbP106-113: pages of the Greek edition (Bruns 1887)
+    * FolioVeP-118A: witness E: Madrid, Escorial, árabe 798
+    * FolioVcP-060B: witness C: Istanbul, Süleymaniye, Carullah 1279
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: formalized issues, separated with commas

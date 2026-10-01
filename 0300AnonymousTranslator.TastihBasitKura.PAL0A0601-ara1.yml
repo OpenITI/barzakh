@@ -6,8 +6,12 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
+90#VERS#COMMENT##: Ed. Nathan Sidoli and J. L. Berggren, 'The Arabic Version
+    of Ptolemy's Planisphere or Flattening the Surface of the Sphere:
+    Text, Translation, Commentary', SCIAMVS 8 (2007), pp. 37–139,
+    esp. pp. 55–81.Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The online edition does not contain page numbers.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGE_NUMBERS

@@ -1,0 +1,19 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0300CisaIbnYahya.AbuqratFiAkhlat.GRAR000092-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/hipp.dehum-transl-ar1
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: ed. Mattock 1971 -- Mattock, John N. Kitāb Buqrāṭ fī l-aḫlāṭ
+    (Hippocrates: On humours). Kitāb al-ġiḏāʾ li-Buqrāṭ
+    (Hippocrates: On nutriment). Arabic Technical and Scientific Texts 6.
+    Cambridge (W. Heffer and Sons) 1971, 1–37.
+    The text contains two sets of page numbers:
+    * PageV01P001...037: Page numbers of the Mattock 1971 ed.
+    * PageVoP248...262: ed. Overwien, Oliver. Hipocratis De humoribus.
+        Corpus Medicorum Graecorum I 3,1. Berlin (De Gruyter) 2014, 248–262.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: CLEANED_VERSION

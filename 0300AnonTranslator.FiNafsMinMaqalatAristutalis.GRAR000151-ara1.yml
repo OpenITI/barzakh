@@ -8,9 +8,12 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: a free running comment here; you can add as many lines
-    as you see fit; the main goal of this comment section is to have a place to
-    record valuable information, which is difficult to formalize into the above
-    given categories.
+90#VERS#COMMENT##: Ed. Helmut Gätje (1971), Studien zur Überlieferung
+    der aristotelischen Psychologie im Islam, Heidelberg: Carl Winter Universitätsverlag.
+    The text contains four sets of page numbers:
+    * PageV01P121...129: page numbers of the Gätje edition
+    * FolioVaP052A...054A: witness A: Istanbul, Süleymaniye, Ayasofya 2457
+    * PageVbP144...147: witness B: Baghdad, al-Matḥaf al-ʿIrāqī, 952
+    * FolioVlP084A...086A: witness L: Leiden, University Library, Or. 177
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

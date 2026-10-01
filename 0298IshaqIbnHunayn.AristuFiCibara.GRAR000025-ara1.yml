@@ -13,5 +13,8 @@
 90#VERS#COMMENT##: Ed. Isidor Pollak (1913),  "Die Hermeneutik des
     Aristoteles in der arabischen Übersetzung  des Ishāk Ibn Honein",
     Abhandlungen für die Kunde des Morgenlandes vol. 13/1 pp. 1-34.
+    The text contains two sets of page numbers:
+    * PageV13P...: page numbers of the Pollak edition.
+    * PageVpP...: witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: formalized issues, separated with commas

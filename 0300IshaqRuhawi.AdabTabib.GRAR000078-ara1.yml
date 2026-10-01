@@ -9,10 +9,6 @@
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
 90#VERS#COMMENT##: Ed. Johann Christoph Bürgel (1992),  Kitāb adab al-
-    ṭabīb taʾlīf Isḥāq ibn ʿAlī al-Ruhāwī, unpublished. All paratextual
-    elements (introductions, footnotes, indices, ...) removed by HRH and MGR
-    (OpenITI Clean operation, 2023) Link to the text file as it was before it
-    was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300IshaqRuhawi/0300IshaqRuhawi.AdabTabib/0300IshaqRuhawi.AdabTabib.GRAR000078-ara1
+    ṭabīb taʾlīf Isḥāq ibn ʿAlī al-Ruhāwī, unpublished.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

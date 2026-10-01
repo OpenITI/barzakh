@@ -12,10 +12,9 @@
     consistently)
 90#VERS#COMMENT##: Ed. Malcolm C. Lyons (1963),  Galeni in Hippocratis De
     officina medici commentariorum versio arabica.  (Corpus Medicorum
-    Graecorum. Supplementum Orientale 1) Berlin: Akademie-Verlag, 10-96. All
-    paratextual elements (introductions, footnotes, indices, ...) removed by
-    HRH and MGR (OpenITI Clean operation, 2023) Link to the text file as it was
-    before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300HubayshIbnHasan/0300HubayshIbnHasan.JalinusFiMudawatKasr/0300HubayshIbnHasan.JalinusFiMudawatKasr.GRAR000049-ara1
+    Graecorum. Supplementum Orientale 1) Berlin: Akademie-Verlag, 10-96.
+    The text contains two sets of page numbers:
+    * PageV01P010...096: page numbers of the Arabic text (ed. Lyons 1963)
+    * PageVKP738...925: page numbers of the Greek text (ed. Kühn 1830)
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

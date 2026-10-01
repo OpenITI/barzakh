@@ -13,9 +13,9 @@
     Buqrāṭ fī ḥabl ʿalā ḥabl [sic]  (Hippocrates: On superfoetation). Kitāb
     Buqrāṭ al-maʿrūf bi-Qāṭīṭrīūn ay Ḥānūt al-ṭabīb  (Hippocrates: In the
     Surgery)  (Arabic Technical and Scientific Texts 3), W. Heffer and Sons,
-    Cambridge, vol. 3, pp. 1-19. All paratextual elements (introductions,
-    footnotes, indices, ...) removed by HRH and MGR (OpenITI Clean operation,
-    2023) Link to the text file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300HubayshIbnHasan/0300HubayshIbnHasan.QatitriyunLiAbuqrat/0300HubayshIbnHasan.QatitriyunLiAbuqrat.GRAR000095-ara1
+    Cambridge, vol. 3, pp. 1-19.
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the Arabic text (ed. Mattock and Lyons 1968)
+    * PageVLP...: page numbers of the Greek text (ed. Littré 1841)
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

@@ -10,10 +10,9 @@
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
 90#VERS#COMMENT##: Ed. ʿAbd al-Raḥmān Badawī (1368/1948), "Manṭiq Arisṭū",
-    Dirāsāt Islāmiyyaŧ 7/1, pp. 59-99. All paratextual elements (introductions,
-    footnotes, indices, ...) removed by HRH and MGR (OpenITI Clean operation,
-    2023) Link to the text file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-
-    clean/data/0298IshaqIbnHunayn/0298IshaqIbnHunayn.AristuFiCibara/0298IshaqIbnHunayn.AristuFiCibara.GRAR000012-ara1
+    Dirāsāt Islāmiyyaŧ 7/1, pp. 59-99.
+    The text contains two sets of page numbers:
+    * PageV01P...: Badawi ed.
+    * PageVpP...: witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

@@ -7,9 +7,14 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: a free running comment here; you can add as many lines
-    as you see fit; the main goal of this comment section is to have a place to
-    record valuable information, which is difficult to formalize into the above
-    given categories.
+90#VERS#COMMENT##: ed. Overwien, Oliver. Hipocratis De humoribus.
+    Corpus Medicorum Graecorum I 3,1. Berlin (De Gruyter) 2014, 248–262.
+    The text contains two sets of page numbers:
+    * PageV01P248...262: Page numbers of the Overwien 2014 edition.
+    * PageVmP001...037: Page numbers of the Mattock 1971 ed. (
+        Mattock, John N. Kitāb Buqrāṭ fī l-aḫlāṭ
+        (Hippocrates: On humours). Kitāb al-ġiḏāʾ li-Buqrāṭ
+        (Hippocrates: On nutriment). Arabic Technical and Scientific Texts 6.
+        Cambridge (W. Heffer and Sons) 1971, 1–37.)
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

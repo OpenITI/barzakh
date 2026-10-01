@@ -10,10 +10,11 @@
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
 90#VERS#COMMENT##: Ed. Felix Klein-Franke (1979),  "The Arabic Version of
-    Galen's Περὶ ἐθῶν".  Jerusalem Studies in Arabic and Islam 1, 125-150. All
-    paratextual elements (introductions, footnotes, indices, ...) removed by
-    HRH and MGR (OpenITI Clean operation, 2023) Link to the text file as it was
-    before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300HubayshIbnHasan/0300HubayshIbnHasan.JalinusFiCadat/0300HubayshIbnHasan.JalinusFiCadat.GRAR000082-ara1
+    Galen's Περὶ ἐθῶν".  Jerusalem Studies in Arabic and Islam 1, 125-150.
+    The text contains four sets of page numbers:
+    * PageV01P139...150: page numbers of the Klein-Franke ed.
+    * PageVpP039...052: page numbers of the Pfaff ed.
+    * PageVsP002...032: page numbers of the Schmutte ed.
+    * FolioVaP194B...206B: folio numbers of manuscript witness A.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

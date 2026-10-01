@@ -11,10 +11,10 @@
     consistently)
 90#VERS#COMMENT##: Ed. Paul Kraus, Richard Walzer (1951), Galeni Compendium
     Timaei Platonis aliorumque dialogorum synopsis  quae extant fragmenta
-    (Plato Arabus 1).  London: Warburg Institute, pp. 3-34. All paratextual
-    elements (introductions, footnotes, indices, ...) removed by HRH and MGR
-    (OpenITI Clean operation, 2023) Link to the text file as it was before it
-    was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0300CisaIbnYahya/0300CisaIbnYahya.JalinusFiTimaus/0300CisaIbnYahya.JalinusFiTimaus.GRAR000079-ara1
+    (Plato Arabus 1).  London: Warburg Institute, pp. 3-34.
+    The text contains three sets of page numbers:
+    * PageV01P...: page numbers of the Kraus ed.
+    * FolioVaP...: folio numbers of witness A
+    * FolioVeP...: folio numbers of witness E
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

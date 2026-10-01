@@ -7,9 +7,11 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: a free running comment here; you can add as many lines
-    as you see fit; the main goal of this comment section is to have a place to
-    record valuable information, which is difficult to formalize into the above
-    given categories.
+90#VERS#COMMENT##: Text transcribed and collated by Uwe Vagelpohl.
+    The text contains four sets of page numbers:
+    * PageV01P...: page numbers of the Greek text (ed. Kühn 1822)
+    * FolioVnP...: witness N: Madrid, Biblioteca Nacional, 5011 (5), 144r–147r
+    * FolioViP...: witness I = Istanbul, Süleymaniye, Ayasofya 3725 (10), 122v–125r
+    * FolioVpP...: witness P = Paris, Bibliothèque Nationale, arabe 2847 (5), 118v–120v
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

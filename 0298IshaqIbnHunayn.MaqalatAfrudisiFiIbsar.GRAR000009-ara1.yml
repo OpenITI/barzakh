@@ -11,9 +11,10 @@
 90#VERS#COMMENT##: Ed. Helmut Gätje (1971),  Studien zur Überlieferung der
     aristotelischen Psychologie im Islam (Annales Universitatis Saraviensis.
     Reihe: Philosophische Fakultät, 11). Heidelberg: Carl Winter
-    Universitätsverlag, 147-163. All paratextual elements (introductions,
-    footnotes, indices, ...) removed by HRH and MGR (OpenITI Clean operation,
-    2023) Link to the text file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0300AH/pre-clean/data/0298IshaqIbnHunayn/0298IshaqIbnHunayn.MaqalatAfrudisiFiIbsar/0298IshaqIbnHunayn.MaqalatAfrudisiFiIbsar.GRAR000009-ara1
+    Universitätsverlag, 147-163.
+    The text contains three sets of page numbers:
+    * PageV01P...: page numbers of the Arabic edition (ed. Gätje 1971)
+    * PageVbP...: page numbers of the Greek edition (ed. Bruns 1887)
+    * FolioVeP...: witness E: Madrid, Escorial, árabe 798
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

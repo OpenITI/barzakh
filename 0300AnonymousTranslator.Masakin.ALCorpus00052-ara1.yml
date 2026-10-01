@@ -12,4 +12,4 @@
     Transcribed by Azzam Hasan.
     The text was converted to OpenITI mARkdown by PV.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

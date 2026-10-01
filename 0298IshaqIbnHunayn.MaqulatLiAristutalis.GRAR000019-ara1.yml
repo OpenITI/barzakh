@@ -13,5 +13,8 @@
     Categoriae Graece cum versione Arabica  Isaaci Honeini filii et variis
     lectionibus  textus Graeci e versione Arabica ductis,  Leipzig: Engelmann,
     3-49.
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the Zenker edition
+    * FolioVpP...: Page numbers of witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: CLEANED_VERSION

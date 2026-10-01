@@ -8,6 +8,10 @@
     consistently)
 90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The text contains two sets of page numbers:
+    * PageV01P...: ms. Istanbul, Köprülü Kütüphanesi, Fazıl Ahmed Paşa 948
+    * PageVmP...: ed. Régis Morelon, Thābit ibn Qurra. Œuvres d’astronomie,
+      Paris: Les Belles Lettres, 1987, pp. 84–92.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
