@@ -12,9 +12,5 @@
 90#VERS#COMMENT##: Ed. William Thomson and Gustav Junge (1930),  The
     Commentary of Pappus on Book 10 of Euclid's Elements  (Harvard Semitic
     Series 8),  Harvard University Press, Cambridge/Mass., vol. 8 pp. 191-260.
-    All paratextual elements (introductions, footnotes, indices, ...) removed
-    by HRH and MGR (OpenITI Clean operation, 2023) Link to the text file as it
-    was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0325AH/pre-clean/data/0305AbuCuthmanDimashqi/0305AbuCuthmanDimashqi.BabusFiAczam/0305AbuCuthmanDimashqi.BabusFiAczam.GRAR000098-ara1
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
