@@ -12,7 +12,6 @@ from openiti.helper.yml import readYML, dicToYML
 from  openiti.helper.templates import version_yml_template, book_yml_template, author_yml_template
 import urllib.request
 
-from escriptorium_connector import EscriptoriumConnector
 
 from lxml import etree
 import statistics
@@ -1502,6 +1501,8 @@ def connect_to_escr(username=None, password=None, url=None):
     Returns:
         escr (an eScriptorium connection object)
     """
+    from escriptorium_connector import EscriptoriumConnector
+    
     try:
         # load your credentials from the .env file if it exists:
         from dotenv import load_dotenv
@@ -1610,6 +1611,15 @@ if __name__ == "__main__":
 ##                       first_page=0, transcription_meta=dict(),
 ##                       main_text_region="main_text_block"
 ##                       )
+
+##    zip_fp = "export_doc13947_kilwachronicle_alto_20261013223215.zip"
+##    outfp = "1300Anonymous.SalwaFiAkhbarKilwa.EScr20261013-ara1"
+##    convert_zip(zip_fp, outfp, include_regions="all", exclude_regions=[],
+##                page_offset=0, min_line_overlap=20,
+##                line_segment_separator="   ", include_image_name=True,
+##                reorder_pages=False, skip_orphan_lines=False, first_page=17,
+##                transcription_meta=dict(), main_text_region="MainZone")
+##    input("CONTINUE?")
             
     transcr_folder = "eScriptorium_alto"
     common_meta={
