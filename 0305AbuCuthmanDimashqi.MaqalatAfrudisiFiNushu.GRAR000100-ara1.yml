@@ -1,0 +1,18 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0305AbuCuthmanDimashqi.MaqalatAfrudisiFiNushu.GRAR000100-ara1
+80#VERS#BASED####:
+    https://www.graeco-arabic-studies.org/view/alexaphrod.quaestio1.5.deauctu-transl-ar2,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/alexaphrod_quaestio1_5_deauctu-transl-ar2.xml
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Ed. ʿAbd al-Raḥmān Badawī (1971), Šurūḥ ʿalā Arisṭū mafqūdah
+    fī l-yūnānīyah wa-rasāʾil uḫrā, Beirut: Dār al-mašriq.
+    The text contains three sets of page numbers:
+    * PageV01P...: page numbers of the Badawi edition
+    * PageVbP...: page numbers of the Greek text (ed. Bruns 1892)
+    * FolioVtP...: witness T: Tashkent, al-Beruni Institute of Oriental Studies, 2385
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: formalized issues, separated with commas
