@@ -12,7 +12,9 @@
 90#VERS#COMMENT##: Ed. Hans-Jochen Ruland (1979),  Zwei arabische Fassungen
     der Abhandlung des Alexander von Aphrodisias  über die Universalia
     (Quaestio I 11a) (Nachrichten der Akademie der Wissenschaften in Göttingen.
-    I: Phil.-hist. Kl., 10) Göttingen: Vandenhoeck & Ruprecht, 254-259. All
-    paratextual elements (introductions, footnotes, indices, ...) removed by
-    HRH and MGR (OpenITI Clean operation, 2023)
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+    I: Phil.-hist. Kl., 10) Göttingen: Vandenhoeck & Ruprecht, 254-259.
+    The text contains three sets of page numbers:
+    * PageV01P...: page numbers of the Ruland edition
+    * PageVbP...: page numbers of the Greek text (ed. Bruns 1892)
+    * FolioVeP...: witness E: Madrid, Escorial, árabe 798
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

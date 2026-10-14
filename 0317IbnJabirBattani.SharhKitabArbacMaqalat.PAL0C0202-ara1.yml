@@ -6,8 +6,15 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
+90#VERS#COMMENT##: This is a transcription of al-Battānī’s commentary
+    on Ptolemy’s Tetrabiblos based on manuscript Escorial árabe 969.
+    It comments on some chapters of Books I and II
+    and on all chapters of Books III and IV.
+    Text digitized by Nadine Löhr for the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The text contains two sets of folio numbers:
+    * FolioV01P...: manuscript Escorial árabe 969
+    * FolioVbP...:  Berlin Sprenger 1840 manuscript
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

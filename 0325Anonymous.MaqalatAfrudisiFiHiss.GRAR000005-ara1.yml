@@ -13,10 +13,10 @@
 90#VERS#COMMENT##: Ed. Hans-Jochen Ruland (1978),  Die arabische
     Übersetzung der Schrift des Alexander von Aphrodisias  über die
     Sinneswahrnehmung. Nachrichten der Akademie der Wissenschaften in
-    Göttingen. I: Phil.-hist. Kl. vol. 2 pp. 168-195. All paratextual elements
-    (introductions, footnotes, indices, ...) removed by HRH and MGR (OpenITI
-    Clean operation, 2023) Link to the text file as it was before it was
-    cleaned:
-    https://raw.githubusercontent.com/OpenITI/0325AH/pre-clean/data/0325Anonymous/0325Anonymous.MaqalatAfrudisiFiHiss/0325Anonymous.MaqalatAfrudisiFiHiss.GRAR000005-ara1
+    Göttingen. I: Phil.-hist. Kl. vol. 2 pp. 168-195.
+    The text contains three sets of page numbers:
+    * PageV01P...: page numbers of the Ruland edition
+    * PageVbP...: page numbers of the Greek text (ed. Bruns 1892)
+    * FolioVeP...: witness E: Madrid, Escorial, árabe 798
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

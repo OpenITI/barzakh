@@ -3,7 +3,7 @@
 
 #META# author: Alexander of Aphrodisias
 #META# title: Quaestio III 3: De sensu
-#META# ed_info: Ed. Ivo Bruns (1978), Die arabische Übersetzung der Schrift des Alexander von Aphrodisias über die Sinneswahrnehmung, Berlin: Reimer.
+#META# ed_info: Ed. Hans-Jochen Ruland (1978), Die arabische Übersetzung der Schrift des Alexander von Aphrodisias über die Sinneswahrnehmung, Berlin: Reimer.
 #META# witness E: Madrid, Escorial, árabe 798
 
 
@@ -11,7 +11,7 @@
 
 # بسم اللّه الرحمان الرحيم، اللّهمّ يسّر برحمتك
 
-### ||| مقالة الإسكندر الأفروديسيّ في الحسّ وكيف هو على مذهب أرسطو
+# مقالة الإسكندر الأفروديسيّ في الحسّ وكيف هو على مذهب أرسطو
 
 # قال الإسكندر إنّ أرسطو لمّا فرغ من كتابه الذي يدعى كتاب النفس من القول
 ~~في صفة القوّة الغاذية، أردف قوله في صفة الحسّ وكيف يكون. غير أنّه ذكر
@@ -241,6 +241,5 @@ PageV01P186
 # فقد استبان الآن وصحّ بأقاويل مضطرّة 〈مقنعة〉 أنّ الحسّ هو الكائن
 ~~بالقوّة الثانية، المنفعل المؤثّر 〈فيه〉 الذاهب إلى الفعل من المحسوس بلا
 ~~استحالة ولا حركة البتّة.
-
-# تمّت المقالة في الحسّ، والحمد للّه كثيراً، كما هو أهله PageV01P194
-~~PageV01P086 FolioVeP077B
+### |PARATEXT|
+# تمّت المقالة في الحسّ، والحمد للّه كثيراً، كما هو أهله PageV01P194 PageV01P086 FolioVeP077B
