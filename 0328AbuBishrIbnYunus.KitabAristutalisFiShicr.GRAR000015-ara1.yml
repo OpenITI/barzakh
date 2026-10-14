@@ -11,10 +11,9 @@
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
 90#VERS#COMMENT##: Ed. David Samuel Margoliouth (1887), Analecta Orientalia
-    ad Poeticam Aristoteleam. London: D. Nutt,pp. 1-76. All paratextual
-    elements (introductions, footnotes, indices, ...) removed by HRH and MGR
-    (OpenITI Clean operation, 2023) Link to the text file as it was before it
-    was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0350AH/pre-clean/data/0328AbuBishrIbnYunus/0328AbuBishrIbnYunus.KitabAristutalisFiShicr/0328AbuBishrIbnYunus.KitabAristutalisFiShicr.GRAR000015-ara1
+    ad Poeticam Aristoteleam. London: D. Nutt,pp. 1-76.
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the Margoliouth edition
+    * FolioVpP...: witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

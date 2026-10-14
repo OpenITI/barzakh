@@ -14,5 +14,8 @@
     ʿarabī. Cairo: Dār al-kitāb al-ʿarabī, pp. 29-157. NB: the ʿAyyād ed.
     contains the translation of Abu Bishr on the odd pages  and a modern
     translation on the even pages.  This is Abu Bishr's translation.
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the ʿAyyād edition
+    * FolioVpP...: witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: CLEANED_VERSION

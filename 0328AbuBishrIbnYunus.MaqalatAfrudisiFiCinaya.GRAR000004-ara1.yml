@@ -11,9 +11,10 @@
 90#VERS#COMMENT##: Ed. Hans-Jochen Ruland (1976), Die arabischen Fassungen
     von zwei Schriften des Alexander von Aphrodisias  Über die Vorsehung und
     Über das liberum arbitrium. Saarbrücken: Universität des Saarlandes,
-    193-210, 1-33. All paratextual elements (introductions, footnotes, indices,
-    ...) removed by HRH and MGR (OpenITI Clean operation, 2023) Link to the
-    text file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0350AH/pre-clean/data/0328AbuBishrIbnYunus/0328AbuBishrIbnYunus.MaqalatAfrudisiFiCinaya/0328AbuBishrIbnYunus.MaqalatAfrudisiFiCinaya.GRAR000004-ara1
+    193-210, 1-33.
+    The text contains three sets of page numbers:
+    * PageV01P...: page numbers of the Ruland edition
+    * FolioVeP...: witness E: Madrid, Escorial, árabe 798
+    * FolioVcP...: witness C: Istanbul, Süleymaniye, Carullah 1279
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

@@ -15,5 +15,8 @@
     Philosophisch-historische Klasse.  Kommission für die Herausgabe der
     arabischen Aristoteles-Übersetzungen 1), Wien: Hölder-Pichler-Tempsky A.G.,
     pp. 220-282.
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the Tkatsch edition
+    * FolioVpP...: witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: CLEANED_VERSION

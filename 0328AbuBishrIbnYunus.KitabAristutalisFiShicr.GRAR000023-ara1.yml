@@ -14,5 +14,8 @@
     al-shiʿr, maʿa al-tarjamaŧ al-ʿarabiyyaŧ al-qadīmaŧ  wa-shurūḥ al-Fārābī
     wa-Ibn Sīnā wa-Ibn Rushd.  Cairo: Maṭbaʿaŧ al-nahḍaŧ al-miṣriyyaŧ, pp.
     85-145.
+    The text contains two sets of page numbers:
+    * PageV01P...: page numbers of the Badawī edition
+    * FolioVpP...: witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: CLEANED_VERSION
