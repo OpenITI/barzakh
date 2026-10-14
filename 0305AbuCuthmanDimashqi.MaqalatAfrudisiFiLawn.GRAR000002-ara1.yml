@@ -13,9 +13,10 @@
 90#VERS#COMMENT##: Ed. Helmut Gätje (1967), Die arabische Übersetzung der
     Schrift des Alexander von Aphrodisias  über die Farbe. Nachrichten der
     Akademie der Wissenschaften in Göttingen. I: Phil.-hist. Kl.  vol. 10 pp.
-    364-375. All paratextual elements (introductions, footnotes, indices, ...)
-    removed by HRH and MGR (OpenITI Clean operation, 2023) Link to the text
-    file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0325AH/pre-clean/data/0305AbuCuthmanDimashqi/0305AbuCuthmanDimashqi.MaqalatAfrudisiFiLawn/0305AbuCuthmanDimashqi.MaqalatAfrudisiFiLawn.GRAR000002-ara1
+    364-375.
+    The edition contains three sets of page numbers:
+    * PageV01P...: page numbers of the Gätje edition
+    * PageVbP...:  page numbers of the Greek text (ed. Bruns 1892)
+    * FolioVeP...: witness E: Madrid, Escorial, árabe 798
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

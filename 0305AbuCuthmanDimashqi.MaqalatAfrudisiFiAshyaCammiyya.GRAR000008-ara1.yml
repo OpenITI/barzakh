@@ -12,10 +12,10 @@
 90#VERS#COMMENT##: Ed. Hans-Jochen Ruland (1979),  Zwei arabische Fassungen
     der Abhandlung des Alexander von Aphrodisias  über die Universalia
     (Quaestio I 11a) (Nachrichten der Akademie der Wissenschaften in Göttingen.
-    I: Phil.-hist. Kl., 10) Göttingen: Vandenhoeck & Ruprecht, 264-269. All
-    paratextual elements (introductions, footnotes, indices, ...) removed by
-    HRH and MGR (OpenITI Clean operation, 2023) Link to the text file as it was
-    before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0325AH/pre-clean/data/0305AbuCuthmanDimashqi/0305AbuCuthmanDimashqi.MaqalatAfrudisiFiAshyaCammiyya/0305AbuCuthmanDimashqi.MaqalatAfrudisiFiAshyaCammiyya.GRAR000008-ara1
+    I: Phil.-hist. Kl., 10) Göttingen: Vandenhoeck & Ruprecht, 264-269.
+    The text contains three sets of page numbers:
+    * PageV01P264...P268: page numbers of the Ruland edition
+    * PageVbP021...P022: page numbers of the Greek text (ed. Bruns 1892)
+    * FolioVdP113A...113B: folio numbers of witness D: Damascus, Ẓāhirīyah, ʿĀmm 4871
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
