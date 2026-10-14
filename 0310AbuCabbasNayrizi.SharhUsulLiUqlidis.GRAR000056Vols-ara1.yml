@@ -1,0 +1,21 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0310AbuCabbasNayrizi.SharhUsulLiUqlidis.GRAR000056Vols-ara1
+80#VERS#BASED####: http://www.worldcat.org/oclc/812411825,
+    https://www.graeco-arabic-studies.org/view/nayrizi.euclid.elem.pt1-comm.sharh-ar1,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/nayrizi_euclid_elem_pt1-comm_sharh-ar1.xml,
+    https://www.graeco-arabic-studies.org/view/nayrizi.euclid.elem.pt2-comm.sharh-ar1,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/nayrizi_euclid_elem_pt2-comm_sharh-ar1.xml,
+    https://www.graeco-arabic-studies.org/view/nayrizi.euclid.elem.pt3-comm.sharh-ar1,
+    https://www.graeco-arabic-studies.org/fileadmin/user_upload/xml_files/nayrizi_euclid_elem_pt3-comm_sharh-ar1.xml
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: Ed. Rasmus Olsen Besthorn and Johan Ludvig Heiberg
+    (1897), Codex Leidensis 399,1 : Euclidis Elementa ex interpretatione Al-
+    Hadschdschadschii  cum commentariis Al-Narizii, Copenhagen: Libraria
+    Gyldendaliania, vol. 1 pp. 4-190, vol. 2 pp. 4-78, vol. 3 pp. 2-148.
+    PV combined the thre volumes into a single file.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
