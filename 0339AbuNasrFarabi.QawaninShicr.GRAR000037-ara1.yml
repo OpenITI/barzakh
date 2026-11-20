@@ -12,9 +12,8 @@
 90#VERS#COMMENT##: Ed. ʿAbd al-Raḥmān Badawī (1953),  Arisṭūṭālīs: Fann
     al-shiʿr, maʿa al-tarjamaŧ al-ʿarabiyyaŧ al-qadīmaŧ  wa-shurūḥ al-Fārābī
     wa-Ibn Sīnā wa-Ibn Rushd.  Cairo: Maṭbaʿaŧ al-nahḍaŧ al-miṣriyyaŧ, pp.
-    149-158. All paratextual elements (introductions, footnotes, indices, ...)
-    removed by HRH and MGR (OpenITI Clean operation, 2023) Link to the text
-    file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0350AH/pre-clean/data/0339AbuNasrFarabi/0339AbuNasrFarabi.QawaninShicr/0339AbuNasrFarabi.QawaninShicr.GRAR000037-ara1
+    149-158. The text contains two sets of page numbers:
+    * PageV01Pxxx: page numbers of the Badawi edition
+    * FolioViPxxx: folio numbers of witness I: London, British Library, India Office Islamic 3832
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

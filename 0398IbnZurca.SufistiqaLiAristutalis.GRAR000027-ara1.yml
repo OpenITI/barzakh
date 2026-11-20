@@ -14,12 +14,9 @@
     work;  This is the one by Ibn Zurʿa.  The two others are ascribed to al-
     Nāʿimī and Yaḥyā b. ʿAdī. In Badawī's edition, for each chapter in
     Aristotle's text, the  three translations are given consecutively. The
-    Graeco-Arabic project extracted each translation in a separate file. Ed.
-    ʿAbd al-Raḥmān Badawī (1952), Manṭiq Arisṭū (Dirāsāt Islāmiyyaŧ 7), Cairo:
-    Maṭbaʿaŧ Dār al-kutub al-miṣriyyaŧ, vol. 3 pp. 737-1015. All paratextual
-    elements (introductions, footnotes, indices, ...) removed by HRH and MGR
-    (OpenITI Clean operation, 2023) Link to the text file as it was before it
-    was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0400AH/pre-clean/data/0398IbnZurca/0398IbnZurca.SufistiqaLiAristutalis/0398IbnZurca.SufistiqaLiAristutalis.GRAR000027-ara1
+    Graeco-Arabic project extracted each translation in a separate file.
+    The text contains two sets of page numbers:
+    * PageV01Pxxx: page numbers of the Badawi edition
+    * FolioVpPxxx: folio numbers of witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

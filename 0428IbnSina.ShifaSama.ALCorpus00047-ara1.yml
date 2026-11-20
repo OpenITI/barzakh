@@ -3,7 +3,8 @@
 00#VERS#URI######: 0428IbnSina.ShifaSama.ALCorpus00047-ara1
 80#VERS#BASED####: permalink, permalink, permalink
 80#VERS#COLLATED#: permalink, permalink, permalink
-80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+80#VERS#LINKS####: https://www.arabic-latin-
+    corpus.philosophie.uni-wuerzburg.de/text/Avic_Caelo_ar.index.xhtml
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please
     use consistently)
 90#VERS#COMMENT##: Text digitized by the Arabic and Latin Corpus project
@@ -12,4 +13,4 @@
     Transcribed by Azzam Hasan.
     The text was converted to OpenITI mARkdown by PV.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

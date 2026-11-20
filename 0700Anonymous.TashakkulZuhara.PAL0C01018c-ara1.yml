@@ -8,6 +8,14 @@
     consistently)
 90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The original text file used the Unicode character
+    U+0305 : COMBINING OVERLINE {overscore, vinculum};
+    PV has removed these characters and put (runs of)
+    a letter combined with this character between forward slashes.
+    The original text also used a special character in the
+    Unicode private use range (U+F500) to represent the zero sign;
+    PV replaced that character with "٠" (ARABIC-INDIC DIGIT ZERO).
+    PV removed the endnotes and endnote markers from the text.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

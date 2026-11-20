@@ -16,10 +16,10 @@
     Aristotle's text, the  three translations are given consecutively. The
     Graeco-Arabic project extracted each translation in a separate file. Ed.
     ʿAbd al-Raḥmān Badawī (1952), Manṭiq Arisṭū (Dirāsāt Islāmiyyaŧ 7), Cairo:
-    Maṭbaʿaŧ Dār al-kutub al-miṣriyyaŧ, vol. 3 pp. 737-1018. All paratextual
-    elements (introductions, footnotes, indices, ...) removed by HRH and MGR
-    (OpenITI Clean operation, 2023) Link to the text file as it was before it
-    was cleaned: https://raw.githubusercontent.com/OpenITI/0375AH/pre-
-    clean/data/0364YahyaIbnCadi/0364YahyaIbnCadi.SufistiqaLiAristutalis/0364YahyaIbnCadi.SufistiqaLiAristutalis.GRAR000026-ara1
+    Maṭbaʿaŧ Dār al-kutub al-miṣriyyaŧ, vol. 3 pp. 737-1018.
+    The text contains two sets of page numbers:
+    * PageV01Pxxx: page numbers of the Badawi edition
+    * FolioVpPxxx: witness P: Paris, Bibliothèque Nationale, arabe 2346
+    PV tagged the copyist's comment in the colophon as paratext.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

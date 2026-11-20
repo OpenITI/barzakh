@@ -11,5 +11,6 @@
     corpus.philosophie.uni-wuerzburg.de/text/Saffar_Astrolab_ar.index.xhtml).
     Transcribed by Azzam Hasan.
     The text was converted to OpenITI mARkdown by PV.
+    PV tagged the colophon as paratext.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

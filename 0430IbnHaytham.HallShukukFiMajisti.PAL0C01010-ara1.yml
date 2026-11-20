@@ -3,11 +3,17 @@
 00#VERS#URI######: 0430IbnHaytham.HallShukukFiMajisti.PAL0C01010-ara1
 80#VERS#BASED####: https://ptolemaeus.badw.de/ms/1035/1543/text/1
 80#VERS#COLLATED#: permalink, permalink, permalink
-80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
+80#VERS#LINKS####: https://ptolemaeus.badw.de/ms/1035/1543/text/1
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
 90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    Transcription by Paul Hullmeine.
+    The original text transcribed references to points and lines in figures
+    using Unicode U+0305 : COMBINING OVERLINE; PV removed this character
+    and put all these references between a pair of forward slashes (e.g., /ط ك ل م/).
+    Normal Arabic letters are used (not isolated glyphs), separated by spaces.
+    PV removed the footnotes and footnote markers.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

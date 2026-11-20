@@ -8,6 +8,7 @@
     consistently)
 90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    PV fixed the headings and marked the copyist's colophon as paratext.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

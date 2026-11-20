@@ -8,9 +8,10 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: a free running comment here; you can add as many lines
-    as you see fit; the main goal of this comment section is to have a place to
-    record valuable information, which is difficult to formalize into the above
-    given categories.
+90#VERS#COMMENT##: Ed. ʿAbd al-Raḥmān Badawī (1952), Abū ʿAlī Aḥmad ibn Muḥammad Miskawayh.
+    al-Ḥikmah al-ḫālidah. Ǧāwīdān ḫirad, Cairo: Maktabat al-nahḍah al-miṣrīyah.
+    The text contains two sets of page numbers:
+    * PageV01Pxxx: page numbers of the Badawi edition
+    * FolioVpPxxx: folio numbers of witness P: Paris, Bibliothèque Nationale, arabe 3957
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

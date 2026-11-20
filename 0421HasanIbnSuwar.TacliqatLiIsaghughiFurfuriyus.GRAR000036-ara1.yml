@@ -12,10 +12,9 @@
     consistently)
 90#VERS#COMMENT##: Ed. ʿAḥmad Fuʾād al-Ahwānī (1952),  Isāghūghī li-
     Furfuriyūs al-Ṣūrī naql Abī ʿUthmān al-Dimashqī.  Cairo: Dār Iḥyāʾ al-
-    Kutub al-ʿArabiyya, pp. 95-112. All paratextual elements (introductions,
-    footnotes, indices, ...) removed by HRH and MGR (OpenITI Clean operation,
-    2023) Link to the text file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0425AH/pre-
-    clean/data/0421HasanIbnSuwar/0421HasanIbnSuwar.TacliqatLiIsaghughiFurfuriyus/0421HasanIbnSuwar.TacliqatLiIsaghughiFurfuriyus.GRAR000036-ara1
+    Kutub al-ʿArabiyya, pp. 95-112.
+    The text contains two sets of page numbers:
+    * PageV01Pxxx: page numbers of the Ahwānī edition
+    * FolioVpPxxx: folio numbers of witness P: Paris, Bibliothèque Nationale, arabe 2346
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

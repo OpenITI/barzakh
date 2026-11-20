@@ -1,0 +1,13 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0632AbuHafsSuhrawardi.CawarifMacarif.IAC00124-ara1
+80#VERS#BASED####:
+80#VERS#LINKS####: https://ibnalarabi.com/books/awarif.php
+90#VERS#ANNOTATOR:
+90#VERS#COMMENT##: This text file is based on the Shamela edition
+90#VERS#DATE#####: The text file does not contain page numbers.
+    The original contained footnotes; PV removed the footnotes
+    and replaced them with placeholder page end markers.
+    It is likely that the end of (very few) multi-paragraph
+    footnotes was not removed.
+90#VERS#ISSUES###: FOOTNOTES, PAGE_NUMBERS

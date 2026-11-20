@@ -8,6 +8,11 @@
     consistently)
 90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The original text transcribed references to points and lines in figures
+    using Unicode U+0305 : COMBINING OVERLINE; PV removed this character
+    and put all these references between a pair of forward slashes (e.g., /ط ك ل م/).
+    Normal Arabic letters are used (not isolated glyphs), separated by spaces.
+    PV removed the footnotes and footnote markers.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

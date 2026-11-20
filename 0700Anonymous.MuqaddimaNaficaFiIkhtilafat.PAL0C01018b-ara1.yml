@@ -6,8 +6,15 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
+90#VERS#COMMENT##: Transcription of ms. Istanbul, Nuruosmaniye, 2941
+    (transcribed by Saer Basmaji).
+    Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    The original text file used the Unicode character
+    U+0305 : COMBINING OVERLINE {overscore, vinculum};
+    PV has removed these characters and put (runs of)
+    a letter combined with this character between forward slashes.
+    PV removed the endnotes and endnote markers from the text.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

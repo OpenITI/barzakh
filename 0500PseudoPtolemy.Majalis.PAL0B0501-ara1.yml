@@ -6,8 +6,11 @@
 80#VERS#LINKS####: all@id, vol1@id, vol2@id, vol3@id, volX@id
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: Text digitized by the Ptolemaeus Arabus et Latinus
+90#VERS#COMMENT##: Cairo, Dār al-kutub, mīqāt 122 -- transcribed by Emanuele Rovati.
+    Text digitized by the Ptolemaeus Arabus et Latinus
     project at the Bayerische Akademie der Wissenschaften. Both transliteration
-    and photographs are available on the link above..
+    and photographs are available on the link above.
+    PV removed footnotes and footnote markers;
+    and formatted the one-column table in the last two folios as simple paragraphs.
 90#VERS#DATE#####: YYYY-MM-DD
 90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION

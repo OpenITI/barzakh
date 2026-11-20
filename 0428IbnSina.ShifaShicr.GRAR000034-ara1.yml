@@ -19,10 +19,5 @@
     The text file contains two sets of page numbers:
     * PageV01P...: references to Margoliouth's edition
     * PageV00P...: references to Badawī's edition (GRAR000035)
-    All paratextual elements (introductions,
-    footnotes, indices, ...) removed by HRH and MGR (OpenITI Clean operation,
-    2023) Link to the text file as it was before it was cleaned:
-    https://raw.githubusercontent.com/OpenITI/0450AH/pre-
-    clean/data/0428IbnSina/0428IbnSina.FannShicr/0428IbnSina.FannShicr.GRAR000034-ara1.mARkdown
 90#VERS#DATE#####: 2020-04-07
-90#VERS#ISSUES###: INCOMPLETE_VERSION, PRIMARY_VERSION, CLEANED_VERSION
+90#VERS#ISSUES###: INCOMPLETE_VERSION, PRIMARY_VERSION, CLEANED_VERSION, PARATEXT

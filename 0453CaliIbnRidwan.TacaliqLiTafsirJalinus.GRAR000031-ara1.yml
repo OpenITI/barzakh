@@ -14,5 +14,9 @@
     officina medici  commentariorum versionem arabicam (Corpus Medicorum
     Graecorum. Supplementum Orientale 1).  Berlin: Akademie-Verlag, pp.
     100-122.
+    The text contains two sets of page numbers:
+    * PageV01Pxxx: Page numbers of the Lyons edition
+    * FolioVcPxxx: folio numbers from witness C
+      (Cambridge, University Library, Cantabr. Dd. 12.1)
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: CLEANED_VERSION

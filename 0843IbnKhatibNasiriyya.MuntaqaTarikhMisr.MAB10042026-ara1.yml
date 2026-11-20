@@ -7,4 +7,4 @@
 90#VERS#ANNOTATOR: Mathew Barber
 90#VERS#COMMENT##: Minor corrections to OCR where I have spotted them - small errors will remain
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: formalized issues, separated with commas
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION
