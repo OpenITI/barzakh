@@ -1,0 +1,14 @@
+00#VERS#CLENGTH##: 
+00#VERS#LENGTH###: 
+00#VERS#URI######: 0465IbnHawazinQushayri.RisalaQushayriyya.IAC00120-ara1
+80#VERS#BASED####: permalink, permalink, permalink
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: https://ibnalarabi.com/books/qushairiya.php
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please
+    use consistently)
+90#VERS#COMMENT##: vol 1 pp. 268ff. and vol. 2 are not linked correctly on the website;
+    all pages from 1/268 (https://ibnalarabi.com/books/qushairiya.php?id=254)
+    to 2/585 (https://ibnalarabi.com/books/qushairiya.php?id=562) all contain the same
+    page text (namely, the text of p. 267)
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, INCOMPLETE_TEXT
