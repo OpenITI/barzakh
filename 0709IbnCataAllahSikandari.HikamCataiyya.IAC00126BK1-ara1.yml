@@ -1,0 +1,17 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0709IbnCataAllahSikandari.HikamCataiyya.IAC00126BK1-ara1
+80#VERS#BASED####: https://search.worldcat.org/title/1558830548
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: https://ibnalarabi.com/books/hikam-ataiya.php,
+    https://archive.org/details/way2llh22_20170904_1507
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: The original text file contained not only the ḥikam
+    (0709IbnCataAllahSikandari.HikamCataiyya),
+    but also a sharḥ (1348CabdMajidSharnubi.SharhHikamCataiyya).
+    PV split the sharḥ from the original text.
+    PV removed the editorial statement at the end:
+    "انتهى ولله الحمد مساء الأحد 24 / 9 / 1403 ه 5 / 6 / 1983 م."
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGE_NUMBERS
