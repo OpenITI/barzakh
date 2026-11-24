@@ -1,0 +1,15 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0709IbnCataAllahSikandari.SharhTakhmis.IAC00058BK2-ara1
+80#VERS#BASED####:
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: https://ibnalarabi.com/books/takhmis.php
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: The original text file contained both Ibn ʿArabī's takhmīs
+    of Abū Madyan al-Tilimsānī's qaṣīda "ما لذة العيش إلا صحبة الفقرا"
+    and Ibn ʿAṭāʾ Allāh's sharḥ.
+    PV split it into two files.
+    The text file does not contain page numbers.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGE_NUMBERS, UNKNOWN_EDITION

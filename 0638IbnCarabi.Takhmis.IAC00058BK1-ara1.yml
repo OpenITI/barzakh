@@ -1,0 +1,16 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0638IbnCarabi.Takhmis.IAC00058BK1-ara1
+80#VERS#BASED####:
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: https://ibnalarabi.com/books/takhmis.php,
+    https://noorlib.ir/tr/book/view/170905/قصيدة-شيخ-الشيوخ-أبي-مدين-شعيب-المغربي-قدس-الله-سره.-و-تخميسها-للشيخ-الأكبر-محيي-الدين-بن-العربي-محمد-بن-علي-الحاتمي-الطائي-الأندلسي.-و-شرحها-عنوان-"التوفیق-في-آداب-الطریق"-العارف-بالله-تاج-الدین-أحمد-بن-محمد-عبدالکریم-بن-عطاءالله-السکندري-قدس-الله
+90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
+    consistently)
+90#VERS#COMMENT##: The original text file contained both Ibn ʿArabī's takhmīs
+    of Abū Madyan al-Tilimsānī's qaṣīda "ما لذة العيش إلا صحبة الفقرا"
+    and Ibn ʿAṭāʾ Allāh's sharḥ.
+    PV split it into two files.
+    The text file does not contain page numbers.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGE_NUMBERS
