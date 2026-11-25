@@ -1,0 +1,14 @@
+00#VERS#CLENGTH##:
+00#VERS#LENGTH###:
+00#VERS#URI######: 0638IbnCarabi.Anwar.IAC00036BK1-ara2
+80#VERS#BASED####: https://search.worldcat.org/title/1557894292
+80#VERS#COLLATED#: permalink, permalink, permalink
+80#VERS#LINKS####: https://ibnalarabi.com/jili/isfar.php,
+    https://sufism.ir/library-files/ibn-arabi/ar/alesfar-ibn-arabi-ar.pdf
+90#VERS#ANNOTATOR: PV
+90#VERS#COMMENT##: The original text file contained both Ibn al-ʿArabī's
+    Risālat al-Anwār and al-Jīlī's sharḥ, and did not contain page numbers.
+    PV removed footnotes, manually added page numbers, and
+    split the sharḥ from the matn.
+90#VERS#DATE#####: YYYY-MM-DD
+90#VERS#ISSUES###: CLEANED_VERSION
