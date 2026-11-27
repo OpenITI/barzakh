@@ -3,12 +3,17 @@
 00#VERS#URI######: 0898NurDinJami.NaqdNusus.IAC00089-ara1
 80#VERS#BASED####:
 80#VERS#COLLATED#: permalink, permalink, permalink
-80#VERS#LINKS####: https://ibnalarabi.com/fusus/jami_naqsh.php
+80#VERS#LINKS####: https://ibnalarabi.com/fusus/jami_naqsh.php,
+    https://sufirfan.org/wp-content/uploads/2022/09/نقد-النصوص11-1212.pdf
 90#VERS#ANNOTATOR: the name of the annotator (latin characters; please use
     consistently)
-90#VERS#COMMENT##: a free running comment here; you can add as many lines
-    as you see fit; the main goal of this comment section is to have a place to
-    record valuable information, which is difficult to formalize into the above
-    given categories.
+90#VERS#COMMENT##: The website is broken and therefore contains only an
+    incomplete text: the links in the table of contents after faṣṣ 19
+    all contain the text of faṣṣ 19.
+    The text seems taken from the Dār al-Kutub al-ʿIlmiyya edition,
+    with additions by the site's editor.
+    The text originally included the fuṣūṣ themselves,
+    mixed in with the text; PV removed those.
+    PV also inserted page numbers from the DKI version into the text.
 90#VERS#DATE#####: YYYY-MM-DD
-90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGE_NUMBERS, UNKNOWN_EDITION
+90#VERS#ISSUES###: PRIMARY_VERSION, CLEANED_VERSION, PAGE_NUMBERS, INCOMPLETE_VERSION
